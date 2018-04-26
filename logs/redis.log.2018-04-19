@@ -1,0 +1,1029 @@
+2018-04-19 10:25:47 [ main:1 ] - [ DEBUG ] CookieSpec selected: default
+2018-04-19 10:25:48 [ main:212 ] - [ DEBUG ] Auth cache not set in the context
+2018-04-19 10:25:48 [ main:236 ] - [ DEBUG ] Connection request: [route: {}->http://zen.ctyun.com.cn:80][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2018-04-19 10:25:48 [ main:505 ] - [ DEBUG ] Connection leased: [id: 0][route: {}->http://zen.ctyun.com.cn:80][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2018-04-19 10:25:48 [ main:521 ] - [ DEBUG ] Opening connection {}->http://zen.ctyun.com.cn:80
+2018-04-19 10:25:48 [ main:616 ] - [ DEBUG ] Connecting to zen.ctyun.com.cn/42.123.120.97:80
+2018-04-19 10:25:48 [ main:740 ] - [ DEBUG ] Connection established 192.168.1.230:51268<->42.123.120.97:80
+2018-04-19 10:25:48 [ main:743 ] - [ DEBUG ] Executing request GET /bss/packet/repair?id=48033e7d08c94765975740b1ac272462 HTTP/1.1
+2018-04-19 10:25:48 [ main:746 ] - [ DEBUG ] Target auth state: UNCHALLENGED
+2018-04-19 10:25:48 [ main:754 ] - [ DEBUG ] Proxy auth state: UNCHALLENGED
+2018-04-19 10:25:48 [ main:772 ] - [ DEBUG ] http-outgoing-0 >> GET /bss/packet/repair?id=48033e7d08c94765975740b1ac272462 HTTP/1.1
+2018-04-19 10:25:48 [ main:775 ] - [ DEBUG ] http-outgoing-0 >> Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+2018-04-19 10:25:48 [ main:776 ] - [ DEBUG ] http-outgoing-0 >> Cookie:  UM_distinctid=1628fd6da9625a-0aa86e3bfbcaf8-4c584130-ff000-1628fd6da981ed; userRoleName="2|1:0|10:1523501291|12:userRoleName|20:6LaF57qn566h55CG5ZGY|2b4474c5b3f33fd806cdcab4ba9f2301c8dc7bcb192675108441e3ed7ebcbcc9"; userName="2|1:0|10:1523501291|8:userName|12:5byg55Ge5by6|009e0b5679caad8295fcfb7d13d22c40775fb0113ac95e2bf4d1678d9c43186b"; userId="2|1:0|10:1523501291|6:userId|44:ZWUzODJiYzNlMWQ1NGJhYzhhMjQ3YjBmZTkyOWIzYzg=|ba63e1efe206b23c2f6fead05059d736981e0f05547a8412c7e7e1c980f49d97"; userRole="2|1:0|10:1523501291|8:userRole|44:MTAxYzQzZjkwNjlhNDQ5Nzk5ODE0ZDUxODEyYTQzYmM=|2e5034516975f98b0c883f98b80dd2c6f33df81f7bbdce739a86bd809d079072"; PYSID_=8c2e667ace5d1ecaa689fc3f510289b3
+2018-04-19 10:25:48 [ main:778 ] - [ DEBUG ] http-outgoing-0 >> X-Requested-With: XMLHttpRequest
+2018-04-19 10:25:48 [ main:781 ] - [ DEBUG ] http-outgoing-0 >> Accept-Encoding: gzip, deflate
+2018-04-19 10:25:48 [ main:783 ] - [ DEBUG ] http-outgoing-0 >> User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0
+2018-04-19 10:25:48 [ main:801 ] - [ DEBUG ] http-outgoing-0 >> Connection: keep-alive
+2018-04-19 10:25:48 [ main:803 ] - [ DEBUG ] http-outgoing-0 >> Accept: */*
+2018-04-19 10:25:48 [ main:804 ] - [ DEBUG ] http-outgoing-0 >> Host: zen.ctyun.com.cn
+2018-04-19 10:25:48 [ main:806 ] - [ DEBUG ] http-outgoing-0 >> "GET /bss/packet/repair?id=48033e7d08c94765975740b1ac272462 HTTP/1.1[\r][\n]"
+2018-04-19 10:25:48 [ main:808 ] - [ DEBUG ] http-outgoing-0 >> "Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2[\r][\n]"
+2018-04-19 10:25:48 [ main:812 ] - [ DEBUG ] http-outgoing-0 >> "Cookie:  UM_distinctid=1628fd6da9625a-0aa86e3bfbcaf8-4c584130-ff000-1628fd6da981ed; userRoleName="2|1:0|10:1523501291|12:userRoleName|20:6LaF57qn566h55CG5ZGY|2b4474c5b3f33fd806cdcab4ba9f2301c8dc7bcb192675108441e3ed7ebcbcc9"; userName="2|1:0|10:1523501291|8:userName|12:5byg55Ge5by6|009e0b5679caad8295fcfb7d13d22c40775fb0113ac95e2bf4d1678d9c43186b"; userId="2|1:0|10:1523501291|6:userId|44:ZWUzODJiYzNlMWQ1NGJhYzhhMjQ3YjBmZTkyOWIzYzg=|ba63e1efe206b23c2f6fead05059d736981e0f05547a8412c7e7e1c980f49d97"; userRole="2|1:0|10:1523501291|8:userRole|44:MTAxYzQzZjkwNjlhNDQ5Nzk5ODE0ZDUxODEyYTQzYmM=|2e5034516975f98b0c883f98b80dd2c6f33df81f7bbdce739a86bd809d079072"; PYSID_=8c2e667ace5d1ecaa689fc3f510289b3[\r][\n]"
+2018-04-19 10:25:48 [ main:814 ] - [ DEBUG ] http-outgoing-0 >> "X-Requested-With: XMLHttpRequest[\r][\n]"
+2018-04-19 10:25:48 [ main:838 ] - [ DEBUG ] http-outgoing-0 >> "Accept-Encoding: gzip, deflate[\r][\n]"
+2018-04-19 10:25:48 [ main:840 ] - [ DEBUG ] http-outgoing-0 >> "User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0[\r][\n]"
+2018-04-19 10:25:48 [ main:842 ] - [ DEBUG ] http-outgoing-0 >> "Connection: keep-alive[\r][\n]"
+2018-04-19 10:25:48 [ main:843 ] - [ DEBUG ] http-outgoing-0 >> "Accept: */*[\r][\n]"
+2018-04-19 10:25:48 [ main:851 ] - [ DEBUG ] http-outgoing-0 >> "Host: zen.ctyun.com.cn[\r][\n]"
+2018-04-19 10:25:48 [ main:853 ] - [ DEBUG ] http-outgoing-0 >> "[\r][\n]"
+2018-04-19 10:25:48 [ main:996 ] - [ DEBUG ] http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+2018-04-19 10:25:48 [ main:998 ] - [ DEBUG ] http-outgoing-0 << "Server: nginx/1.11.6[\r][\n]"
+2018-04-19 10:25:48 [ main:1000 ] - [ DEBUG ] http-outgoing-0 << "Date: Thu, 19 Apr 2018 02:38:34 GMT[\r][\n]"
+2018-04-19 10:25:48 [ main:1004 ] - [ DEBUG ] http-outgoing-0 << "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2018-04-19 10:25:48 [ main:1005 ] - [ DEBUG ] http-outgoing-0 << "Content-Length: 68[\r][\n]"
+2018-04-19 10:25:48 [ main:1007 ] - [ DEBUG ] http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+2018-04-19 10:25:48 [ main:1009 ] - [ DEBUG ] http-outgoing-0 << "Access-Control-Allow-Headers: *[\r][\n]"
+2018-04-19 10:25:48 [ main:1011 ] - [ DEBUG ] http-outgoing-0 << "Etag: "2025a8354299cfde1322cddb0ff8d565fe47719d"[\r][\n]"
+2018-04-19 10:25:48 [ main:1012 ] - [ DEBUG ] http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
+2018-04-19 10:25:48 [ main:1014 ] - [ DEBUG ] http-outgoing-0 << "Access-Control-Allow-Methods: POST, GET, OPTIONS[\r][\n]"
+2018-04-19 10:25:48 [ main:1015 ] - [ DEBUG ] http-outgoing-0 << "[\r][\n]"
+2018-04-19 10:25:48 [ main:1017 ] - [ DEBUG ] http-outgoing-0 << "{"returnObj": null, "msg": null, "message": null, "statusCode": 900}"
+2018-04-19 10:25:49 [ main:1037 ] - [ DEBUG ] http-outgoing-0 << HTTP/1.1 200 OK
+2018-04-19 10:25:49 [ main:1039 ] - [ DEBUG ] http-outgoing-0 << Server: nginx/1.11.6
+2018-04-19 10:25:49 [ main:1040 ] - [ DEBUG ] http-outgoing-0 << Date: Thu, 19 Apr 2018 02:38:34 GMT
+2018-04-19 10:25:49 [ main:1042 ] - [ DEBUG ] http-outgoing-0 << Content-Type: application/json; charset=UTF-8
+2018-04-19 10:25:49 [ main:1043 ] - [ DEBUG ] http-outgoing-0 << Content-Length: 68
+2018-04-19 10:25:49 [ main:1045 ] - [ DEBUG ] http-outgoing-0 << Connection: keep-alive
+2018-04-19 10:25:49 [ main:1047 ] - [ DEBUG ] http-outgoing-0 << Access-Control-Allow-Headers: *
+2018-04-19 10:25:49 [ main:1048 ] - [ DEBUG ] http-outgoing-0 << Etag: "2025a8354299cfde1322cddb0ff8d565fe47719d"
+2018-04-19 10:25:49 [ main:1049 ] - [ DEBUG ] http-outgoing-0 << Access-Control-Allow-Origin: *
+2018-04-19 10:25:49 [ main:1051 ] - [ DEBUG ] http-outgoing-0 << Access-Control-Allow-Methods: POST, GET, OPTIONS
+2018-04-19 10:25:49 [ main:1105 ] - [ DEBUG ] Connection can be kept alive indefinitely
+2018-04-19 10:26:38 [ main:50884 ] - [ DEBUG ] Connection [id: 0][route: {}->http://zen.ctyun.com.cn:80] can be kept alive indefinitely
+2018-04-19 10:26:38 [ main:50886 ] - [ DEBUG ] Connection released: [id: 0][route: {}->http://zen.ctyun.com.cn:80][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2018-04-19 10:43:19 [ main:0 ] - [ INFO ] URL param 0:id=ff9fa6e3cdbb4ddb8afaff843203b8ac
+2018-04-19 10:43:33 [ main:14747 ] - [ DEBUG ] CookieSpec selected: default
+2018-04-19 10:43:34 [ main:14936 ] - [ DEBUG ] Auth cache not set in the context
+2018-04-19 10:43:34 [ main:14960 ] - [ DEBUG ] Connection request: [route: {}->http://zen.ctyun.com.cn:80][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2018-04-19 10:43:34 [ main:15145 ] - [ DEBUG ] Connection leased: [id: 0][route: {}->http://zen.ctyun.com.cn:80][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2018-04-19 10:43:34 [ main:15163 ] - [ DEBUG ] Opening connection {}->http://zen.ctyun.com.cn:80
+2018-04-19 10:43:34 [ main:15196 ] - [ DEBUG ] Connecting to zen.ctyun.com.cn/42.123.120.97:80
+2018-04-19 10:43:34 [ main:15286 ] - [ DEBUG ] Connection established 192.168.1.230:51511<->42.123.120.97:80
+2018-04-19 10:43:34 [ main:15289 ] - [ DEBUG ] Executing request GET /bss/packet/repair?id=ff9fa6e3cdbb4ddb8afaff843203b8ac HTTP/1.1
+2018-04-19 10:43:34 [ main:15291 ] - [ DEBUG ] Target auth state: UNCHALLENGED
+2018-04-19 10:43:34 [ main:15300 ] - [ DEBUG ] Proxy auth state: UNCHALLENGED
+2018-04-19 10:43:34 [ main:15317 ] - [ DEBUG ] http-outgoing-0 >> GET /bss/packet/repair?id=ff9fa6e3cdbb4ddb8afaff843203b8ac HTTP/1.1
+2018-04-19 10:43:34 [ main:15320 ] - [ DEBUG ] http-outgoing-0 >> Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+2018-04-19 10:43:34 [ main:15322 ] - [ DEBUG ] http-outgoing-0 >> Cookie: UM_distinctid=1628fd6da9625a-0aa86e3bfbcaf8-4c584130-ff000-1628fd6da981ed; userRoleName="2|1:0|10:1523501291|12:userRoleName|20:6LaF57qn566h55CG5ZGY|2b4474c5b3f33fd806cdcab4ba9f2301c8dc7bcb192675108441e3ed7ebcbcc9"; userName="2|1:0|10:1523501291|8:userName|12:5byg55Ge5by6|009e0b5679caad8295fcfb7d13d22c40775fb0113ac95e2bf4d1678d9c43186b"; userId="2|1:0|10:1523501291|6:userId|44:ZWUzODJiYzNlMWQ1NGJhYzhhMjQ3YjBmZTkyOWIzYzg=|ba63e1efe206b23c2f6fead05059d736981e0f05547a8412c7e7e1c980f49d97"; userRole="2|1:0|10:1523501291|8:userRole|44:MTAxYzQzZjkwNjlhNDQ5Nzk5ODE0ZDUxODEyYTQzYmM=|2e5034516975f98b0c883f98b80dd2c6f33df81f7bbdce739a86bd809d079072"; PYSID_=8c2e667ace5d1ecaa689fc3f510289b3
+2018-04-19 10:43:34 [ main:15324 ] - [ DEBUG ] http-outgoing-0 >> X-Requested-With: XMLHttpRequest
+2018-04-19 10:43:34 [ main:15326 ] - [ DEBUG ] http-outgoing-0 >> Accept-Encoding: gzip, deflate
+2018-04-19 10:43:34 [ main:15352 ] - [ DEBUG ] http-outgoing-0 >> User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0
+2018-04-19 10:43:34 [ main:15355 ] - [ DEBUG ] http-outgoing-0 >> Connection: keep-alive
+2018-04-19 10:43:34 [ main:15358 ] - [ DEBUG ] http-outgoing-0 >> Accept: */*
+2018-04-19 10:43:34 [ main:15359 ] - [ DEBUG ] http-outgoing-0 >> Host: zen.ctyun.com.cn
+2018-04-19 10:43:34 [ main:15364 ] - [ DEBUG ] http-outgoing-0 >> "GET /bss/packet/repair?id=ff9fa6e3cdbb4ddb8afaff843203b8ac HTTP/1.1[\r][\n]"
+2018-04-19 10:43:34 [ main:15369 ] - [ DEBUG ] http-outgoing-0 >> "Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2[\r][\n]"
+2018-04-19 10:43:34 [ main:15374 ] - [ DEBUG ] http-outgoing-0 >> "Cookie: UM_distinctid=1628fd6da9625a-0aa86e3bfbcaf8-4c584130-ff000-1628fd6da981ed; userRoleName="2|1:0|10:1523501291|12:userRoleName|20:6LaF57qn566h55CG5ZGY|2b4474c5b3f33fd806cdcab4ba9f2301c8dc7bcb192675108441e3ed7ebcbcc9"; userName="2|1:0|10:1523501291|8:userName|12:5byg55Ge5by6|009e0b5679caad8295fcfb7d13d22c40775fb0113ac95e2bf4d1678d9c43186b"; userId="2|1:0|10:1523501291|6:userId|44:ZWUzODJiYzNlMWQ1NGJhYzhhMjQ3YjBmZTkyOWIzYzg=|ba63e1efe206b23c2f6fead05059d736981e0f05547a8412c7e7e1c980f49d97"; userRole="2|1:0|10:1523501291|8:userRole|44:MTAxYzQzZjkwNjlhNDQ5Nzk5ODE0ZDUxODEyYTQzYmM=|2e5034516975f98b0c883f98b80dd2c6f33df81f7bbdce739a86bd809d079072"; PYSID_=8c2e667ace5d1ecaa689fc3f510289b3[\r][\n]"
+2018-04-19 10:43:34 [ main:15377 ] - [ DEBUG ] http-outgoing-0 >> "X-Requested-With: XMLHttpRequest[\r][\n]"
+2018-04-19 10:43:34 [ main:15380 ] - [ DEBUG ] http-outgoing-0 >> "Accept-Encoding: gzip, deflate[\r][\n]"
+2018-04-19 10:43:34 [ main:15383 ] - [ DEBUG ] http-outgoing-0 >> "User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0[\r][\n]"
+2018-04-19 10:43:34 [ main:15387 ] - [ DEBUG ] http-outgoing-0 >> "Connection: keep-alive[\r][\n]"
+2018-04-19 10:43:34 [ main:15393 ] - [ DEBUG ] http-outgoing-0 >> "Accept: */*[\r][\n]"
+2018-04-19 10:43:34 [ main:15396 ] - [ DEBUG ] http-outgoing-0 >> "Host: zen.ctyun.com.cn[\r][\n]"
+2018-04-19 10:43:34 [ main:15399 ] - [ DEBUG ] http-outgoing-0 >> "[\r][\n]"
+2018-04-19 10:43:34 [ main:15568 ] - [ DEBUG ] http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+2018-04-19 10:43:34 [ main:15571 ] - [ DEBUG ] http-outgoing-0 << "Server: nginx/1.11.6[\r][\n]"
+2018-04-19 10:43:34 [ main:15573 ] - [ DEBUG ] http-outgoing-0 << "Date: Thu, 19 Apr 2018 02:56:20 GMT[\r][\n]"
+2018-04-19 10:43:34 [ main:15575 ] - [ DEBUG ] http-outgoing-0 << "Content-Type: application/json; charset=UTF-8[\r][\n]"
+2018-04-19 10:43:34 [ main:15577 ] - [ DEBUG ] http-outgoing-0 << "Content-Length: 68[\r][\n]"
+2018-04-19 10:43:34 [ main:15579 ] - [ DEBUG ] http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+2018-04-19 10:43:34 [ main:15581 ] - [ DEBUG ] http-outgoing-0 << "Access-Control-Allow-Headers: *[\r][\n]"
+2018-04-19 10:43:34 [ main:15584 ] - [ DEBUG ] http-outgoing-0 << "Etag: "2025a8354299cfde1322cddb0ff8d565fe47719d"[\r][\n]"
+2018-04-19 10:43:34 [ main:15586 ] - [ DEBUG ] http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
+2018-04-19 10:43:34 [ main:15589 ] - [ DEBUG ] http-outgoing-0 << "Access-Control-Allow-Methods: POST, GET, OPTIONS[\r][\n]"
+2018-04-19 10:43:34 [ main:15591 ] - [ DEBUG ] http-outgoing-0 << "[\r][\n]"
+2018-04-19 10:43:34 [ main:15594 ] - [ DEBUG ] http-outgoing-0 << "{"returnObj": null, "msg": null, "message": null, "statusCode": 900}"
+2018-04-19 10:43:34 [ main:15620 ] - [ DEBUG ] http-outgoing-0 << HTTP/1.1 200 OK
+2018-04-19 10:43:34 [ main:15622 ] - [ DEBUG ] http-outgoing-0 << Server: nginx/1.11.6
+2018-04-19 10:43:34 [ main:15624 ] - [ DEBUG ] http-outgoing-0 << Date: Thu, 19 Apr 2018 02:56:20 GMT
+2018-04-19 10:43:34 [ main:15626 ] - [ DEBUG ] http-outgoing-0 << Content-Type: application/json; charset=UTF-8
+2018-04-19 10:43:34 [ main:15629 ] - [ DEBUG ] http-outgoing-0 << Content-Length: 68
+2018-04-19 10:43:34 [ main:15635 ] - [ DEBUG ] http-outgoing-0 << Connection: keep-alive
+2018-04-19 10:43:34 [ main:15639 ] - [ DEBUG ] http-outgoing-0 << Access-Control-Allow-Headers: *
+2018-04-19 10:43:34 [ main:15644 ] - [ DEBUG ] http-outgoing-0 << Etag: "2025a8354299cfde1322cddb0ff8d565fe47719d"
+2018-04-19 10:43:34 [ main:15651 ] - [ DEBUG ] http-outgoing-0 << Access-Control-Allow-Origin: *
+2018-04-19 10:43:34 [ main:15657 ] - [ DEBUG ] http-outgoing-0 << Access-Control-Allow-Methods: POST, GET, OPTIONS
+2018-04-19 10:43:34 [ main:15710 ] - [ DEBUG ] Connection can be kept alive indefinitely
+2018-04-19 10:43:55 [ main:36584 ] - [ DEBUG ] Connection [id: 0][route: {}->http://zen.ctyun.com.cn:80] can be kept alive indefinitely
+2018-04-19 10:43:55 [ main:36587 ] - [ DEBUG ] Connection released: [id: 0][route: {}->http://zen.ctyun.com.cn:80][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2018-04-19 10:48:48 [ main:329562 ] - [ INFO ] {"returnObj": null, "msg": null, "message": null, "statusCode": 900}
+2018-04-19 13:20:52 [ main:0 ] - [ INFO ] URL param 0:id=0fd65eebea1d4a4b8fe3b995e56c7794
+2018-04-19 13:21:10 [ main:17297 ] - [ DEBUG ] CookieSpec selected: default
+2018-04-19 13:21:10 [ main:17533 ] - [ DEBUG ] Auth cache not set in the context
+2018-04-19 13:21:10 [ main:17560 ] - [ DEBUG ] Connection request: [route: {}->http://zen.ctyun.com.cn:80][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2018-04-19 13:21:10 [ main:17869 ] - [ DEBUG ] Connection leased: [id: 0][route: {}->http://zen.ctyun.com.cn:80][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2018-04-19 13:21:10 [ main:17897 ] - [ DEBUG ] Opening connection {}->http://zen.ctyun.com.cn:80
+2018-04-19 13:21:10 [ main:18037 ] - [ DEBUG ] Connecting to zen.ctyun.com.cn/42.123.120.97:80
+2018-04-19 13:21:10 [ main:18163 ] - [ DEBUG ] Connection established 192.168.1.118:53809<->42.123.120.97:80
+2018-04-19 13:21:10 [ main:18166 ] - [ DEBUG ] Executing request GET /bss/packet/repair?id=0fd65eebea1d4a4b8fe3b995e56c7794 HTTP/1.1
+2018-04-19 13:21:10 [ main:18168 ] - [ DEBUG ] Target auth state: UNCHALLENGED
+2018-04-19 13:21:10 [ main:18174 ] - [ DEBUG ] Proxy auth state: UNCHALLENGED
+2018-04-19 13:21:10 [ main:18192 ] - [ DEBUG ] http-outgoing-0 >> GET /bss/packet/repair?id=0fd65eebea1d4a4b8fe3b995e56c7794 HTTP/1.1
+2018-04-19 13:21:10 [ main:18194 ] - [ DEBUG ] http-outgoing-0 >> Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+2018-04-19 13:21:10 [ main:18195 ] - [ DEBUG ] http-outgoing-0 >> Cookie: UM_distinctid=1628fd6da9625a-0aa86e3bfbcaf8-4c584130-ff000-1628fd6da981ed; PYSID_=9640fe45bf0e6006ac186e92c84bd2a9; userRoleName="2|1:0|10:1524113105|12:userRoleName|20:6LaF57qn566h55CG5ZGY|2aad9b466da0d0aa391b3e00673dbc017c0fc3528a5c6ef0135af485c6a26e70"; userName="2|1:0|10:1524113105|8:userName|12:5byg55Ge5by6|9f794b93144095ee88e6c8f2bf72024c9bee6560f2a2527a6728a92e55083c80"; userId="2|1:0|10:1524113105|6:userId|44:ZWUzODJiYzNlMWQ1NGJhYzhhMjQ3YjBmZTkyOWIzYzg=|b34e67f3068e75cd91a509aece3b5aa7c556fa80e9edf306f400ba34e57ce6ba"; userRole="2|1:0|10:1524113105|8:userRole|44:MTAxYzQzZjkwNjlhNDQ5Nzk5ODE0ZDUxODEyYTQzYmM=|c02423b269738e2a997783f850b092d4103baec9f568afefbeb05169ba5c4d7b"
+2018-04-19 13:21:10 [ main:18199 ] - [ DEBUG ] http-outgoing-0 >> X-Requested-With: XMLHttpRequest
+2018-04-19 13:21:10 [ main:18201 ] - [ DEBUG ] http-outgoing-0 >> Accept-Encoding: gzip, deflate
+2018-04-19 13:21:10 [ main:18238 ] - [ DEBUG ] http-outgoing-0 >> User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0
+2018-04-19 13:21:10 [ main:18241 ] - [ DEBUG ] http-outgoing-0 >> If-None-Match: W/"f6f213009d7cc86bb0fb6913314953b250d79e78"
+2018-04-19 13:21:10 [ main:18250 ] - [ DEBUG ] http-outgoing-0 >> Connection: keep-alive
+2018-04-19 13:21:10 [ main:18253 ] - [ DEBUG ] http-outgoing-0 >> Accept: */*
+2018-04-19 13:21:10 [ main:18255 ] - [ DEBUG ] http-outgoing-0 >> Cache-Control: max-age=0
+2018-04-19 13:21:11 [ main:18257 ] - [ DEBUG ] http-outgoing-0 >> Host: zen.ctyun.com.cn
+2018-04-19 13:21:11 [ main:18260 ] - [ DEBUG ] http-outgoing-0 >> "GET /bss/packet/repair?id=0fd65eebea1d4a4b8fe3b995e56c7794 HTTP/1.1[\r][\n]"
+2018-04-19 13:21:11 [ main:18262 ] - [ DEBUG ] http-outgoing-0 >> "Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2[\r][\n]"
+2018-04-19 13:21:11 [ main:18269 ] - [ DEBUG ] http-outgoing-0 >> "Cookie: UM_distinctid=1628fd6da9625a-0aa86e3bfbcaf8-4c584130-ff000-1628fd6da981ed; PYSID_=9640fe45bf0e6006ac186e92c84bd2a9; userRoleName="2|1:0|10:1524113105|12:userRoleName|20:6LaF57qn566h55CG5ZGY|2aad9b466da0d0aa391b3e00673dbc017c0fc3528a5c6ef0135af485c6a26e70"; userName="2|1:0|10:1524113105|8:userName|12:5byg55Ge5by6|9f794b93144095ee88e6c8f2bf72024c9bee6560f2a2527a6728a92e55083c80"; userId="2|1:0|10:1524113105|6:userId|44:ZWUzODJiYzNlMWQ1NGJhYzhhMjQ3YjBmZTkyOWIzYzg=|b34e67f3068e75cd91a509aece3b5aa7c556fa80e9edf306f400ba34e57ce6ba"; userRole="2|1:0|10:1524113105|8:userRole|44:MTAxYzQzZjkwNjlhNDQ5Nzk5ODE0ZDUxODEyYTQzYmM=|c02423b269738e2a997783f850b092d4103baec9f568afefbeb05169ba5c4d7b"[\r][\n]"
+2018-04-19 13:21:11 [ main:18271 ] - [ DEBUG ] http-outgoing-0 >> "X-Requested-With: XMLHttpRequest[\r][\n]"
+2018-04-19 13:21:11 [ main:18275 ] - [ DEBUG ] http-outgoing-0 >> "Accept-Encoding: gzip, deflate[\r][\n]"
+2018-04-19 13:21:11 [ main:18277 ] - [ DEBUG ] http-outgoing-0 >> "User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0[\r][\n]"
+2018-04-19 13:21:11 [ main:18279 ] - [ DEBUG ] http-outgoing-0 >> "If-None-Match: W/"f6f213009d7cc86bb0fb6913314953b250d79e78"[\r][\n]"
+2018-04-19 13:21:11 [ main:18281 ] - [ DEBUG ] http-outgoing-0 >> "Connection: keep-alive[\r][\n]"
+2018-04-19 13:21:11 [ main:18284 ] - [ DEBUG ] http-outgoing-0 >> "Accept: */*[\r][\n]"
+2018-04-19 13:21:11 [ main:18287 ] - [ DEBUG ] http-outgoing-0 >> "Cache-Control: max-age=0[\r][\n]"
+2018-04-19 13:21:11 [ main:18288 ] - [ DEBUG ] http-outgoing-0 >> "Host: zen.ctyun.com.cn[\r][\n]"
+2018-04-19 13:21:11 [ main:18290 ] - [ DEBUG ] http-outgoing-0 >> "[\r][\n]"
+2018-04-19 13:21:11 [ main:18440 ] - [ DEBUG ] http-outgoing-0 << "HTTP/1.1 302 Found[\r][\n]"
+2018-04-19 13:21:11 [ main:18442 ] - [ DEBUG ] http-outgoing-0 << "Server: nginx/1.11.6[\r][\n]"
+2018-04-19 13:21:11 [ main:18445 ] - [ DEBUG ] http-outgoing-0 << "Date: Thu, 19 Apr 2018 05:33:57 GMT[\r][\n]"
+2018-04-19 13:21:11 [ main:18448 ] - [ DEBUG ] http-outgoing-0 << "Content-Type: text/html; charset=UTF-8[\r][\n]"
+2018-04-19 13:21:11 [ main:18451 ] - [ DEBUG ] http-outgoing-0 << "Content-Length: 0[\r][\n]"
+2018-04-19 13:21:11 [ main:18453 ] - [ DEBUG ] http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+2018-04-19 13:21:11 [ main:18456 ] - [ DEBUG ] http-outgoing-0 << "Access-Control-Allow-Headers: *[\r][\n]"
+2018-04-19 13:21:11 [ main:18460 ] - [ DEBUG ] http-outgoing-0 << "Set-Cookie: PYSID_=68832d5f37ef70f14dc39d5778e413c0; Path=/[\r][\n]"
+2018-04-19 13:21:11 [ main:18463 ] - [ DEBUG ] http-outgoing-0 << "Location: /bss/login?returnUrl=/bss/packet/repair[\r][\n]"
+2018-04-19 13:21:11 [ main:18466 ] - [ DEBUG ] http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
+2018-04-19 13:21:11 [ main:18469 ] - [ DEBUG ] http-outgoing-0 << "Access-Control-Allow-Methods: POST, GET, OPTIONS[\r][\n]"
+2018-04-19 13:21:11 [ main:18472 ] - [ DEBUG ] http-outgoing-0 << "[\r][\n]"
+2018-04-19 13:21:11 [ main:18509 ] - [ DEBUG ] http-outgoing-0 << HTTP/1.1 302 Found
+2018-04-19 13:21:11 [ main:18511 ] - [ DEBUG ] http-outgoing-0 << Server: nginx/1.11.6
+2018-04-19 13:21:11 [ main:18514 ] - [ DEBUG ] http-outgoing-0 << Date: Thu, 19 Apr 2018 05:33:57 GMT
+2018-04-19 13:21:11 [ main:18516 ] - [ DEBUG ] http-outgoing-0 << Content-Type: text/html; charset=UTF-8
+2018-04-19 13:21:11 [ main:18520 ] - [ DEBUG ] http-outgoing-0 << Content-Length: 0
+2018-04-19 13:21:11 [ main:18527 ] - [ DEBUG ] http-outgoing-0 << Connection: keep-alive
+2018-04-19 13:21:11 [ main:18530 ] - [ DEBUG ] http-outgoing-0 << Access-Control-Allow-Headers: *
+2018-04-19 13:21:11 [ main:18542 ] - [ DEBUG ] http-outgoing-0 << Set-Cookie: PYSID_=68832d5f37ef70f14dc39d5778e413c0; Path=/
+2018-04-19 13:21:11 [ main:18549 ] - [ DEBUG ] http-outgoing-0 << Location: /bss/login?returnUrl=/bss/packet/repair
+2018-04-19 13:21:11 [ main:18552 ] - [ DEBUG ] http-outgoing-0 << Access-Control-Allow-Origin: *
+2018-04-19 13:21:11 [ main:18556 ] - [ DEBUG ] http-outgoing-0 << Access-Control-Allow-Methods: POST, GET, OPTIONS
+2018-04-19 13:21:11 [ main:18639 ] - [ DEBUG ] Connection can be kept alive indefinitely
+2018-04-19 13:21:11 [ main:18643 ] - [ DEBUG ] Connection [id: 0][route: {}->http://zen.ctyun.com.cn:80] can be kept alive indefinitely
+2018-04-19 13:21:11 [ main:18652 ] - [ DEBUG ] Connection released: [id: 0][route: {}->http://zen.ctyun.com.cn:80][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2018-04-19 13:21:11 [ main:18816 ] - [ DEBUG ] Cookie accepted [PYSID_="68832d5f37ef70f14dc39d5778e413c0", version:0, domain:zen.ctyun.com.cn, path:/, expiry:null]
+2018-04-19 13:21:11 [ main:18818 ] - [ DEBUG ] Redirect requested to location '/bss/login?returnUrl=/bss/packet/repair'
+2018-04-19 13:21:11 [ main:18909 ] - [ DEBUG ] Resetting target auth state
+2018-04-19 13:21:11 [ main:18911 ] - [ DEBUG ] Redirecting to 'http://zen.ctyun.com.cn/bss/login?returnUrl=/bss/packet/repair' via {}->http://zen.ctyun.com.cn:80
+2018-04-19 13:21:11 [ main:18928 ] - [ DEBUG ] CookieSpec selected: default
+2018-04-19 13:21:12 [ main:19412 ] - [ DEBUG ] Cookie [version: 0][name: PYSID_][value: 68832d5f37ef70f14dc39d5778e413c0][domain: zen.ctyun.com.cn][path: /][expiry: null] match [zen.ctyun.com.cn:80/bss/login]
+2018-04-19 13:21:12 [ main:19421 ] - [ DEBUG ] Auth cache not set in the context
+2018-04-19 13:21:12 [ main:19425 ] - [ DEBUG ] Connection request: [route: {}->http://zen.ctyun.com.cn:80][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2018-04-19 13:21:12 [ main:19428 ] - [ DEBUG ] Connection leased: [id: 0][route: {}->http://zen.ctyun.com.cn:80][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2018-04-19 13:21:12 [ main:19432 ] - [ DEBUG ] Executing request GET /bss/login?returnUrl=/bss/packet/repair HTTP/1.1
+2018-04-19 13:21:12 [ main:19435 ] - [ DEBUG ] Target auth state: UNCHALLENGED
+2018-04-19 13:21:12 [ main:19437 ] - [ DEBUG ] Proxy auth state: UNCHALLENGED
+2018-04-19 13:21:12 [ main:19443 ] - [ DEBUG ] http-outgoing-0 >> GET /bss/login?returnUrl=/bss/packet/repair HTTP/1.1
+2018-04-19 13:21:12 [ main:19449 ] - [ DEBUG ] http-outgoing-0 >> Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+2018-04-19 13:21:12 [ main:19453 ] - [ DEBUG ] http-outgoing-0 >> Cookie: UM_distinctid=1628fd6da9625a-0aa86e3bfbcaf8-4c584130-ff000-1628fd6da981ed; PYSID_=9640fe45bf0e6006ac186e92c84bd2a9; userRoleName="2|1:0|10:1524113105|12:userRoleName|20:6LaF57qn566h55CG5ZGY|2aad9b466da0d0aa391b3e00673dbc017c0fc3528a5c6ef0135af485c6a26e70"; userName="2|1:0|10:1524113105|8:userName|12:5byg55Ge5by6|9f794b93144095ee88e6c8f2bf72024c9bee6560f2a2527a6728a92e55083c80"; userId="2|1:0|10:1524113105|6:userId|44:ZWUzODJiYzNlMWQ1NGJhYzhhMjQ3YjBmZTkyOWIzYzg=|b34e67f3068e75cd91a509aece3b5aa7c556fa80e9edf306f400ba34e57ce6ba"; userRole="2|1:0|10:1524113105|8:userRole|44:MTAxYzQzZjkwNjlhNDQ5Nzk5ODE0ZDUxODEyYTQzYmM=|c02423b269738e2a997783f850b092d4103baec9f568afefbeb05169ba5c4d7b"
+2018-04-19 13:21:12 [ main:19460 ] - [ DEBUG ] http-outgoing-0 >> X-Requested-With: XMLHttpRequest
+2018-04-19 13:21:12 [ main:19465 ] - [ DEBUG ] http-outgoing-0 >> Accept-Encoding: gzip, deflate
+2018-04-19 13:21:12 [ main:19468 ] - [ DEBUG ] http-outgoing-0 >> User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0
+2018-04-19 13:21:12 [ main:19471 ] - [ DEBUG ] http-outgoing-0 >> If-None-Match: W/"f6f213009d7cc86bb0fb6913314953b250d79e78"
+2018-04-19 13:21:12 [ main:19474 ] - [ DEBUG ] http-outgoing-0 >> Connection: keep-alive
+2018-04-19 13:21:12 [ main:19477 ] - [ DEBUG ] http-outgoing-0 >> Accept: */*
+2018-04-19 13:21:12 [ main:19483 ] - [ DEBUG ] http-outgoing-0 >> Cache-Control: max-age=0
+2018-04-19 13:21:12 [ main:19488 ] - [ DEBUG ] http-outgoing-0 >> Host: zen.ctyun.com.cn
+2018-04-19 13:21:12 [ main:19491 ] - [ DEBUG ] http-outgoing-0 >> Cookie: PYSID_=68832d5f37ef70f14dc39d5778e413c0
+2018-04-19 13:21:12 [ main:19497 ] - [ DEBUG ] http-outgoing-0 >> "GET /bss/login?returnUrl=/bss/packet/repair HTTP/1.1[\r][\n]"
+2018-04-19 13:21:12 [ main:19501 ] - [ DEBUG ] http-outgoing-0 >> "Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2[\r][\n]"
+2018-04-19 13:21:12 [ main:19507 ] - [ DEBUG ] http-outgoing-0 >> "Cookie: UM_distinctid=1628fd6da9625a-0aa86e3bfbcaf8-4c584130-ff000-1628fd6da981ed; PYSID_=9640fe45bf0e6006ac186e92c84bd2a9; userRoleName="2|1:0|10:1524113105|12:userRoleName|20:6LaF57qn566h55CG5ZGY|2aad9b466da0d0aa391b3e00673dbc017c0fc3528a5c6ef0135af485c6a26e70"; userName="2|1:0|10:1524113105|8:userName|12:5byg55Ge5by6|9f794b93144095ee88e6c8f2bf72024c9bee6560f2a2527a6728a92e55083c80"; userId="2|1:0|10:1524113105|6:userId|44:ZWUzODJiYzNlMWQ1NGJhYzhhMjQ3YjBmZTkyOWIzYzg=|b34e67f3068e75cd91a509aece3b5aa7c556fa80e9edf306f400ba34e57ce6ba"; userRole="2|1:0|10:1524113105|8:userRole|44:MTAxYzQzZjkwNjlhNDQ5Nzk5ODE0ZDUxODEyYTQzYmM=|c02423b269738e2a997783f850b092d4103baec9f568afefbeb05169ba5c4d7b"[\r][\n]"
+2018-04-19 13:21:12 [ main:19510 ] - [ DEBUG ] http-outgoing-0 >> "X-Requested-With: XMLHttpRequest[\r][\n]"
+2018-04-19 13:21:12 [ main:19513 ] - [ DEBUG ] http-outgoing-0 >> "Accept-Encoding: gzip, deflate[\r][\n]"
+2018-04-19 13:21:12 [ main:19516 ] - [ DEBUG ] http-outgoing-0 >> "User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0[\r][\n]"
+2018-04-19 13:21:12 [ main:19518 ] - [ DEBUG ] http-outgoing-0 >> "If-None-Match: W/"f6f213009d7cc86bb0fb6913314953b250d79e78"[\r][\n]"
+2018-04-19 13:21:12 [ main:19522 ] - [ DEBUG ] http-outgoing-0 >> "Connection: keep-alive[\r][\n]"
+2018-04-19 13:21:12 [ main:19525 ] - [ DEBUG ] http-outgoing-0 >> "Accept: */*[\r][\n]"
+2018-04-19 13:21:12 [ main:19529 ] - [ DEBUG ] http-outgoing-0 >> "Cache-Control: max-age=0[\r][\n]"
+2018-04-19 13:21:12 [ main:19532 ] - [ DEBUG ] http-outgoing-0 >> "Host: zen.ctyun.com.cn[\r][\n]"
+2018-04-19 13:21:12 [ main:19537 ] - [ DEBUG ] http-outgoing-0 >> "Cookie: PYSID_=68832d5f37ef70f14dc39d5778e413c0[\r][\n]"
+2018-04-19 13:21:12 [ main:19540 ] - [ DEBUG ] http-outgoing-0 >> "[\r][\n]"
+2018-04-19 13:21:12 [ main:19685 ] - [ DEBUG ] http-outgoing-0 << "HTTP/1.1 302 Found[\r][\n]"
+2018-04-19 13:21:12 [ main:19687 ] - [ DEBUG ] http-outgoing-0 << "Server: nginx/1.11.6[\r][\n]"
+2018-04-19 13:21:12 [ main:19690 ] - [ DEBUG ] http-outgoing-0 << "Date: Thu, 19 Apr 2018 05:33:58 GMT[\r][\n]"
+2018-04-19 13:21:12 [ main:19692 ] - [ DEBUG ] http-outgoing-0 << "Content-Type: text/html; charset=UTF-8[\r][\n]"
+2018-04-19 13:21:12 [ main:19695 ] - [ DEBUG ] http-outgoing-0 << "Content-Length: 0[\r][\n]"
+2018-04-19 13:21:12 [ main:19698 ] - [ DEBUG ] http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+2018-04-19 13:21:12 [ main:19701 ] - [ DEBUG ] http-outgoing-0 << "Access-Control-Allow-Headers: *[\r][\n]"
+2018-04-19 13:21:12 [ main:19704 ] - [ DEBUG ] http-outgoing-0 << "Set-Cookie: PYSID_=f29f65fc76692be798ad1656173a5f28; Path=/[\r][\n]"
+2018-04-19 13:21:12 [ main:19706 ] - [ DEBUG ] http-outgoing-0 << "Location: http://zen.ctyun.com.cn/#/login[\r][\n]"
+2018-04-19 13:21:12 [ main:19708 ] - [ DEBUG ] http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
+2018-04-19 13:21:12 [ main:19711 ] - [ DEBUG ] http-outgoing-0 << "Access-Control-Allow-Methods: POST, GET, OPTIONS[\r][\n]"
+2018-04-19 13:21:12 [ main:19714 ] - [ DEBUG ] http-outgoing-0 << "[\r][\n]"
+2018-04-19 13:21:12 [ main:19717 ] - [ DEBUG ] http-outgoing-0 << HTTP/1.1 302 Found
+2018-04-19 13:21:12 [ main:19719 ] - [ DEBUG ] http-outgoing-0 << Server: nginx/1.11.6
+2018-04-19 13:21:12 [ main:19721 ] - [ DEBUG ] http-outgoing-0 << Date: Thu, 19 Apr 2018 05:33:58 GMT
+2018-04-19 13:21:12 [ main:19723 ] - [ DEBUG ] http-outgoing-0 << Content-Type: text/html; charset=UTF-8
+2018-04-19 13:21:12 [ main:19725 ] - [ DEBUG ] http-outgoing-0 << Content-Length: 0
+2018-04-19 13:21:12 [ main:19728 ] - [ DEBUG ] http-outgoing-0 << Connection: keep-alive
+2018-04-19 13:21:12 [ main:19730 ] - [ DEBUG ] http-outgoing-0 << Access-Control-Allow-Headers: *
+2018-04-19 13:21:12 [ main:19732 ] - [ DEBUG ] http-outgoing-0 << Set-Cookie: PYSID_=f29f65fc76692be798ad1656173a5f28; Path=/
+2018-04-19 13:21:12 [ main:19735 ] - [ DEBUG ] http-outgoing-0 << Location: http://zen.ctyun.com.cn/#/login
+2018-04-19 13:21:12 [ main:19738 ] - [ DEBUG ] http-outgoing-0 << Access-Control-Allow-Origin: *
+2018-04-19 13:21:12 [ main:19741 ] - [ DEBUG ] http-outgoing-0 << Access-Control-Allow-Methods: POST, GET, OPTIONS
+2018-04-19 13:21:12 [ main:19747 ] - [ DEBUG ] Connection can be kept alive indefinitely
+2018-04-19 13:21:12 [ main:19752 ] - [ DEBUG ] Connection [id: 0][route: {}->http://zen.ctyun.com.cn:80] can be kept alive indefinitely
+2018-04-19 13:21:12 [ main:19757 ] - [ DEBUG ] Connection released: [id: 0][route: {}->http://zen.ctyun.com.cn:80][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2018-04-19 13:21:12 [ main:19765 ] - [ DEBUG ] Cookie accepted [PYSID_="f29f65fc76692be798ad1656173a5f28", version:0, domain:zen.ctyun.com.cn, path:/, expiry:null]
+2018-04-19 13:21:12 [ main:19769 ] - [ DEBUG ] Redirect requested to location 'http://zen.ctyun.com.cn/#/login'
+2018-04-19 13:21:12 [ main:19778 ] - [ DEBUG ] Resetting target auth state
+2018-04-19 13:21:12 [ main:19782 ] - [ DEBUG ] Redirecting to 'http://zen.ctyun.com.cn/#/login' via {}->http://zen.ctyun.com.cn:80
+2018-04-19 13:21:12 [ main:19786 ] - [ DEBUG ] CookieSpec selected: default
+2018-04-19 13:21:12 [ main:19791 ] - [ DEBUG ] Cookie [version: 0][name: PYSID_][value: f29f65fc76692be798ad1656173a5f28][domain: zen.ctyun.com.cn][path: /][expiry: null] match [zen.ctyun.com.cn:80/]
+2018-04-19 13:21:12 [ main:19793 ] - [ DEBUG ] Auth cache not set in the context
+2018-04-19 13:21:12 [ main:19797 ] - [ DEBUG ] Connection request: [route: {}->http://zen.ctyun.com.cn:80][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2018-04-19 13:21:12 [ main:19800 ] - [ DEBUG ] Connection leased: [id: 0][route: {}->http://zen.ctyun.com.cn:80][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2018-04-19 13:21:12 [ main:19803 ] - [ DEBUG ] Executing request GET / HTTP/1.1
+2018-04-19 13:21:12 [ main:19806 ] - [ DEBUG ] Target auth state: UNCHALLENGED
+2018-04-19 13:21:12 [ main:19809 ] - [ DEBUG ] Proxy auth state: UNCHALLENGED
+2018-04-19 13:21:12 [ main:19814 ] - [ DEBUG ] http-outgoing-0 >> GET / HTTP/1.1
+2018-04-19 13:21:12 [ main:19818 ] - [ DEBUG ] http-outgoing-0 >> Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+2018-04-19 13:21:12 [ main:19821 ] - [ DEBUG ] http-outgoing-0 >> Cookie: UM_distinctid=1628fd6da9625a-0aa86e3bfbcaf8-4c584130-ff000-1628fd6da981ed; PYSID_=9640fe45bf0e6006ac186e92c84bd2a9; userRoleName="2|1:0|10:1524113105|12:userRoleName|20:6LaF57qn566h55CG5ZGY|2aad9b466da0d0aa391b3e00673dbc017c0fc3528a5c6ef0135af485c6a26e70"; userName="2|1:0|10:1524113105|8:userName|12:5byg55Ge5by6|9f794b93144095ee88e6c8f2bf72024c9bee6560f2a2527a6728a92e55083c80"; userId="2|1:0|10:1524113105|6:userId|44:ZWUzODJiYzNlMWQ1NGJhYzhhMjQ3YjBmZTkyOWIzYzg=|b34e67f3068e75cd91a509aece3b5aa7c556fa80e9edf306f400ba34e57ce6ba"; userRole="2|1:0|10:1524113105|8:userRole|44:MTAxYzQzZjkwNjlhNDQ5Nzk5ODE0ZDUxODEyYTQzYmM=|c02423b269738e2a997783f850b092d4103baec9f568afefbeb05169ba5c4d7b"
+2018-04-19 13:21:12 [ main:19825 ] - [ DEBUG ] http-outgoing-0 >> X-Requested-With: XMLHttpRequest
+2018-04-19 13:21:12 [ main:19828 ] - [ DEBUG ] http-outgoing-0 >> Accept-Encoding: gzip, deflate
+2018-04-19 13:21:12 [ main:19830 ] - [ DEBUG ] http-outgoing-0 >> User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0
+2018-04-19 13:21:12 [ main:19834 ] - [ DEBUG ] http-outgoing-0 >> If-None-Match: W/"f6f213009d7cc86bb0fb6913314953b250d79e78"
+2018-04-19 13:21:12 [ main:19837 ] - [ DEBUG ] http-outgoing-0 >> Connection: keep-alive
+2018-04-19 13:21:12 [ main:19840 ] - [ DEBUG ] http-outgoing-0 >> Accept: */*
+2018-04-19 13:21:12 [ main:19843 ] - [ DEBUG ] http-outgoing-0 >> Cache-Control: max-age=0
+2018-04-19 13:21:12 [ main:19846 ] - [ DEBUG ] http-outgoing-0 >> Host: zen.ctyun.com.cn
+2018-04-19 13:21:12 [ main:19849 ] - [ DEBUG ] http-outgoing-0 >> Cookie: PYSID_=f29f65fc76692be798ad1656173a5f28
+2018-04-19 13:21:12 [ main:19852 ] - [ DEBUG ] http-outgoing-0 >> "GET / HTTP/1.1[\r][\n]"
+2018-04-19 13:21:12 [ main:19854 ] - [ DEBUG ] http-outgoing-0 >> "Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2[\r][\n]"
+2018-04-19 13:21:12 [ main:19862 ] - [ DEBUG ] http-outgoing-0 >> "Cookie: UM_distinctid=1628fd6da9625a-0aa86e3bfbcaf8-4c584130-ff000-1628fd6da981ed; PYSID_=9640fe45bf0e6006ac186e92c84bd2a9; userRoleName="2|1:0|10:1524113105|12:userRoleName|20:6LaF57qn566h55CG5ZGY|2aad9b466da0d0aa391b3e00673dbc017c0fc3528a5c6ef0135af485c6a26e70"; userName="2|1:0|10:1524113105|8:userName|12:5byg55Ge5by6|9f794b93144095ee88e6c8f2bf72024c9bee6560f2a2527a6728a92e55083c80"; userId="2|1:0|10:1524113105|6:userId|44:ZWUzODJiYzNlMWQ1NGJhYzhhMjQ3YjBmZTkyOWIzYzg=|b34e67f3068e75cd91a509aece3b5aa7c556fa80e9edf306f400ba34e57ce6ba"; userRole="2|1:0|10:1524113105|8:userRole|44:MTAxYzQzZjkwNjlhNDQ5Nzk5ODE0ZDUxODEyYTQzYmM=|c02423b269738e2a997783f850b092d4103baec9f568afefbeb05169ba5c4d7b"[\r][\n]"
+2018-04-19 13:21:12 [ main:19869 ] - [ DEBUG ] http-outgoing-0 >> "X-Requested-With: XMLHttpRequest[\r][\n]"
+2018-04-19 13:21:12 [ main:19873 ] - [ DEBUG ] http-outgoing-0 >> "Accept-Encoding: gzip, deflate[\r][\n]"
+2018-04-19 13:21:12 [ main:19890 ] - [ DEBUG ] http-outgoing-0 >> "User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0[\r][\n]"
+2018-04-19 13:21:12 [ main:19894 ] - [ DEBUG ] http-outgoing-0 >> "If-None-Match: W/"f6f213009d7cc86bb0fb6913314953b250d79e78"[\r][\n]"
+2018-04-19 13:21:12 [ main:19898 ] - [ DEBUG ] http-outgoing-0 >> "Connection: keep-alive[\r][\n]"
+2018-04-19 13:21:12 [ main:19901 ] - [ DEBUG ] http-outgoing-0 >> "Accept: */*[\r][\n]"
+2018-04-19 13:21:12 [ main:19903 ] - [ DEBUG ] http-outgoing-0 >> "Cache-Control: max-age=0[\r][\n]"
+2018-04-19 13:21:12 [ main:19906 ] - [ DEBUG ] http-outgoing-0 >> "Host: zen.ctyun.com.cn[\r][\n]"
+2018-04-19 13:21:12 [ main:19910 ] - [ DEBUG ] http-outgoing-0 >> "Cookie: PYSID_=f29f65fc76692be798ad1656173a5f28[\r][\n]"
+2018-04-19 13:21:12 [ main:19914 ] - [ DEBUG ] http-outgoing-0 >> "[\r][\n]"
+2018-04-19 13:21:12 [ main:19995 ] - [ DEBUG ] http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+2018-04-19 13:21:12 [ main:19999 ] - [ DEBUG ] http-outgoing-0 << "Server: nginx/1.11.6[\r][\n]"
+2018-04-19 13:21:12 [ main:20003 ] - [ DEBUG ] http-outgoing-0 << "Date: Thu, 19 Apr 2018 05:33:58 GMT[\r][\n]"
+2018-04-19 13:21:12 [ main:20006 ] - [ DEBUG ] http-outgoing-0 << "Content-Type: text/html; charset=UTF-8[\r][\n]"
+2018-04-19 13:21:12 [ main:20009 ] - [ DEBUG ] http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+2018-04-19 13:21:12 [ main:20011 ] - [ DEBUG ] http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+2018-04-19 13:21:12 [ main:20015 ] - [ DEBUG ] http-outgoing-0 << "Etag: W/"027437dc716e8c4f6f284471320b12a8e1b28690"[\r][\n]"
+2018-04-19 13:21:12 [ main:20018 ] - [ DEBUG ] http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+2018-04-19 13:21:12 [ main:20021 ] - [ DEBUG ] http-outgoing-0 << "[\r][\n]"
+2018-04-19 13:21:12 [ main:20024 ] - [ DEBUG ] http-outgoing-0 << "245[\r][\n]"
+2018-04-19 13:21:12 [ main:20045 ] - [ DEBUG ] http-outgoing-0 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0x8d]T[0xcb]n[0xd3]@[0x14][0xdd][0xe7]+\[0xaf][0xda][0x85]=[0x8e][0x13]T[0xa7]8[0xd9]@[0x17][0xdd][0x94][0x82]`[0xc1][0xd2][0x8f][0xeb]x[0x82]_[0xcc][0x8c][0x3][0x16]Bj[0xa5][0x16])[0x12]H[0xad][0x90][0x10]B[0x8][0x91][0x5]e[0x1][0x82][0x15][0xad]H[0x8b][0xf8][0x99][0x1a]'[0xc1][0xc4]IL[0xd2]6!+k[0xac]{[0xce][0xb9][0xe7][0xcc][0xbd][0xa3][0xaf][0xdc][0xbe]s[0xeb][0xfe][0xc3][0x9d]M[0xc1]e[0xbe][0xd7]([0xe9][0x93][0xf][0x18]6?1[0xcc]<h[0xc][0x8e][0xdf][0xc][0xba]?t4:[0x95]t[0xf][0x7][0x8f][0x4][0x2]^][0xa4],[0xf1][0x80][0xba][0x0]L[0x14]\[0x2]N][0x94]eD[0x99][0xc1][0xb0][0x85]lL[0x19]b.&6E[0xad][0xc7]1[0x90]D[0x8a][0xb1]lQ*r[0xe2][0x9c][0xe2]Z[0x84][0x8f]}L[0xc2]@[0x95][0xca][0xb2]"[0xab][0x9a][0xec][0xe3] [0x7]][0x11][0xe4],[0xd4]"8b[0x2]K"[0xa8][0x8b][0xc][0x9e]2[0xd4]2[0xda][0xc6][0xe8]/Wq[0xe2][0xc0]b8[0xc][0x84]&[0xb0][0x7][0x14][0xc8][0xb6][0xe1][0xc3][0xea][0x9a][0xf0][0xac]D[0x80][0xc5]$[0x10][0xc4][0xf4][0xfc]cv[0xf4]!=[0xef][0xad][0xf6]O[0xe][0xb2][0xde][0xe7][0xec][7;|[0x91][0x1e][0xbd]][0x13]o[0x96][0x9e]_[0xc1][0xdf][0xb][0xbd]Y[0xfc]v[0x18][0xc0][0xb5][0x95][[0xf6][0x8c][0xe]@ESM[0xab][0x2]e[0xfb]F[0xd5]4,[0xcd]P[0xab][0xeb][0xa6][0xe2]@M[0xad][0x99][0x15]K[0xcb]9t4j[0x9c][0xfb]B[0xee](~3[0xb4][0x13]~[0xb4]q[[0xc0]v][0xf4][\r][0x1c][0x88][\r][0x9d]'[0xdb][0xfe]g[0x9e][0x12]kq[0xea]e[0xb9][0x96][0x87][0xd8][0xa2][0xe2][0xbc][0xa4][0xa6][0xa4][0xc7][0x91].b[0xbd];[0xbc]K9"8`2'[0xe5][\r][0x15][0x8d]/[0x81].&[0xe1][0x12]tE[0x92][0x84][0xad]M[0xad][0xff][0xfb][0xb0][0xdf]}i[0x1a]&x[0x83][0xf7][0xbb][0xfd][0xe3][0xbd][0xec][0xdd][0xfe]N[0xe8]%[0xe][0xf6]<*IK[0xf9][0x8e][0xc6][0xf5][0x13][0xdb][0xd3][0x1d][0xe]er[0xf6][0xb4][0xf3]*[0xfb][0xf2][0xbd][0xff][0xeb][0xeb][0xc5][0xcf]Nz[0xfa])=8[0x15][0x96][0xa4]7I[0xf8][0x84]O[0x93][0x4][0xb4]"[0x5]!e[0x4][l[0x9e]T[0xe1](;[0xdb][0xbf]8;I{[0xaf][0xff]tv[0xb9][0xb1]iW[0xcb][0xea][0x16][0x9b][0x11]ya[0x9e][0x87][0xe4][0x84]D[0xc2][0xa0]][0xbe][0x5][0xee][0xb1][0xa8][0xfd]ObE[0xdd]p[0xdb][0xaa][0xea][0x1c][0x1b][0x93]*[0xc1][0x7]?$[0x89]`[0x83][0x19]7[0x8b][0xf5][0xcb]g[0xc5]e,[0xda]@[0xa8][0xac][0xae]s"E.oT[0x14]E[0x99]<[0x5]f[0x1c][0xd8][0x1e][0xcc][0xb6][0xb9] [0xec][0xc8]h[0x2]EV[0x18]8[0xb8]9[0x4]-1[0xb6]h[0xbc]*([0xbf][0xfe][0x2][0xec][0xd9]=[0x82][0xd6][0x4][0x0][0x0][\r][\n]"
+2018-04-19 13:21:12 [ main:20049 ] - [ DEBUG ] http-outgoing-0 << "0[\r][\n]"
+2018-04-19 13:21:12 [ main:20052 ] - [ DEBUG ] http-outgoing-0 << "[\r][\n]"
+2018-04-19 13:21:12 [ main:20056 ] - [ DEBUG ] http-outgoing-0 << HTTP/1.1 200 OK
+2018-04-19 13:21:12 [ main:20059 ] - [ DEBUG ] http-outgoing-0 << Server: nginx/1.11.6
+2018-04-19 13:21:12 [ main:20062 ] - [ DEBUG ] http-outgoing-0 << Date: Thu, 19 Apr 2018 05:33:58 GMT
+2018-04-19 13:21:12 [ main:20065 ] - [ DEBUG ] http-outgoing-0 << Content-Type: text/html; charset=UTF-8
+2018-04-19 13:21:12 [ main:20067 ] - [ DEBUG ] http-outgoing-0 << Transfer-Encoding: chunked
+2018-04-19 13:21:12 [ main:20069 ] - [ DEBUG ] http-outgoing-0 << Connection: keep-alive
+2018-04-19 13:21:12 [ main:20072 ] - [ DEBUG ] http-outgoing-0 << Etag: W/"027437dc716e8c4f6f284471320b12a8e1b28690"
+2018-04-19 13:21:12 [ main:20075 ] - [ DEBUG ] http-outgoing-0 << Content-Encoding: gzip
+2018-04-19 13:21:12 [ main:20109 ] - [ DEBUG ] Connection can be kept alive indefinitely
+2018-04-19 13:21:57 [ main:65056 ] - [ DEBUG ] Connection [id: 0][route: {}->http://zen.ctyun.com.cn:80] can be kept alive indefinitely
+2018-04-19 13:21:57 [ main:65059 ] - [ DEBUG ] Connection released: [id: 0][route: {}->http://zen.ctyun.com.cn:80][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2018-04-19 13:21:59 [ main:67169 ] - [ INFO ] <!DOCTYPE html>
+<html>
+<head>
+<title>首页</title>
+<link rel="stylesheet" href="../static/dist/thirds/jquery-ui.css">
+<link href="../static/dist/mimiron2-1.0.28.min.css" rel="stylesheet">
+<script type="text/javascript">
+function getUserName() {
+return "张瑞强(超级管理员)";
+}
+function getUserRole() {
+return "None";
+}
+function getUserId() {
+return "ee382bc3e1d54bac8a247b0fe929b3c8";
+}
+</script>
+</head>
+<body>
+<div id="main"></div>
+<script src="../static/dist/thirds/jquery1.9.min.js" type="text/javascript"></script>
+<script src="../static/dist/thirds/jQuery.print.js"></script>
+<script src="../static/dist/thirds/jquery-ui.js"></script>
+<!-- IE8运行babel需要的Polyfills-->
+<script src="../static/dist/thirds/polyfill.min.js"></script>
+<!-- babel前端转义工具 -->
+<script src="../static/dist/thirds/browser-es3-nostrict.min.js"></script>
+<!-- IE8运行组件库所需的Polyfills -->
+<script src="../static/dist/thirds/mimiron2-ployfill-for-ie8.js"></script>
+<!--mimiron2-->
+<script src="../static/dist/mimiron2-1.0.42.min.js"></script>
+<!--mimiron2 memory debug
+<script src="http://127.0.0.1:3000/static/bundle.js"></script>-->
+<script src="../static/pages/config.js" type="text/javascript"></script>
+</body>
+</html>
+2018-04-19 14:25:02 [ main:0 ] - [ INFO ] URL param 0:id=ff9fa6e3cdbb4ddb8afaff843203b8ac
+2018-04-19 14:25:46 [ main:43687 ] - [ DEBUG ] CookieSpec selected: default
+2018-04-19 14:25:46 [ main:43841 ] - [ DEBUG ] Auth cache not set in the context
+2018-04-19 14:25:46 [ main:43869 ] - [ DEBUG ] Connection request: [route: {}->http://zen.ctyun.com.cn:80][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2018-04-19 14:25:46 [ main:44130 ] - [ DEBUG ] Connection leased: [id: 0][route: {}->http://zen.ctyun.com.cn:80][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2018-04-19 14:25:46 [ main:44151 ] - [ DEBUG ] Opening connection {}->http://zen.ctyun.com.cn:80
+2018-04-19 14:25:46 [ main:44262 ] - [ DEBUG ] Connecting to zen.ctyun.com.cn/42.123.120.97:80
+2018-04-19 14:25:46 [ main:44401 ] - [ DEBUG ] Connection established 192.168.1.118:54637<->42.123.120.97:80
+2018-04-19 14:25:46 [ main:44404 ] - [ DEBUG ] Executing request GET /bss/packet/repair?id=ff9fa6e3cdbb4ddb8afaff843203b8ac HTTP/1.1
+2018-04-19 14:25:46 [ main:44406 ] - [ DEBUG ] Target auth state: UNCHALLENGED
+2018-04-19 14:25:46 [ main:44417 ] - [ DEBUG ] Proxy auth state: UNCHALLENGED
+2018-04-19 14:25:46 [ main:44438 ] - [ DEBUG ] http-outgoing-0 >> GET /bss/packet/repair?id=ff9fa6e3cdbb4ddb8afaff843203b8ac HTTP/1.1
+2018-04-19 14:25:46 [ main:44441 ] - [ DEBUG ] http-outgoing-0 >> Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+2018-04-19 14:25:46 [ main:44443 ] - [ DEBUG ] http-outgoing-0 >> Cookie: UM_distinctid=1628fd6da9625a-0aa86e3bfbcaf8-4c584130-ff000-1628fd6da981ed; PYSID_=9640fe45bf0e6006ac186e92c84bd2a9; userRoleName="2|1:0|10:1524113105|12:userRoleName|20:6LaF57qn566h55CG5ZGY|2aad9b466da0d0aa391b3e00673dbc017c0fc3528a5c6ef0135af485c6a26e70"; userName="2|1:0|10:1524113105|8:userName|12:5byg55Ge5by6|9f794b93144095ee88e6c8f2bf72024c9bee6560f2a2527a6728a92e55083c80"; userId="2|1:0|10:1524113105|6:userId|44:ZWUzODJiYzNlMWQ1NGJhYzhhMjQ3YjBmZTkyOWIzYzg=|b34e67f3068e75cd91a509aece3b5aa7c556fa80e9edf306f400ba34e57ce6ba"; userRole="2|1:0|10:1524113105|8:userRole|44:MTAxYzQzZjkwNjlhNDQ5Nzk5ODE0ZDUxODEyYTQzYmM=|c02423b269738e2a997783f850b092d4103baec9f568afefbeb05169ba5c4d7b"
+2018-04-19 14:25:46 [ main:44447 ] - [ DEBUG ] http-outgoing-0 >> X-Requested-With: XMLHttpRequest
+2018-04-19 14:25:46 [ main:44449 ] - [ DEBUG ] http-outgoing-0 >> Accept-Encoding: gzip, deflate
+2018-04-19 14:25:46 [ main:44472 ] - [ DEBUG ] http-outgoing-0 >> User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0
+2018-04-19 14:25:46 [ main:44475 ] - [ DEBUG ] http-outgoing-0 >> If-None-Match: W/"f6f213009d7cc86bb0fb6913314953b250d79e78"
+2018-04-19 14:25:46 [ main:44478 ] - [ DEBUG ] http-outgoing-0 >> Connection: keep-alive
+2018-04-19 14:25:46 [ main:44480 ] - [ DEBUG ] http-outgoing-0 >> Accept: */*
+2018-04-19 14:25:46 [ main:44482 ] - [ DEBUG ] http-outgoing-0 >> Cache-Control: max-age=0
+2018-04-19 14:25:46 [ main:44484 ] - [ DEBUG ] http-outgoing-0 >> Host: zen.ctyun.com.cn
+2018-04-19 14:25:46 [ main:44486 ] - [ DEBUG ] http-outgoing-0 >> "GET /bss/packet/repair?id=ff9fa6e3cdbb4ddb8afaff843203b8ac HTTP/1.1[\r][\n]"
+2018-04-19 14:25:46 [ main:44489 ] - [ DEBUG ] http-outgoing-0 >> "Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2[\r][\n]"
+2018-04-19 14:25:46 [ main:44494 ] - [ DEBUG ] http-outgoing-0 >> "Cookie: UM_distinctid=1628fd6da9625a-0aa86e3bfbcaf8-4c584130-ff000-1628fd6da981ed; PYSID_=9640fe45bf0e6006ac186e92c84bd2a9; userRoleName="2|1:0|10:1524113105|12:userRoleName|20:6LaF57qn566h55CG5ZGY|2aad9b466da0d0aa391b3e00673dbc017c0fc3528a5c6ef0135af485c6a26e70"; userName="2|1:0|10:1524113105|8:userName|12:5byg55Ge5by6|9f794b93144095ee88e6c8f2bf72024c9bee6560f2a2527a6728a92e55083c80"; userId="2|1:0|10:1524113105|6:userId|44:ZWUzODJiYzNlMWQ1NGJhYzhhMjQ3YjBmZTkyOWIzYzg=|b34e67f3068e75cd91a509aece3b5aa7c556fa80e9edf306f400ba34e57ce6ba"; userRole="2|1:0|10:1524113105|8:userRole|44:MTAxYzQzZjkwNjlhNDQ5Nzk5ODE0ZDUxODEyYTQzYmM=|c02423b269738e2a997783f850b092d4103baec9f568afefbeb05169ba5c4d7b"[\r][\n]"
+2018-04-19 14:25:46 [ main:44496 ] - [ DEBUG ] http-outgoing-0 >> "X-Requested-With: XMLHttpRequest[\r][\n]"
+2018-04-19 14:25:46 [ main:44500 ] - [ DEBUG ] http-outgoing-0 >> "Accept-Encoding: gzip, deflate[\r][\n]"
+2018-04-19 14:25:46 [ main:44503 ] - [ DEBUG ] http-outgoing-0 >> "User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0[\r][\n]"
+2018-04-19 14:25:46 [ main:44508 ] - [ DEBUG ] http-outgoing-0 >> "If-None-Match: W/"f6f213009d7cc86bb0fb6913314953b250d79e78"[\r][\n]"
+2018-04-19 14:25:46 [ main:44511 ] - [ DEBUG ] http-outgoing-0 >> "Connection: keep-alive[\r][\n]"
+2018-04-19 14:25:46 [ main:44514 ] - [ DEBUG ] http-outgoing-0 >> "Accept: */*[\r][\n]"
+2018-04-19 14:25:46 [ main:44518 ] - [ DEBUG ] http-outgoing-0 >> "Cache-Control: max-age=0[\r][\n]"
+2018-04-19 14:25:46 [ main:44521 ] - [ DEBUG ] http-outgoing-0 >> "Host: zen.ctyun.com.cn[\r][\n]"
+2018-04-19 14:25:46 [ main:44527 ] - [ DEBUG ] http-outgoing-0 >> "[\r][\n]"
+2018-04-19 14:25:47 [ main:44698 ] - [ DEBUG ] http-outgoing-0 << "HTTP/1.1 302 Found[\r][\n]"
+2018-04-19 14:25:47 [ main:44700 ] - [ DEBUG ] http-outgoing-0 << "Server: nginx/1.11.6[\r][\n]"
+2018-04-19 14:25:47 [ main:44702 ] - [ DEBUG ] http-outgoing-0 << "Date: Thu, 19 Apr 2018 06:38:33 GMT[\r][\n]"
+2018-04-19 14:25:47 [ main:44704 ] - [ DEBUG ] http-outgoing-0 << "Content-Type: text/html; charset=UTF-8[\r][\n]"
+2018-04-19 14:25:47 [ main:44708 ] - [ DEBUG ] http-outgoing-0 << "Content-Length: 0[\r][\n]"
+2018-04-19 14:25:47 [ main:44711 ] - [ DEBUG ] http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+2018-04-19 14:25:47 [ main:44715 ] - [ DEBUG ] http-outgoing-0 << "Access-Control-Allow-Headers: *[\r][\n]"
+2018-04-19 14:25:47 [ main:44717 ] - [ DEBUG ] http-outgoing-0 << "Set-Cookie: PYSID_=f778cecd815e799b336570817bbbeb99; Path=/[\r][\n]"
+2018-04-19 14:25:47 [ main:44719 ] - [ DEBUG ] http-outgoing-0 << "Location: /bss/login?returnUrl=/bss/packet/repair[\r][\n]"
+2018-04-19 14:25:47 [ main:44721 ] - [ DEBUG ] http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
+2018-04-19 14:25:47 [ main:44723 ] - [ DEBUG ] http-outgoing-0 << "Access-Control-Allow-Methods: POST, GET, OPTIONS[\r][\n]"
+2018-04-19 14:25:47 [ main:44730 ] - [ DEBUG ] http-outgoing-0 << "[\r][\n]"
+2018-04-19 14:25:47 [ main:44763 ] - [ DEBUG ] http-outgoing-0 << HTTP/1.1 302 Found
+2018-04-19 14:25:47 [ main:44766 ] - [ DEBUG ] http-outgoing-0 << Server: nginx/1.11.6
+2018-04-19 14:25:47 [ main:44769 ] - [ DEBUG ] http-outgoing-0 << Date: Thu, 19 Apr 2018 06:38:33 GMT
+2018-04-19 14:25:47 [ main:44772 ] - [ DEBUG ] http-outgoing-0 << Content-Type: text/html; charset=UTF-8
+2018-04-19 14:25:47 [ main:44775 ] - [ DEBUG ] http-outgoing-0 << Content-Length: 0
+2018-04-19 14:25:47 [ main:44777 ] - [ DEBUG ] http-outgoing-0 << Connection: keep-alive
+2018-04-19 14:25:47 [ main:44780 ] - [ DEBUG ] http-outgoing-0 << Access-Control-Allow-Headers: *
+2018-04-19 14:25:47 [ main:44782 ] - [ DEBUG ] http-outgoing-0 << Set-Cookie: PYSID_=f778cecd815e799b336570817bbbeb99; Path=/
+2018-04-19 14:25:47 [ main:44784 ] - [ DEBUG ] http-outgoing-0 << Location: /bss/login?returnUrl=/bss/packet/repair
+2018-04-19 14:25:47 [ main:44786 ] - [ DEBUG ] http-outgoing-0 << Access-Control-Allow-Origin: *
+2018-04-19 14:25:47 [ main:44789 ] - [ DEBUG ] http-outgoing-0 << Access-Control-Allow-Methods: POST, GET, OPTIONS
+2018-04-19 14:25:47 [ main:44880 ] - [ DEBUG ] Connection can be kept alive indefinitely
+2018-04-19 14:25:47 [ main:44886 ] - [ DEBUG ] Connection [id: 0][route: {}->http://zen.ctyun.com.cn:80] can be kept alive indefinitely
+2018-04-19 14:25:47 [ main:44894 ] - [ DEBUG ] Connection released: [id: 0][route: {}->http://zen.ctyun.com.cn:80][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2018-04-19 14:25:47 [ main:45033 ] - [ DEBUG ] Cookie accepted [PYSID_="f778cecd815e799b336570817bbbeb99", version:0, domain:zen.ctyun.com.cn, path:/, expiry:null]
+2018-04-19 14:25:47 [ main:45035 ] - [ DEBUG ] Redirect requested to location '/bss/login?returnUrl=/bss/packet/repair'
+2018-04-19 14:25:47 [ main:45112 ] - [ DEBUG ] Resetting target auth state
+2018-04-19 14:25:47 [ main:45115 ] - [ DEBUG ] Redirecting to 'http://zen.ctyun.com.cn/bss/login?returnUrl=/bss/packet/repair' via {}->http://zen.ctyun.com.cn:80
+2018-04-19 14:25:47 [ main:45124 ] - [ DEBUG ] CookieSpec selected: default
+2018-04-19 14:25:47 [ main:45538 ] - [ DEBUG ] Cookie [version: 0][name: PYSID_][value: f778cecd815e799b336570817bbbeb99][domain: zen.ctyun.com.cn][path: /][expiry: null] match [zen.ctyun.com.cn:80/bss/login]
+2018-04-19 14:25:47 [ main:45546 ] - [ DEBUG ] Auth cache not set in the context
+2018-04-19 14:25:47 [ main:45548 ] - [ DEBUG ] Connection request: [route: {}->http://zen.ctyun.com.cn:80][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2018-04-19 14:25:47 [ main:45551 ] - [ DEBUG ] Connection leased: [id: 0][route: {}->http://zen.ctyun.com.cn:80][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2018-04-19 14:25:47 [ main:45554 ] - [ DEBUG ] Executing request GET /bss/login?returnUrl=/bss/packet/repair HTTP/1.1
+2018-04-19 14:25:47 [ main:45555 ] - [ DEBUG ] Target auth state: UNCHALLENGED
+2018-04-19 14:25:47 [ main:45558 ] - [ DEBUG ] Proxy auth state: UNCHALLENGED
+2018-04-19 14:25:47 [ main:45561 ] - [ DEBUG ] http-outgoing-0 >> GET /bss/login?returnUrl=/bss/packet/repair HTTP/1.1
+2018-04-19 14:25:47 [ main:45563 ] - [ DEBUG ] http-outgoing-0 >> Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+2018-04-19 14:25:47 [ main:45565 ] - [ DEBUG ] http-outgoing-0 >> Cookie: UM_distinctid=1628fd6da9625a-0aa86e3bfbcaf8-4c584130-ff000-1628fd6da981ed; PYSID_=9640fe45bf0e6006ac186e92c84bd2a9; userRoleName="2|1:0|10:1524113105|12:userRoleName|20:6LaF57qn566h55CG5ZGY|2aad9b466da0d0aa391b3e00673dbc017c0fc3528a5c6ef0135af485c6a26e70"; userName="2|1:0|10:1524113105|8:userName|12:5byg55Ge5by6|9f794b93144095ee88e6c8f2bf72024c9bee6560f2a2527a6728a92e55083c80"; userId="2|1:0|10:1524113105|6:userId|44:ZWUzODJiYzNlMWQ1NGJhYzhhMjQ3YjBmZTkyOWIzYzg=|b34e67f3068e75cd91a509aece3b5aa7c556fa80e9edf306f400ba34e57ce6ba"; userRole="2|1:0|10:1524113105|8:userRole|44:MTAxYzQzZjkwNjlhNDQ5Nzk5ODE0ZDUxODEyYTQzYmM=|c02423b269738e2a997783f850b092d4103baec9f568afefbeb05169ba5c4d7b"
+2018-04-19 14:25:47 [ main:45567 ] - [ DEBUG ] http-outgoing-0 >> X-Requested-With: XMLHttpRequest
+2018-04-19 14:25:47 [ main:45569 ] - [ DEBUG ] http-outgoing-0 >> Accept-Encoding: gzip, deflate
+2018-04-19 14:25:47 [ main:45571 ] - [ DEBUG ] http-outgoing-0 >> User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0
+2018-04-19 14:25:47 [ main:45573 ] - [ DEBUG ] http-outgoing-0 >> If-None-Match: W/"f6f213009d7cc86bb0fb6913314953b250d79e78"
+2018-04-19 14:25:47 [ main:45575 ] - [ DEBUG ] http-outgoing-0 >> Connection: keep-alive
+2018-04-19 14:25:47 [ main:45577 ] - [ DEBUG ] http-outgoing-0 >> Accept: */*
+2018-04-19 14:25:47 [ main:45580 ] - [ DEBUG ] http-outgoing-0 >> Cache-Control: max-age=0
+2018-04-19 14:25:47 [ main:45583 ] - [ DEBUG ] http-outgoing-0 >> Host: zen.ctyun.com.cn
+2018-04-19 14:25:47 [ main:45586 ] - [ DEBUG ] http-outgoing-0 >> Cookie: PYSID_=f778cecd815e799b336570817bbbeb99
+2018-04-19 14:25:47 [ main:45589 ] - [ DEBUG ] http-outgoing-0 >> "GET /bss/login?returnUrl=/bss/packet/repair HTTP/1.1[\r][\n]"
+2018-04-19 14:25:47 [ main:45591 ] - [ DEBUG ] http-outgoing-0 >> "Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2[\r][\n]"
+2018-04-19 14:25:47 [ main:45599 ] - [ DEBUG ] http-outgoing-0 >> "Cookie: UM_distinctid=1628fd6da9625a-0aa86e3bfbcaf8-4c584130-ff000-1628fd6da981ed; PYSID_=9640fe45bf0e6006ac186e92c84bd2a9; userRoleName="2|1:0|10:1524113105|12:userRoleName|20:6LaF57qn566h55CG5ZGY|2aad9b466da0d0aa391b3e00673dbc017c0fc3528a5c6ef0135af485c6a26e70"; userName="2|1:0|10:1524113105|8:userName|12:5byg55Ge5by6|9f794b93144095ee88e6c8f2bf72024c9bee6560f2a2527a6728a92e55083c80"; userId="2|1:0|10:1524113105|6:userId|44:ZWUzODJiYzNlMWQ1NGJhYzhhMjQ3YjBmZTkyOWIzYzg=|b34e67f3068e75cd91a509aece3b5aa7c556fa80e9edf306f400ba34e57ce6ba"; userRole="2|1:0|10:1524113105|8:userRole|44:MTAxYzQzZjkwNjlhNDQ5Nzk5ODE0ZDUxODEyYTQzYmM=|c02423b269738e2a997783f850b092d4103baec9f568afefbeb05169ba5c4d7b"[\r][\n]"
+2018-04-19 14:25:47 [ main:45603 ] - [ DEBUG ] http-outgoing-0 >> "X-Requested-With: XMLHttpRequest[\r][\n]"
+2018-04-19 14:25:47 [ main:45606 ] - [ DEBUG ] http-outgoing-0 >> "Accept-Encoding: gzip, deflate[\r][\n]"
+2018-04-19 14:25:47 [ main:45610 ] - [ DEBUG ] http-outgoing-0 >> "User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0[\r][\n]"
+2018-04-19 14:25:47 [ main:45612 ] - [ DEBUG ] http-outgoing-0 >> "If-None-Match: W/"f6f213009d7cc86bb0fb6913314953b250d79e78"[\r][\n]"
+2018-04-19 14:25:47 [ main:45617 ] - [ DEBUG ] http-outgoing-0 >> "Connection: keep-alive[\r][\n]"
+2018-04-19 14:25:47 [ main:45621 ] - [ DEBUG ] http-outgoing-0 >> "Accept: */*[\r][\n]"
+2018-04-19 14:25:47 [ main:45625 ] - [ DEBUG ] http-outgoing-0 >> "Cache-Control: max-age=0[\r][\n]"
+2018-04-19 14:25:47 [ main:45630 ] - [ DEBUG ] http-outgoing-0 >> "Host: zen.ctyun.com.cn[\r][\n]"
+2018-04-19 14:25:47 [ main:45632 ] - [ DEBUG ] http-outgoing-0 >> "Cookie: PYSID_=f778cecd815e799b336570817bbbeb99[\r][\n]"
+2018-04-19 14:25:47 [ main:45634 ] - [ DEBUG ] http-outgoing-0 >> "[\r][\n]"
+2018-04-19 14:25:48 [ main:45782 ] - [ DEBUG ] http-outgoing-0 << "HTTP/1.1 302 Found[\r][\n]"
+2018-04-19 14:25:48 [ main:45785 ] - [ DEBUG ] http-outgoing-0 << "Server: nginx/1.11.6[\r][\n]"
+2018-04-19 14:25:48 [ main:45788 ] - [ DEBUG ] http-outgoing-0 << "Date: Thu, 19 Apr 2018 06:38:34 GMT[\r][\n]"
+2018-04-19 14:25:48 [ main:45792 ] - [ DEBUG ] http-outgoing-0 << "Content-Type: text/html; charset=UTF-8[\r][\n]"
+2018-04-19 14:25:48 [ main:45794 ] - [ DEBUG ] http-outgoing-0 << "Content-Length: 0[\r][\n]"
+2018-04-19 14:25:48 [ main:45796 ] - [ DEBUG ] http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+2018-04-19 14:25:48 [ main:45798 ] - [ DEBUG ] http-outgoing-0 << "Access-Control-Allow-Headers: *[\r][\n]"
+2018-04-19 14:25:48 [ main:45801 ] - [ DEBUG ] http-outgoing-0 << "Set-Cookie: PYSID_=fbc51b45621f3d6bd772b154a6e10739; Path=/[\r][\n]"
+2018-04-19 14:25:48 [ main:45803 ] - [ DEBUG ] http-outgoing-0 << "Location: http://zen.ctyun.com.cn/#/login[\r][\n]"
+2018-04-19 14:25:48 [ main:45805 ] - [ DEBUG ] http-outgoing-0 << "Access-Control-Allow-Origin: *[\r][\n]"
+2018-04-19 14:25:48 [ main:45808 ] - [ DEBUG ] http-outgoing-0 << "Access-Control-Allow-Methods: POST, GET, OPTIONS[\r][\n]"
+2018-04-19 14:25:48 [ main:45810 ] - [ DEBUG ] http-outgoing-0 << "[\r][\n]"
+2018-04-19 14:25:48 [ main:45814 ] - [ DEBUG ] http-outgoing-0 << HTTP/1.1 302 Found
+2018-04-19 14:25:48 [ main:45816 ] - [ DEBUG ] http-outgoing-0 << Server: nginx/1.11.6
+2018-04-19 14:25:48 [ main:45818 ] - [ DEBUG ] http-outgoing-0 << Date: Thu, 19 Apr 2018 06:38:34 GMT
+2018-04-19 14:25:48 [ main:45820 ] - [ DEBUG ] http-outgoing-0 << Content-Type: text/html; charset=UTF-8
+2018-04-19 14:25:48 [ main:45822 ] - [ DEBUG ] http-outgoing-0 << Content-Length: 0
+2018-04-19 14:25:48 [ main:45824 ] - [ DEBUG ] http-outgoing-0 << Connection: keep-alive
+2018-04-19 14:25:48 [ main:45826 ] - [ DEBUG ] http-outgoing-0 << Access-Control-Allow-Headers: *
+2018-04-19 14:25:48 [ main:45828 ] - [ DEBUG ] http-outgoing-0 << Set-Cookie: PYSID_=fbc51b45621f3d6bd772b154a6e10739; Path=/
+2018-04-19 14:25:48 [ main:45833 ] - [ DEBUG ] http-outgoing-0 << Location: http://zen.ctyun.com.cn/#/login
+2018-04-19 14:25:48 [ main:45836 ] - [ DEBUG ] http-outgoing-0 << Access-Control-Allow-Origin: *
+2018-04-19 14:25:48 [ main:45839 ] - [ DEBUG ] http-outgoing-0 << Access-Control-Allow-Methods: POST, GET, OPTIONS
+2018-04-19 14:25:48 [ main:45846 ] - [ DEBUG ] Connection can be kept alive indefinitely
+2018-04-19 14:25:48 [ main:45850 ] - [ DEBUG ] Connection [id: 0][route: {}->http://zen.ctyun.com.cn:80] can be kept alive indefinitely
+2018-04-19 14:25:48 [ main:45855 ] - [ DEBUG ] Connection released: [id: 0][route: {}->http://zen.ctyun.com.cn:80][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2018-04-19 14:25:48 [ main:45865 ] - [ DEBUG ] Cookie accepted [PYSID_="fbc51b45621f3d6bd772b154a6e10739", version:0, domain:zen.ctyun.com.cn, path:/, expiry:null]
+2018-04-19 14:25:48 [ main:45869 ] - [ DEBUG ] Redirect requested to location 'http://zen.ctyun.com.cn/#/login'
+2018-04-19 14:25:48 [ main:45879 ] - [ DEBUG ] Resetting target auth state
+2018-04-19 14:25:48 [ main:45882 ] - [ DEBUG ] Redirecting to 'http://zen.ctyun.com.cn/#/login' via {}->http://zen.ctyun.com.cn:80
+2018-04-19 14:25:48 [ main:45885 ] - [ DEBUG ] CookieSpec selected: default
+2018-04-19 14:25:48 [ main:45894 ] - [ DEBUG ] Cookie [version: 0][name: PYSID_][value: fbc51b45621f3d6bd772b154a6e10739][domain: zen.ctyun.com.cn][path: /][expiry: null] match [zen.ctyun.com.cn:80/]
+2018-04-19 14:25:48 [ main:45897 ] - [ DEBUG ] Auth cache not set in the context
+2018-04-19 14:25:48 [ main:45900 ] - [ DEBUG ] Connection request: [route: {}->http://zen.ctyun.com.cn:80][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2018-04-19 14:25:48 [ main:45902 ] - [ DEBUG ] Connection leased: [id: 0][route: {}->http://zen.ctyun.com.cn:80][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2018-04-19 14:25:48 [ main:45905 ] - [ DEBUG ] Executing request GET / HTTP/1.1
+2018-04-19 14:25:48 [ main:45908 ] - [ DEBUG ] Target auth state: UNCHALLENGED
+2018-04-19 14:25:48 [ main:45910 ] - [ DEBUG ] Proxy auth state: UNCHALLENGED
+2018-04-19 14:25:48 [ main:45914 ] - [ DEBUG ] http-outgoing-0 >> GET / HTTP/1.1
+2018-04-19 14:25:48 [ main:45917 ] - [ DEBUG ] http-outgoing-0 >> Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
+2018-04-19 14:25:48 [ main:45920 ] - [ DEBUG ] http-outgoing-0 >> Cookie: UM_distinctid=1628fd6da9625a-0aa86e3bfbcaf8-4c584130-ff000-1628fd6da981ed; PYSID_=9640fe45bf0e6006ac186e92c84bd2a9; userRoleName="2|1:0|10:1524113105|12:userRoleName|20:6LaF57qn566h55CG5ZGY|2aad9b466da0d0aa391b3e00673dbc017c0fc3528a5c6ef0135af485c6a26e70"; userName="2|1:0|10:1524113105|8:userName|12:5byg55Ge5by6|9f794b93144095ee88e6c8f2bf72024c9bee6560f2a2527a6728a92e55083c80"; userId="2|1:0|10:1524113105|6:userId|44:ZWUzODJiYzNlMWQ1NGJhYzhhMjQ3YjBmZTkyOWIzYzg=|b34e67f3068e75cd91a509aece3b5aa7c556fa80e9edf306f400ba34e57ce6ba"; userRole="2|1:0|10:1524113105|8:userRole|44:MTAxYzQzZjkwNjlhNDQ5Nzk5ODE0ZDUxODEyYTQzYmM=|c02423b269738e2a997783f850b092d4103baec9f568afefbeb05169ba5c4d7b"
+2018-04-19 14:25:48 [ main:45925 ] - [ DEBUG ] http-outgoing-0 >> X-Requested-With: XMLHttpRequest
+2018-04-19 14:25:48 [ main:45927 ] - [ DEBUG ] http-outgoing-0 >> Accept-Encoding: gzip, deflate
+2018-04-19 14:25:48 [ main:45929 ] - [ DEBUG ] http-outgoing-0 >> User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0
+2018-04-19 14:25:48 [ main:45933 ] - [ DEBUG ] http-outgoing-0 >> If-None-Match: W/"f6f213009d7cc86bb0fb6913314953b250d79e78"
+2018-04-19 14:25:48 [ main:45936 ] - [ DEBUG ] http-outgoing-0 >> Connection: keep-alive
+2018-04-19 14:25:48 [ main:45938 ] - [ DEBUG ] http-outgoing-0 >> Accept: */*
+2018-04-19 14:25:48 [ main:45942 ] - [ DEBUG ] http-outgoing-0 >> Cache-Control: max-age=0
+2018-04-19 14:25:48 [ main:45945 ] - [ DEBUG ] http-outgoing-0 >> Host: zen.ctyun.com.cn
+2018-04-19 14:25:48 [ main:45948 ] - [ DEBUG ] http-outgoing-0 >> Cookie: PYSID_=fbc51b45621f3d6bd772b154a6e10739
+2018-04-19 14:25:48 [ main:45951 ] - [ DEBUG ] http-outgoing-0 >> "GET / HTTP/1.1[\r][\n]"
+2018-04-19 14:25:48 [ main:45955 ] - [ DEBUG ] http-outgoing-0 >> "Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2[\r][\n]"
+2018-04-19 14:25:48 [ main:45962 ] - [ DEBUG ] http-outgoing-0 >> "Cookie: UM_distinctid=1628fd6da9625a-0aa86e3bfbcaf8-4c584130-ff000-1628fd6da981ed; PYSID_=9640fe45bf0e6006ac186e92c84bd2a9; userRoleName="2|1:0|10:1524113105|12:userRoleName|20:6LaF57qn566h55CG5ZGY|2aad9b466da0d0aa391b3e00673dbc017c0fc3528a5c6ef0135af485c6a26e70"; userName="2|1:0|10:1524113105|8:userName|12:5byg55Ge5by6|9f794b93144095ee88e6c8f2bf72024c9bee6560f2a2527a6728a92e55083c80"; userId="2|1:0|10:1524113105|6:userId|44:ZWUzODJiYzNlMWQ1NGJhYzhhMjQ3YjBmZTkyOWIzYzg=|b34e67f3068e75cd91a509aece3b5aa7c556fa80e9edf306f400ba34e57ce6ba"; userRole="2|1:0|10:1524113105|8:userRole|44:MTAxYzQzZjkwNjlhNDQ5Nzk5ODE0ZDUxODEyYTQzYmM=|c02423b269738e2a997783f850b092d4103baec9f568afefbeb05169ba5c4d7b"[\r][\n]"
+2018-04-19 14:25:48 [ main:45965 ] - [ DEBUG ] http-outgoing-0 >> "X-Requested-With: XMLHttpRequest[\r][\n]"
+2018-04-19 14:25:48 [ main:45968 ] - [ DEBUG ] http-outgoing-0 >> "Accept-Encoding: gzip, deflate[\r][\n]"
+2018-04-19 14:25:48 [ main:45975 ] - [ DEBUG ] http-outgoing-0 >> "User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0[\r][\n]"
+2018-04-19 14:25:48 [ main:45979 ] - [ DEBUG ] http-outgoing-0 >> "If-None-Match: W/"f6f213009d7cc86bb0fb6913314953b250d79e78"[\r][\n]"
+2018-04-19 14:25:48 [ main:45982 ] - [ DEBUG ] http-outgoing-0 >> "Connection: keep-alive[\r][\n]"
+2018-04-19 14:25:48 [ main:45990 ] - [ DEBUG ] http-outgoing-0 >> "Accept: */*[\r][\n]"
+2018-04-19 14:25:48 [ main:45994 ] - [ DEBUG ] http-outgoing-0 >> "Cache-Control: max-age=0[\r][\n]"
+2018-04-19 14:25:48 [ main:45997 ] - [ DEBUG ] http-outgoing-0 >> "Host: zen.ctyun.com.cn[\r][\n]"
+2018-04-19 14:25:48 [ main:46001 ] - [ DEBUG ] http-outgoing-0 >> "Cookie: PYSID_=fbc51b45621f3d6bd772b154a6e10739[\r][\n]"
+2018-04-19 14:25:48 [ main:46003 ] - [ DEBUG ] http-outgoing-0 >> "[\r][\n]"
+2018-04-19 14:25:48 [ main:46125 ] - [ DEBUG ] http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+2018-04-19 14:25:48 [ main:46127 ] - [ DEBUG ] http-outgoing-0 << "Server: nginx/1.11.6[\r][\n]"
+2018-04-19 14:25:48 [ main:46130 ] - [ DEBUG ] http-outgoing-0 << "Date: Thu, 19 Apr 2018 06:38:34 GMT[\r][\n]"
+2018-04-19 14:25:48 [ main:46132 ] - [ DEBUG ] http-outgoing-0 << "Content-Type: text/html; charset=UTF-8[\r][\n]"
+2018-04-19 14:25:48 [ main:46134 ] - [ DEBUG ] http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+2018-04-19 14:25:48 [ main:46137 ] - [ DEBUG ] http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+2018-04-19 14:25:48 [ main:46139 ] - [ DEBUG ] http-outgoing-0 << "Etag: W/"027437dc716e8c4f6f284471320b12a8e1b28690"[\r][\n]"
+2018-04-19 14:25:48 [ main:46143 ] - [ DEBUG ] http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+2018-04-19 14:25:48 [ main:46145 ] - [ DEBUG ] http-outgoing-0 << "[\r][\n]"
+2018-04-19 14:25:48 [ main:46147 ] - [ DEBUG ] http-outgoing-0 << "245[\r][\n]"
+2018-04-19 14:25:48 [ main:46164 ] - [ DEBUG ] http-outgoing-0 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0x8d]T[0xcb]n[0xd3]@[0x14][0xdd][0xe7]+\[0xaf][0xda][0x85]=[0x8e][0x13]T[0xa7]8[0xd9]@[0x17][0xdd][0x94][0x82]`[0xc1][0xd2][0x8f][0xeb]x[0x82]_[0xcc][0x8c][0x3][0x16]Bj[0xa5][0x16])[0x12]H[0xad][0x90][0x10]B[0x8][0x91][0x5]e[0x1][0x82][0x15][0xad]H[0x8b][0xf8][0x99][0x1a]'[0xc1][0xc4]IL[0xd2]6!+k[0xac]{[0xce][0xb9][0xe7][0xcc][0xbd][0xa3][0xaf][0xdc][0xbe]s[0xeb][0xfe][0xc3][0x9d]M[0xc1]e[0xbe][0xd7]([0xe9][0x93][0xf][0x18]6?1[0xcc]<h[0xc][0x8e][0xdf][0xc][0xba]?t4:[0x95]t[0xf][0x7][0x8f][0x4][0x2]^][0xa4],[0xf1][0x80][0xba][0x0]L[0x14]\[0x2]N][0x94]eD[0x99][0xc1][0xb0][0x85]lL[0x19]b.&6E[0xad][0xc7]1[0x90]D[0x8a][0xb1]lQ*r[0xe2][0x9c][0xe2]Z[0x84][0x8f]}L[0xc2]@[0x95][0xca][0xb2]"[0xab][0x9a][0xec][0xe3] [0x7]][0x11][0xe4],[0xd4]"8b[0x2]K"[0xa8][0x8b][0xc][0x9e]2[0xd4]2[0xda][0xc6][0xe8]/Wq[0xe2][0xc0]b8[0xc][0x84]&[0xb0][0x7][0x14][0xc8][0xb6][0xe1][0xc3][0xea][0x9a][0xf0][0xac]D[0x80][0xc5]$[0x10][0xc4][0xf4][0xfc]cv[0xf4]!=[0xef][0xad][0xf6]O[0xe][0xb2][0xde][0xe7][0xec][7;|[0x91][0x1e][0xbd]][0x13]o[0x96][0x9e]_[0xc1][0xdf][0xb][0xbd]Y[0xfc]v[0x18][0xc0][0xb5][0x95][[0xf6][0x8c][0xe]@ESM[0xab][0x2]e[0xfb]F[0xd5]4,[0xcd]P[0xab][0xeb][0xa6][0xe2]@M[0xad][0x99][0x15]K[0xcb]9t4j[0x9c][0xfb]B[0xee](~3[0xb4][0x13]~[0xb4]q[[0xc0]v][0xf4][\r][0x1c][0x88][\r][0x9d]'[0xdb][0xfe]g[0x9e][0x12]kq[0xea]e[0xb9][0x96][0x87][0xd8][0xa2][0xe2][0xbc][0xa4][0xa6][0xa4][0xc7][0x91].b[0xbd];[0xbc]K9"8`2'[0xe5][\r][0x15][0x8d]/[0x81].&[0xe1][0x12]tE[0x92][0x84][0xad]M[0xad][0xff][0xfb][0xb0][0xdf]}i[0x1a]&x[0x83][0xf7][0xbb][0xfd][0xe3][0xbd][0xec][0xdd][0xfe]N[0xe8]%[0xe][0xf6]<*IK[0xf9][0x8e][0xc6][0xf5][0x13][0xdb][0xd3][0x1d][0xe]er[0xf6][0xb4][0xf3]*[0xfb][0xf2][0xbd][0xff][0xeb][0xeb][0xc5][0xcf]Nz[0xfa])=8[0x15][0x96][0xa4]7I[0xf8][0x84]O[0x93][0x4][0xb4]"[0x5]!e[0x4][l[0x9e]T[0xe1](;[0xdb][0xbf]8;I{[0xaf][0xff]tv[0xb9][0xb1]iW[0xcb][0xea][0x16][0x9b][0x11]ya[0x9e][0x87][0xe4][0x84]D[0xc2][0xa0]][0xbe][0x5][0xee][0xb1][0xa8][0xfd]ObE[0xdd]p[0xdb][0xaa][0xea][0x1c][0x1b][0x93]*[0xc1][0x7]?$[0x89]`[0x83][0x19]7[0x8b][0xf5][0xcb]g[0xc5]e,[0xda]@[0xa8][0xac][0xae]s"E.oT[0x14]E[0x99]<[0x5]f[0x1c][0xd8][0x1e][0xcc][0xb6][0xb9] [0xec][0xc8]h[0x2]EV[0x18]8[0xb8]9[0x4]-1[0xb6]h[0xbc]*([0xbf][0xfe][0x2][0xec][0xd9]=[0x82][0xd6][0x4][0x0][0x0][\r][\n]"
+2018-04-19 14:25:48 [ main:46167 ] - [ DEBUG ] http-outgoing-0 << "0[\r][\n]"
+2018-04-19 14:25:48 [ main:46169 ] - [ DEBUG ] http-outgoing-0 << "[\r][\n]"
+2018-04-19 14:25:48 [ main:46173 ] - [ DEBUG ] http-outgoing-0 << HTTP/1.1 200 OK
+2018-04-19 14:25:48 [ main:46176 ] - [ DEBUG ] http-outgoing-0 << Server: nginx/1.11.6
+2018-04-19 14:25:48 [ main:46178 ] - [ DEBUG ] http-outgoing-0 << Date: Thu, 19 Apr 2018 06:38:34 GMT
+2018-04-19 14:25:48 [ main:46180 ] - [ DEBUG ] http-outgoing-0 << Content-Type: text/html; charset=UTF-8
+2018-04-19 14:25:48 [ main:46182 ] - [ DEBUG ] http-outgoing-0 << Transfer-Encoding: chunked
+2018-04-19 14:25:48 [ main:46184 ] - [ DEBUG ] http-outgoing-0 << Connection: keep-alive
+2018-04-19 14:25:48 [ main:46186 ] - [ DEBUG ] http-outgoing-0 << Etag: W/"027437dc716e8c4f6f284471320b12a8e1b28690"
+2018-04-19 14:25:48 [ main:46189 ] - [ DEBUG ] http-outgoing-0 << Content-Encoding: gzip
+2018-04-19 14:25:48 [ main:46228 ] - [ DEBUG ] Connection can be kept alive indefinitely
+2018-04-19 14:25:53 [ main:51443 ] - [ DEBUG ] Connection [id: 0][route: {}->http://zen.ctyun.com.cn:80] can be kept alive indefinitely
+2018-04-19 14:25:53 [ main:51451 ] - [ DEBUG ] Connection released: [id: 0][route: {}->http://zen.ctyun.com.cn:80][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2018-04-19 14:27:14 [ main:132091 ] - [ INFO ] <!DOCTYPE html>
+<html>
+<head>
+<title>首页</title>
+<link rel="stylesheet" href="../static/dist/thirds/jquery-ui.css">
+<link href="../static/dist/mimiron2-1.0.28.min.css" rel="stylesheet">
+<script type="text/javascript">
+function getUserName() {
+return "张瑞强(超级管理员)";
+}
+function getUserRole() {
+return "None";
+}
+function getUserId() {
+return "ee382bc3e1d54bac8a247b0fe929b3c8";
+}
+</script>
+</head>
+<body>
+<div id="main"></div>
+<script src="../static/dist/thirds/jquery1.9.min.js" type="text/javascript"></script>
+<script src="../static/dist/thirds/jQuery.print.js"></script>
+<script src="../static/dist/thirds/jquery-ui.js"></script>
+<!-- IE8运行babel需要的Polyfills-->
+<script src="../static/dist/thirds/polyfill.min.js"></script>
+<!-- babel前端转义工具 -->
+<script src="../static/dist/thirds/browser-es3-nostrict.min.js"></script>
+<!-- IE8运行组件库所需的Polyfills -->
+<script src="../static/dist/thirds/mimiron2-ployfill-for-ie8.js"></script>
+<!--mimiron2-->
+<script src="../static/dist/mimiron2-1.0.42.min.js"></script>
+<!--mimiron2 memory debug
+<script src="http://127.0.0.1:3000/static/bundle.js"></script>-->
+<script src="../static/pages/config.js" type="text/javascript"></script>
+</body>
+</html>
+2018-04-19 16:29:13 [ main:0 ] - [ DEBUG ] SpringJUnit4ClassRunner constructor called with [class cn.redis.test.TestSpringRedis].
+2018-04-19 16:29:13 [ main:385 ] - [ DEBUG ] Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@617c74e5 declaringClass = 'cn.redis.test.TestSpringRedis', locations = '{classpath:applicationContext.xml}', classes = '{}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+2018-04-19 16:29:13 [ main:398 ] - [ DEBUG ] Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [cn.redis.test.TestSpringRedis]
+2018-04-19 16:29:13 [ main:408 ] - [ DEBUG ] @TestExecutionListeners is not present for class [class cn.redis.test.TestSpringRedis]: using defaults.
+2018-04-19 16:29:13 [ main:535 ] - [ DEBUG ] Retrieved @ProfileValueSourceConfiguration [null] for test class [cn.redis.test.TestSpringRedis]
+2018-04-19 16:29:13 [ main:538 ] - [ DEBUG ] Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [cn.redis.test.TestSpringRedis]
+2018-04-19 16:29:13 [ main:541 ] - [ DEBUG ] Retrieved @ProfileValueSourceConfiguration [null] for test class [cn.redis.test.TestSpringRedis]
+2018-04-19 16:29:13 [ main:542 ] - [ DEBUG ] Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [cn.redis.test.TestSpringRedis]
+2018-04-19 16:29:13 [ main:552 ] - [ DEBUG ] Retrieved @ProfileValueSourceConfiguration [null] for test class [cn.redis.test.TestSpringRedis]
+2018-04-19 16:29:13 [ main:555 ] - [ DEBUG ] Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [cn.redis.test.TestSpringRedis]
+2018-04-19 16:29:13 [ main:565 ] - [ DEBUG ] Performing dependency injection for test context [[DefaultTestContext@d8355a8 testClass = TestSpringRedis, testInstance = cn.redis.test.TestSpringRedis@59fa1d9b, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@28d25987 testClass = TestSpringRedis, locations = '{classpath:applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]].
+2018-04-19 16:29:13 [ main:567 ] - [ DEBUG ] Delegating to GenericXmlContextLoader to load context from [MergedContextConfiguration@28d25987 testClass = TestSpringRedis, locations = '{classpath:applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]].
+2018-04-19 16:29:13 [ main:569 ] - [ DEBUG ] Loading ApplicationContext for merged context configuration [[MergedContextConfiguration@28d25987 testClass = TestSpringRedis, locations = '{classpath:applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+2018-04-19 16:29:14 [ main:1365 ] - [ DEBUG ] Adding [systemProperties] PropertySource with lowest search precedence
+2018-04-19 16:29:14 [ main:1379 ] - [ DEBUG ] Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-04-19 16:29:14 [ main:1382 ] - [ DEBUG ] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-04-19 16:29:14 [ main:1544 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-04-19 16:29:15 [ main:1810 ] - [ DEBUG ] Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+2018-04-19 16:29:15 [ main:2239 ] - [ DEBUG ] Loading schema mappings from [META-INF/spring.schemas]
+2018-04-19 16:29:15 [ main:2310 ] - [ DEBUG ] Loaded schema mappings: {http://www.springframework.org/schema/tx/spring-tx-2.5.xsd=org/springframework/transaction/config/spring-tx-2.5.xsd, http://www.springframework.org/schema/context/spring-context-3.1.xsd=org/springframework/context/config/spring-context-3.1.xsd, http://www.springframework.org/schema/data/repository/spring-repository-1.4.xsd=org/springframework/data/repository/config/spring-repository-1.4.xsd, http://www.springframework.org/schema/util/spring-util-3.0.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-4.0.xsd, http://www.springframework.org/schema/aop/spring-aop-3.2.xsd=org/springframework/aop/config/spring-aop-3.2.xsd, http://www.springframework.org/schema/redis/spring-redis.xsd=org/springframework/data/redis/config/spring-redis-1.0.xsd, http://www.springframework.org/schema/context/spring-context-4.0.xsd=org/springframework/context/config/spring-context-4.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd=org/springframework/web/servlet/config/spring-mvc-3.2.xsd, http://www.springframework.org/schema/oxm/spring-oxm-3.0.xsd=org/springframework/oxm/config/spring-oxm-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.2.xsd=org/springframework/scripting/config/spring-lang-3.2.xsd, http://www.springframework.org/schema/cache/spring-cache-3.2.xsd=org/springframework/cache/config/spring-cache-3.2.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.1.xsd=org/springframework/jdbc/config/spring-jdbc-3.1.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.2.xsd=org/springframework/beans/factory/xml/spring-tool-3.2.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-4.0.xsd, http://www.springframework.org/schema/aop/spring-aop-4.0.xsd=org/springframework/aop/config/spring-aop-4.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.2.xsd=org/springframework/ejb/config/spring-jee-3.2.xsd, http://www.springframework.org/schema/context/spring-context-3.0.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-4.0.xsd=org/springframework/jdbc/config/spring-jdbc-4.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd=org/springframework/web/servlet/config/spring-mvc-4.0.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans-3.2.xsd=org/springframework/beans/factory/xml/spring-beans-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop-3.1.xsd=org/springframework/aop/config/spring-aop-3.1.xsd, http://www.springframework.org/schema/lang/spring-lang-4.0.xsd=org/springframework/scripting/config/spring-lang-4.0.xsd, http://www.springframework.org/schema/data/repository/spring-repository-1.8.xsd=org/springframework/data/repository/config/spring-repository-1.8.xsd, http://www.springframework.org/schema/mvc/spring-mvc.xsd=org/springframework/web/servlet/config/spring-mvc-4.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd=org/springframework/web/servlet/config/spring-mvc-3.1.xsd, http://www.springframework.org/schema/redis/spring-redis-1.0.xsd=org/springframework/data/redis/config/spring-redis-1.0.xsd, http://www.springframework.org/schema/tool/spring-tool-4.0.xsd=org/springframework/beans/factory/xml/spring-tool-4.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.1.xsd=org/springframework/scripting/config/spring-lang-3.1.xsd, http://www.springframework.org/schema/tx/spring-tx-3.2.xsd=org/springframework/transaction/config/spring-tx-3.2.xsd, http://www.springframework.org/schema/cache/spring-cache-3.1.xsd=org/springframework/cache/config/spring-cache-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-4.0.xsd=org/springframework/ejb/config/spring-jee-4.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd=org/springframework/jdbc/config/spring-jdbc-3.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc.xsd=org/springframework/jdbc/config/spring-jdbc-4.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.1.xsd=org/springframework/beans/factory/xml/spring-tool-3.1.xsd, http://www.springframework.org/schema/cache/spring-cache-4.0.xsd=org/springframework/cache/config/spring-cache-4.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.1.xsd=org/springframework/ejb/config/spring-jee-3.1.xsd, http://www.springframework.org/schema/task/spring-task-3.2.xsd=org/springframework/scheduling/config/spring-task-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-3.1.xsd=org/springframework/beans/factory/xml/spring-beans-3.1.xsd, http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-4.0.xsd, http://www.springframework.org/schema/aop/spring-aop-3.0.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/data/repository/spring-repository.xsd=org/springframework/data/repository/config/spring-repository-1.11.xsd, http://www.springframework.org/schema/data/repository/spring-repository-1.7.xsd=org/springframework/data/repository/config/spring-repository-1.7.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd=org/springframework/web/servlet/config/spring-mvc-3.0.xsd, http://www.springframework.org/schema/beans/spring-beans-4.0.xsd=org/springframework/beans/factory/xml/spring-beans-4.0.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-4.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.0.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.1.xsd=org/springframework/transaction/config/spring-tx-3.1.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/task/spring-task-4.0.xsd=org/springframework/scheduling/config/spring-task-4.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.0.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-4.0.xsd=org/springframework/transaction/config/spring-tx-4.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.0.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/task/spring-task-3.1.xsd=org/springframework/scheduling/config/spring-task-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-3.0.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-4.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://www.springframework.org/schema/data/repository/spring-repository-1.6.xsd=org/springframework/data/repository/config/spring-repository-1.6.xsd, http://www.springframework.org/schema/oxm/spring-oxm.xsd=org/springframework/oxm/config/spring-oxm-4.0.xsd, http://www.springframework.org/schema/util/spring-util-3.2.xsd=org/springframework/beans/factory/xml/spring-util-3.2.xsd, http://www.springframework.org/schema/task/spring-task.xsd=org/springframework/scheduling/config/spring-task-4.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.0.xsd=org/springframework/transaction/config/spring-tx-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://www.springframework.org/schema/oxm/spring-oxm-3.2.xsd=org/springframework/oxm/config/spring-oxm-3.2.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/data/repository/spring-repository-1.0.xsd=org/springframework/data/repository/config/spring-repository-1.0.xsd, http://www.springframework.org/schema/util/spring-util-4.0.xsd=org/springframework/beans/factory/xml/spring-util-4.0.xsd, http://www.springframework.org/schema/task/spring-task-3.0.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-4.0.xsd, http://www.springframework.org/schema/context/spring-context-3.2.xsd=org/springframework/context/config/spring-context-3.2.xsd, http://www.springframework.org/schema/data/repository/spring-repository-1.5.xsd=org/springframework/data/repository/config/spring-repository-1.5.xsd, http://www.springframework.org/schema/util/spring-util-3.1.xsd=org/springframework/beans/factory/xml/spring-util-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://www.springframework.org/schema/oxm/spring-oxm-4.0.xsd=org/springframework/oxm/config/spring-oxm-4.0.xsd, http://www.springframework.org/schema/cache/spring-cache.xsd=org/springframework/cache/config/spring-cache-4.0.xsd, http://www.springframework.org/schema/tx/spring-tx.xsd=org/springframework/transaction/config/spring-tx-4.0.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd, http://www.springframework.org/schema/oxm/spring-oxm-3.1.xsd=org/springframework/oxm/config/spring-oxm-3.1.xsd, http://www.springframework.org/schema/tx/spring-tx-2.0.xsd=org/springframework/transaction/config/spring-tx-2.0.xsd, http://www.springframework.org/schema/data/repository/spring-repository-1.11.xsd=org/springframework/data/repository/config/spring-repository-1.11.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.2.xsd=org/springframework/jdbc/config/spring-jdbc-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-4.0.xsd}
+2018-04-19 16:29:15 [ main:2327 ] - [ DEBUG ] Found XML schema [http://www.springframework.org/schema/beans/spring-beans-4.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-4.0.xsd
+2018-04-19 16:29:16 [ main:2747 ] - [ DEBUG ] Found XML schema [http://www.springframework.org/schema/context/spring-context-4.0.xsd] in classpath: org/springframework/context/config/spring-context-4.0.xsd
+2018-04-19 16:29:16 [ main:2798 ] - [ DEBUG ] Found XML schema [http://www.springframework.org/schema/tool/spring-tool-4.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-4.0.xsd
+2018-04-19 16:29:16 [ main:2874 ] - [ DEBUG ] Loading bean definitions
+2018-04-19 16:29:16 [ main:2994 ] - [ DEBUG ] Loaded NamespaceHandler mappings: {http://www.springframework.org/schema/p=org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler, http://www.springframework.org/schema/mvc=org.springframework.web.servlet.config.MvcNamespaceHandler, http://www.springframework.org/schema/util=org.springframework.beans.factory.xml.UtilNamespaceHandler, http://www.springframework.org/schema/jee=org.springframework.ejb.config.JeeNamespaceHandler, http://www.springframework.org/schema/aop=org.springframework.aop.config.AopNamespaceHandler, http://www.springframework.org/schema/data/repository=org.springframework.data.repository.config.RepositoryNameSpaceHandler, http://www.springframework.org/schema/redis=org.springframework.data.redis.config.RedisNamespaceHandler, http://www.springframework.org/schema/jdbc=org.springframework.jdbc.config.JdbcNamespaceHandler, http://www.springframework.org/schema/oxm=org.springframework.oxm.config.OxmNamespaceHandler, http://www.springframework.org/schema/cache=org.springframework.cache.config.CacheNamespaceHandler, http://www.springframework.org/schema/c=org.springframework.beans.factory.xml.SimpleConstructorNamespaceHandler, http://www.springframework.org/schema/tx=org.springframework.transaction.config.TxNamespaceHandler, http://www.springframework.org/schema/task=org.springframework.scheduling.config.TaskNamespaceHandler, http://www.springframework.org/schema/lang=org.springframework.scripting.config.LangNamespaceHandler, http://www.springframework.org/schema/data/keyvalue=org.springframework.data.keyvalue.repository.config.KeyValueRepositoryNameSpaceHandler, http://www.springframework.org/schema/context=org.springframework.context.config.ContextNamespaceHandler}
+2018-04-19 16:29:16 [ main:3106 ] - [ DEBUG ] JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+2018-04-19 16:29:16 [ main:3115 ] - [ DEBUG ] JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+2018-04-19 16:29:16 [ main:3144 ] - [ DEBUG ] Looking for matching resources in directory tree [D:\Workspaces\MyEclipse10\RedisServer\target\test-classes\cn\redis]
+2018-04-19 16:29:16 [ main:3146 ] - [ DEBUG ] Searching directory [D:\Workspaces\MyEclipse10\RedisServer\target\test-classes\cn\redis] for files matching pattern [D:/Workspaces/MyEclipse10/RedisServer/target/test-classes/cn/redis/**/*.class]
+2018-04-19 16:29:16 [ main:3155 ] - [ DEBUG ] Searching directory [D:\Workspaces\MyEclipse10\RedisServer\target\test-classes\cn\redis\test] for files matching pattern [D:/Workspaces/MyEclipse10/RedisServer/target/test-classes/cn/redis/**/*.class]
+2018-04-19 16:29:16 [ main:3165 ] - [ DEBUG ] Looking for matching resources in directory tree [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis]
+2018-04-19 16:29:16 [ main:3167 ] - [ DEBUG ] Searching directory [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis] for files matching pattern [D:/Workspaces/MyEclipse10/RedisServer/target/classes/cn/redis/**/*.class]
+2018-04-19 16:29:16 [ main:3170 ] - [ DEBUG ] Searching directory [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\controller] for files matching pattern [D:/Workspaces/MyEclipse10/RedisServer/target/classes/cn/redis/**/*.class]
+2018-04-19 16:29:16 [ main:3173 ] - [ DEBUG ] Searching directory [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\controller\database] for files matching pattern [D:/Workspaces/MyEclipse10/RedisServer/target/classes/cn/redis/**/*.class]
+2018-04-19 16:29:16 [ main:3177 ] - [ DEBUG ] Searching directory [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\controller\page] for files matching pattern [D:/Workspaces/MyEclipse10/RedisServer/target/classes/cn/redis/**/*.class]
+2018-04-19 16:29:16 [ main:3180 ] - [ DEBUG ] Searching directory [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\controller\test] for files matching pattern [D:/Workspaces/MyEclipse10/RedisServer/target/classes/cn/redis/**/*.class]
+2018-04-19 16:29:16 [ main:3184 ] - [ DEBUG ] Searching directory [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\exception] for files matching pattern [D:/Workspaces/MyEclipse10/RedisServer/target/classes/cn/redis/**/*.class]
+2018-04-19 16:29:16 [ main:3187 ] - [ DEBUG ] Searching directory [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\model] for files matching pattern [D:/Workspaces/MyEclipse10/RedisServer/target/classes/cn/redis/**/*.class]
+2018-04-19 16:29:16 [ main:3188 ] - [ DEBUG ] Searching directory [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\model\http] for files matching pattern [D:/Workspaces/MyEclipse10/RedisServer/target/classes/cn/redis/**/*.class]
+2018-04-19 16:29:16 [ main:3191 ] - [ DEBUG ] Searching directory [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\model\redisreturn] for files matching pattern [D:/Workspaces/MyEclipse10/RedisServer/target/classes/cn/redis/**/*.class]
+2018-04-19 16:29:16 [ main:3194 ] - [ DEBUG ] Searching directory [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\service] for files matching pattern [D:/Workspaces/MyEclipse10/RedisServer/target/classes/cn/redis/**/*.class]
+2018-04-19 16:29:16 [ main:3196 ] - [ DEBUG ] Searching directory [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\service\impl] for files matching pattern [D:/Workspaces/MyEclipse10/RedisServer/target/classes/cn/redis/**/*.class]
+2018-04-19 16:29:16 [ main:3199 ] - [ DEBUG ] Searching directory [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\test] for files matching pattern [D:/Workspaces/MyEclipse10/RedisServer/target/classes/cn/redis/**/*.class]
+2018-04-19 16:29:16 [ main:3202 ] - [ DEBUG ] Searching directory [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\utils] for files matching pattern [D:/Workspaces/MyEclipse10/RedisServer/target/classes/cn/redis/**/*.class]
+2018-04-19 16:29:16 [ main:3205 ] - [ DEBUG ] Searching directory [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\utils\tree] for files matching pattern [D:/Workspaces/MyEclipse10/RedisServer/target/classes/cn/redis/**/*.class]
+2018-04-19 16:29:16 [ main:3215 ] - [ DEBUG ] Resolved location pattern [classpath*:cn/redis/**/*.class] to resources [file [D:\Workspaces\MyEclipse10\RedisServer\target\test-classes\cn\redis\test\HttpClientT.class], file [D:\Workspaces\MyEclipse10\RedisServer\target\test-classes\cn\redis\test\RunTest.class], file [D:\Workspaces\MyEclipse10\RedisServer\target\test-classes\cn\redis\test\testMain.class], file [D:\Workspaces\MyEclipse10\RedisServer\target\test-classes\cn\redis\test\TestSpringRedis.class], file [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\controller\database\SelectorDataBaseController.class], file [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\controller\page\RedisMainPageController.class], file [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\controller\test\TestController.class], file [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\exception\DatabaseIndexOutException.class], file [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\exception\RedisKeyNUllException.class], file [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\exception\TimeOutRangeException.class], file [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\model\http\ResponseStatus.class], file [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\model\http\ReturnCode.class], file [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\model\redisreturn\RedisReturnValue.class], file [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\service\impl\RedisServiceImpl.class], file [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\service\RedisService.class], file [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\test\TestRedis.class], file [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\utils\RedisKey.class], file [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\utils\RedisLifeCycle.class], file [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\utils\RedisUtils.class], file [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\utils\Stringutils.class], file [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\utils\tree\Tree.class], file [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\utils\tree\TreeBulid.class]]
+2018-04-19 16:29:16 [ main:3488 ] - [ DEBUG ] Identified candidate component class: file [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\controller\database\SelectorDataBaseController.class]
+2018-04-19 16:29:16 [ main:3494 ] - [ DEBUG ] Identified candidate component class: file [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\controller\page\RedisMainPageController.class]
+2018-04-19 16:29:16 [ main:3497 ] - [ DEBUG ] Identified candidate component class: file [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\controller\test\TestController.class]
+2018-04-19 16:29:16 [ main:3510 ] - [ DEBUG ] Identified candidate component class: file [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\service\impl\RedisServiceImpl.class]
+2018-04-19 16:29:16 [ main:3517 ] - [ DEBUG ] Identified candidate component class: file [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\utils\RedisUtils.class]
+2018-04-19 16:29:16 [ main:3615 ] - [ INFO ] Loading XML bean definitions from class path resource [redis-config.xml]
+2018-04-19 16:29:16 [ main:3620 ] - [ DEBUG ] Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+2018-04-19 16:29:16 [ main:3626 ] - [ DEBUG ] Found XML schema [http://www.springframework.org/schema/beans/spring-beans.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-4.0.xsd
+2018-04-19 16:29:16 [ main:3708 ] - [ DEBUG ] Loading bean definitions
+2018-04-19 16:29:17 [ main:3776 ] - [ DEBUG ] Loaded 3 bean definitions from location pattern [classpath:redis-config.xml]
+2018-04-19 16:29:17 [ main:3777 ] - [ DEBUG ] Imported 3 bean definitions from URL location [classpath:redis-config.xml]
+2018-04-19 16:29:17 [ main:3779 ] - [ DEBUG ] Loaded 13 bean definitions from location pattern [classpath:applicationContext.xml]
+2018-04-19 16:29:17 [ main:3791 ] - [ INFO ] Refreshing org.springframework.context.support.GenericApplicationContext@31ef45e3: startup date [Thu Apr 19 16:29:17 CST 2018]; root of context hierarchy
+2018-04-19 16:29:17 [ main:3793 ] - [ DEBUG ] Bean factory for org.springframework.context.support.GenericApplicationContext@31ef45e3: org.springframework.beans.factory.support.DefaultListableBeanFactory@6b419da: defining beans [selectorDataBaseController,redisMainPageController,testController,redisService,redisUtils,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,jedisPoolConfig,jedisConnectionFactory,stringRedisTemplate]; root of factory hierarchy
+2018-04-19 16:29:17 [ main:3887 ] - [ DEBUG ] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2018-04-19 16:29:17 [ main:3893 ] - [ DEBUG ] Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2018-04-19 16:29:17 [ main:3943 ] - [ DEBUG ] Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+2018-04-19 16:29:17 [ main:3950 ] - [ DEBUG ] Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2018-04-19 16:29:17 [ main:4182 ] - [ DEBUG ] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2018-04-19 16:29:17 [ main:4184 ] - [ DEBUG ] Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2018-04-19 16:29:17 [ main:4187 ] - [ INFO ] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-04-19 16:29:17 [ main:4188 ] - [ DEBUG ] Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+2018-04-19 16:29:17 [ main:4189 ] - [ DEBUG ] Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2018-04-19 16:29:17 [ main:4190 ] - [ DEBUG ] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2018-04-19 16:29:17 [ main:4191 ] - [ DEBUG ] Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2018-04-19 16:29:17 [ main:4194 ] - [ DEBUG ] Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+2018-04-19 16:29:17 [ main:4195 ] - [ DEBUG ] Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2018-04-19 16:29:17 [ main:4196 ] - [ DEBUG ] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2018-04-19 16:29:17 [ main:4197 ] - [ DEBUG ] Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2018-04-19 16:29:17 [ main:4226 ] - [ DEBUG ] Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+2018-04-19 16:29:17 [ main:4228 ] - [ DEBUG ] Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2018-04-19 16:29:17 [ main:4229 ] - [ DEBUG ] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2018-04-19 16:29:17 [ main:4230 ] - [ DEBUG ] Creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2018-04-19 16:29:17 [ main:4254 ] - [ DEBUG ] Eagerly caching bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor' to allow for resolving potential circular references
+2018-04-19 16:29:17 [ main:4255 ] - [ DEBUG ] Finished creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2018-04-19 16:29:17 [ main:4257 ] - [ DEBUG ] Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2018-04-19 16:29:17 [ main:4258 ] - [ DEBUG ] Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2018-04-19 16:29:17 [ main:4259 ] - [ DEBUG ] Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor' to allow for resolving potential circular references
+2018-04-19 16:29:17 [ main:4261 ] - [ DEBUG ] Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2018-04-19 16:29:17 [ main:4262 ] - [ DEBUG ] Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2018-04-19 16:29:17 [ main:4264 ] - [ DEBUG ] Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2018-04-19 16:29:17 [ main:4265 ] - [ DEBUG ] Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor' to allow for resolving potential circular references
+2018-04-19 16:29:17 [ main:4267 ] - [ DEBUG ] Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2018-04-19 16:29:17 [ main:4293 ] - [ DEBUG ] Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@636be97c]
+2018-04-19 16:29:17 [ main:4301 ] - [ DEBUG ] Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@41e36e46]
+2018-04-19 16:29:17 [ main:4314 ] - [ DEBUG ] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6b419da: defining beans [selectorDataBaseController,redisMainPageController,testController,redisService,redisUtils,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,jedisPoolConfig,jedisConnectionFactory,stringRedisTemplate,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor]; root of factory hierarchy
+2018-04-19 16:29:17 [ main:4317 ] - [ DEBUG ] Creating shared instance of singleton bean 'selectorDataBaseController'
+2018-04-19 16:29:17 [ main:4319 ] - [ DEBUG ] Creating instance of bean 'selectorDataBaseController'
+2018-04-19 16:29:17 [ main:4353 ] - [ DEBUG ] Registered injected element on class [cn.redis.controller.database.SelectorDataBaseController]: ResourceElement for private cn.redis.service.RedisService cn.redis.controller.database.SelectorDataBaseController.redisService
+2018-04-19 16:29:17 [ main:4361 ] - [ DEBUG ] Eagerly caching bean 'selectorDataBaseController' to allow for resolving potential circular references
+2018-04-19 16:29:17 [ main:4402 ] - [ DEBUG ] Processing injected method of bean 'selectorDataBaseController': ResourceElement for private cn.redis.service.RedisService cn.redis.controller.database.SelectorDataBaseController.redisService
+2018-04-19 16:29:17 [ main:4404 ] - [ DEBUG ] Creating shared instance of singleton bean 'redisService'
+2018-04-19 16:29:17 [ main:4405 ] - [ DEBUG ] Creating instance of bean 'redisService'
+2018-04-19 16:29:17 [ main:4425 ] - [ DEBUG ] Registered injected element on class [cn.redis.service.impl.RedisServiceImpl]: ResourceElement for private cn.redis.utils.RedisUtils cn.redis.service.impl.RedisServiceImpl.redisUtils
+2018-04-19 16:29:17 [ main:4428 ] - [ DEBUG ] Eagerly caching bean 'redisService' to allow for resolving potential circular references
+2018-04-19 16:29:17 [ main:4437 ] - [ DEBUG ] Processing injected method of bean 'redisService': ResourceElement for private cn.redis.utils.RedisUtils cn.redis.service.impl.RedisServiceImpl.redisUtils
+2018-04-19 16:29:17 [ main:4438 ] - [ DEBUG ] Creating shared instance of singleton bean 'redisUtils'
+2018-04-19 16:29:17 [ main:4439 ] - [ DEBUG ] Creating instance of bean 'redisUtils'
+2018-04-19 16:29:17 [ main:4517 ] - [ DEBUG ] Registered injected element on class [cn.redis.utils.RedisUtils]: ResourceElement for private org.springframework.data.redis.core.RedisTemplate cn.redis.utils.RedisUtils.stringRedisTemplate
+2018-04-19 16:29:17 [ main:4519 ] - [ DEBUG ] Registered injected element on class [cn.redis.utils.RedisUtils]: ResourceElement for private org.springframework.data.redis.connection.jedis.JedisConnectionFactory cn.redis.utils.RedisUtils.jedisConnectionFactory
+2018-04-19 16:29:17 [ main:4522 ] - [ DEBUG ] Eagerly caching bean 'redisUtils' to allow for resolving potential circular references
+2018-04-19 16:29:17 [ main:4534 ] - [ DEBUG ] Processing injected method of bean 'redisUtils': ResourceElement for private org.springframework.data.redis.core.RedisTemplate cn.redis.utils.RedisUtils.stringRedisTemplate
+2018-04-19 16:29:17 [ main:4537 ] - [ DEBUG ] Creating shared instance of singleton bean 'stringRedisTemplate'
+2018-04-19 16:29:17 [ main:4538 ] - [ DEBUG ] Creating instance of bean 'stringRedisTemplate'
+2018-04-19 16:29:17 [ main:4669 ] - [ DEBUG ] Eagerly caching bean 'stringRedisTemplate' to allow for resolving potential circular references
+2018-04-19 16:29:18 [ main:4811 ] - [ DEBUG ] Creating shared instance of singleton bean 'jedisConnectionFactory'
+2018-04-19 16:29:18 [ main:4814 ] - [ DEBUG ] Creating instance of bean 'jedisConnectionFactory'
+2018-04-19 16:29:18 [ main:5109 ] - [ DEBUG ] Eagerly caching bean 'jedisConnectionFactory' to allow for resolving potential circular references
+2018-04-19 16:29:18 [ main:5206 ] - [ DEBUG ] Creating shared instance of singleton bean 'jedisPoolConfig'
+2018-04-19 16:29:18 [ main:5208 ] - [ DEBUG ] Creating instance of bean 'jedisPoolConfig'
+2018-04-19 16:29:18 [ main:5216 ] - [ DEBUG ] Eagerly caching bean 'jedisPoolConfig' to allow for resolving potential circular references
+2018-04-19 16:29:18 [ main:5305 ] - [ DEBUG ] Finished creating instance of bean 'jedisPoolConfig'
+2018-04-19 16:29:18 [ main:5308 ] - [ DEBUG ] Invoking afterPropertiesSet() on bean with name 'jedisConnectionFactory'
+2018-04-19 16:29:19 [ main:6267 ] - [ DEBUG ] Finished creating instance of bean 'jedisConnectionFactory'
+2018-04-19 16:29:19 [ main:6277 ] - [ DEBUG ] Invoking afterPropertiesSet() on bean with name 'stringRedisTemplate'
+2018-04-19 16:29:19 [ main:6302 ] - [ DEBUG ] Finished creating instance of bean 'stringRedisTemplate'
+2018-04-19 16:29:19 [ main:6334 ] - [ DEBUG ] Processing injected method of bean 'redisUtils': ResourceElement for private org.springframework.data.redis.connection.jedis.JedisConnectionFactory cn.redis.utils.RedisUtils.jedisConnectionFactory
+2018-04-19 16:29:19 [ main:6337 ] - [ DEBUG ] Returning cached instance of singleton bean 'jedisConnectionFactory'
+2018-04-19 16:29:19 [ main:6339 ] - [ DEBUG ] Finished creating instance of bean 'redisUtils'
+2018-04-19 16:29:19 [ main:6348 ] - [ DEBUG ] Finished creating instance of bean 'redisService'
+2018-04-19 16:29:19 [ main:6349 ] - [ DEBUG ] Finished creating instance of bean 'selectorDataBaseController'
+2018-04-19 16:29:19 [ main:6350 ] - [ DEBUG ] Creating shared instance of singleton bean 'redisMainPageController'
+2018-04-19 16:29:19 [ main:6351 ] - [ DEBUG ] Creating instance of bean 'redisMainPageController'
+2018-04-19 16:29:19 [ main:6362 ] - [ DEBUG ] Registered injected element on class [cn.redis.controller.page.RedisMainPageController]: ResourceElement for private cn.redis.service.RedisService cn.redis.controller.page.RedisMainPageController.redisService
+2018-04-19 16:29:19 [ main:6364 ] - [ DEBUG ] Eagerly caching bean 'redisMainPageController' to allow for resolving potential circular references
+2018-04-19 16:29:19 [ main:6382 ] - [ DEBUG ] Processing injected method of bean 'redisMainPageController': ResourceElement for private cn.redis.service.RedisService cn.redis.controller.page.RedisMainPageController.redisService
+2018-04-19 16:29:19 [ main:6385 ] - [ DEBUG ] Returning cached instance of singleton bean 'redisService'
+2018-04-19 16:29:19 [ main:6387 ] - [ DEBUG ] Finished creating instance of bean 'redisMainPageController'
+2018-04-19 16:29:19 [ main:6388 ] - [ DEBUG ] Creating shared instance of singleton bean 'testController'
+2018-04-19 16:29:19 [ main:6389 ] - [ DEBUG ] Creating instance of bean 'testController'
+2018-04-19 16:29:19 [ main:6392 ] - [ DEBUG ] Eagerly caching bean 'testController' to allow for resolving potential circular references
+2018-04-19 16:29:19 [ main:6397 ] - [ DEBUG ] Finished creating instance of bean 'testController'
+2018-04-19 16:29:19 [ main:6398 ] - [ DEBUG ] Returning cached instance of singleton bean 'redisService'
+2018-04-19 16:29:19 [ main:6399 ] - [ DEBUG ] Returning cached instance of singleton bean 'redisUtils'
+2018-04-19 16:29:19 [ main:6400 ] - [ DEBUG ] Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2018-04-19 16:29:19 [ main:6402 ] - [ DEBUG ] Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2018-04-19 16:29:19 [ main:6403 ] - [ DEBUG ] Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2018-04-19 16:29:19 [ main:6404 ] - [ DEBUG ] Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2018-04-19 16:29:19 [ main:6405 ] - [ DEBUG ] Returning cached instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2018-04-19 16:29:19 [ main:6406 ] - [ DEBUG ] Returning cached instance of singleton bean 'jedisPoolConfig'
+2018-04-19 16:29:19 [ main:6406 ] - [ DEBUG ] Returning cached instance of singleton bean 'jedisConnectionFactory'
+2018-04-19 16:29:19 [ main:6407 ] - [ DEBUG ] Returning cached instance of singleton bean 'stringRedisTemplate'
+2018-04-19 16:29:19 [ main:6408 ] - [ DEBUG ] Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2018-04-19 16:29:19 [ main:6409 ] - [ DEBUG ] Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2018-04-19 16:29:19 [ main:6431 ] - [ DEBUG ] Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@5ab9e72c]
+2018-04-19 16:29:19 [ main:6436 ] - [ DEBUG ] Returning cached instance of singleton bean 'lifecycleProcessor'
+2018-04-19 16:29:19 [ main:6453 ] - [ DEBUG ] Searching for key 'spring.liveBeansView.mbeanDomain' in [systemProperties]
+2018-04-19 16:29:19 [ main:6455 ] - [ DEBUG ] Searching for key 'spring.liveBeansView.mbeanDomain' in [systemEnvironment]
+2018-04-19 16:29:19 [ main:6467 ] - [ DEBUG ] Could not find key 'spring.liveBeansView.mbeanDomain' in any property source. Returning [null]
+2018-04-19 16:29:19 [ main:6470 ] - [ DEBUG ] Storing ApplicationContext in cache under key [[MergedContextConfiguration@28d25987 testClass = TestSpringRedis, locations = '{classpath:applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+2018-04-19 16:29:19 [ main:6492 ] - [ DEBUG ] Processing injected method of bean 'cn.redis.test.TestSpringRedis': ResourceElement for private cn.redis.service.RedisService cn.redis.test.TestSpringRedis.redisService
+2018-04-19 16:29:19 [ main:6494 ] - [ DEBUG ] Returning cached instance of singleton bean 'redisService'
+2018-04-19 16:29:19 [ main:6511 ] - [ INFO ] select database:2
+2018-04-19 16:29:20 [ main:6744 ] - [ DEBUG ] Opening RedisConnection
+2018-04-19 16:29:35 [ main:22046 ] - [ ERROR ] Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+org.springframework.data.redis.RedisConnectionFailureException: Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.fetchJedisConnector(JedisConnectionFactory.java:198)
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.getConnection(JedisConnectionFactory.java:345)
+	at org.springframework.data.redis.core.RedisConnectionUtils.doGetConnection(RedisConnectionUtils.java:128)
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:91)
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:78)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:178)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:153)
+	at org.springframework.data.redis.core.RedisTemplate.keys(RedisTemplate.java:718)
+	at cn.redis.utils.RedisUtils.vagueQueryKeys(RedisUtils.java:320)
+	at cn.redis.service.impl.RedisServiceImpl.getKeyByVague(RedisServiceImpl.java:299)
+	at cn.redis.test.TestSpringRedis.testSpringRedis(TestSpringRedis.java:142)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:232)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:292)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:175)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:50)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:99)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:12)
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.fetchJedisConnector(JedisConnectionFactory.java:191)
+	... 44 more
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: connect timed out
+	at redis.clients.jedis.Connection.connect(Connection.java:164)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:80)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1676)
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:87)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:861)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:435)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:363)
+	at redis.clients.util.Pool.getResource(Pool.java:48)
+	... 47 more
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at redis.clients.jedis.Connection.connect(Connection.java:158)
+	... 54 more
+2018-04-19 16:29:35 [ main:22060 ] - [ DEBUG ] After test method: context [DefaultTestContext@d8355a8 testClass = TestSpringRedis, testInstance = cn.redis.test.TestSpringRedis@59fa1d9b, testMethod = testSpringRedis@TestSpringRedis, testException = java.lang.NullPointerException, mergedContextConfiguration = [MergedContextConfiguration@28d25987 testClass = TestSpringRedis, locations = '{classpath:applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class dirties context [false], class mode [null], method dirties context [false].
+2018-04-19 16:29:35 [ main:22159 ] - [ DEBUG ] After test class: context [DefaultTestContext@d8355a8 testClass = TestSpringRedis, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@28d25987 testClass = TestSpringRedis, locations = '{classpath:applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], dirtiesContext [false].
+2018-04-19 16:29:35 [ Thread-3:22189 ] - [ INFO ] Closing org.springframework.context.support.GenericApplicationContext@31ef45e3: startup date [Thu Apr 19 16:29:17 CST 2018]; root of context hierarchy
+2018-04-19 16:29:35 [ Thread-3:22203 ] - [ DEBUG ] Returning cached instance of singleton bean 'lifecycleProcessor'
+2018-04-19 16:29:35 [ Thread-3:22203 ] - [ DEBUG ] Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6b419da: defining beans [selectorDataBaseController,redisMainPageController,testController,redisService,redisUtils,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,jedisPoolConfig,jedisConnectionFactory,stringRedisTemplate,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor]; root of factory hierarchy
+2018-04-19 16:29:35 [ Thread-3:22339 ] - [ DEBUG ] Retrieved dependent beans for bean 'redisService': [cn.redis.test.TestSpringRedis]
+2018-04-19 16:29:35 [ Thread-3:22340 ] - [ DEBUG ] Invoking destroy() on bean with name 'jedisConnectionFactory'
+2018-04-19 16:31:40 [ main:0 ] - [ DEBUG ] SpringJUnit4ClassRunner constructor called with [class cn.redis.test.TestSpringRedis].
+2018-04-19 16:31:40 [ main:242 ] - [ DEBUG ] Delegating to GenericXmlContextLoader to process context configuration [ContextConfigurationAttributes@258e2e41 declaringClass = 'cn.redis.test.TestSpringRedis', locations = '{classpath:applicationContext.xml}', classes = '{}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+2018-04-19 16:31:40 [ main:247 ] - [ DEBUG ] Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [cn.redis.test.TestSpringRedis]
+2018-04-19 16:31:40 [ main:253 ] - [ DEBUG ] @TestExecutionListeners is not present for class [class cn.redis.test.TestSpringRedis]: using defaults.
+2018-04-19 16:31:40 [ main:311 ] - [ DEBUG ] Retrieved @ProfileValueSourceConfiguration [null] for test class [cn.redis.test.TestSpringRedis]
+2018-04-19 16:31:40 [ main:313 ] - [ DEBUG ] Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [cn.redis.test.TestSpringRedis]
+2018-04-19 16:31:41 [ main:403 ] - [ DEBUG ] Retrieved @ProfileValueSourceConfiguration [null] for test class [cn.redis.test.TestSpringRedis]
+2018-04-19 16:31:41 [ main:404 ] - [ DEBUG ] Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [cn.redis.test.TestSpringRedis]
+2018-04-19 16:31:41 [ main:407 ] - [ DEBUG ] Retrieved @ProfileValueSourceConfiguration [null] for test class [cn.redis.test.TestSpringRedis]
+2018-04-19 16:31:41 [ main:408 ] - [ DEBUG ] Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [cn.redis.test.TestSpringRedis]
+2018-04-19 16:31:41 [ main:410 ] - [ DEBUG ] Retrieved @ProfileValueSourceConfiguration [null] for test class [cn.redis.test.TestSpringRedis]
+2018-04-19 16:31:41 [ main:411 ] - [ DEBUG ] Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [cn.redis.test.TestSpringRedis]
+2018-04-19 16:31:41 [ main:417 ] - [ DEBUG ] Retrieved @ProfileValueSourceConfiguration [null] for test class [cn.redis.test.TestSpringRedis]
+2018-04-19 16:31:41 [ main:419 ] - [ DEBUG ] Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [cn.redis.test.TestSpringRedis]
+2018-04-19 16:31:41 [ main:433 ] - [ DEBUG ] Performing dependency injection for test context [[DefaultTestContext@96def03 testClass = TestSpringRedis, testInstance = cn.redis.test.TestSpringRedis@5ccddd20, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@1ed1993a testClass = TestSpringRedis, locations = '{classpath:applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]].
+2018-04-19 16:31:41 [ main:434 ] - [ DEBUG ] Delegating to GenericXmlContextLoader to load context from [MergedContextConfiguration@1ed1993a testClass = TestSpringRedis, locations = '{classpath:applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]].
+2018-04-19 16:31:41 [ main:441 ] - [ DEBUG ] Loading ApplicationContext for merged context configuration [[MergedContextConfiguration@1ed1993a testClass = TestSpringRedis, locations = '{classpath:applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+2018-04-19 16:31:41 [ main:692 ] - [ DEBUG ] Adding [systemProperties] PropertySource with lowest search precedence
+2018-04-19 16:31:41 [ main:702 ] - [ DEBUG ] Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-04-19 16:31:41 [ main:703 ] - [ DEBUG ] Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-04-19 16:31:41 [ main:736 ] - [ INFO ] Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-04-19 16:31:41 [ main:802 ] - [ DEBUG ] Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+2018-04-19 16:31:41 [ main:883 ] - [ DEBUG ] Loading schema mappings from [META-INF/spring.schemas]
+2018-04-19 16:31:41 [ main:892 ] - [ DEBUG ] Loaded schema mappings: {http://www.springframework.org/schema/tx/spring-tx-2.5.xsd=org/springframework/transaction/config/spring-tx-2.5.xsd, http://www.springframework.org/schema/context/spring-context-3.1.xsd=org/springframework/context/config/spring-context-3.1.xsd, http://www.springframework.org/schema/data/repository/spring-repository-1.4.xsd=org/springframework/data/repository/config/spring-repository-1.4.xsd, http://www.springframework.org/schema/util/spring-util-3.0.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-4.0.xsd, http://www.springframework.org/schema/aop/spring-aop-3.2.xsd=org/springframework/aop/config/spring-aop-3.2.xsd, http://www.springframework.org/schema/redis/spring-redis.xsd=org/springframework/data/redis/config/spring-redis-1.0.xsd, http://www.springframework.org/schema/context/spring-context-4.0.xsd=org/springframework/context/config/spring-context-4.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd=org/springframework/web/servlet/config/spring-mvc-3.2.xsd, http://www.springframework.org/schema/oxm/spring-oxm-3.0.xsd=org/springframework/oxm/config/spring-oxm-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.2.xsd=org/springframework/scripting/config/spring-lang-3.2.xsd, http://www.springframework.org/schema/cache/spring-cache-3.2.xsd=org/springframework/cache/config/spring-cache-3.2.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.1.xsd=org/springframework/jdbc/config/spring-jdbc-3.1.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.2.xsd=org/springframework/beans/factory/xml/spring-tool-3.2.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-4.0.xsd, http://www.springframework.org/schema/aop/spring-aop-4.0.xsd=org/springframework/aop/config/spring-aop-4.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.2.xsd=org/springframework/ejb/config/spring-jee-3.2.xsd, http://www.springframework.org/schema/context/spring-context-3.0.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-4.0.xsd=org/springframework/jdbc/config/spring-jdbc-4.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd=org/springframework/web/servlet/config/spring-mvc-4.0.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans-3.2.xsd=org/springframework/beans/factory/xml/spring-beans-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop-3.1.xsd=org/springframework/aop/config/spring-aop-3.1.xsd, http://www.springframework.org/schema/lang/spring-lang-4.0.xsd=org/springframework/scripting/config/spring-lang-4.0.xsd, http://www.springframework.org/schema/data/repository/spring-repository-1.8.xsd=org/springframework/data/repository/config/spring-repository-1.8.xsd, http://www.springframework.org/schema/mvc/spring-mvc.xsd=org/springframework/web/servlet/config/spring-mvc-4.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd=org/springframework/web/servlet/config/spring-mvc-3.1.xsd, http://www.springframework.org/schema/redis/spring-redis-1.0.xsd=org/springframework/data/redis/config/spring-redis-1.0.xsd, http://www.springframework.org/schema/tool/spring-tool-4.0.xsd=org/springframework/beans/factory/xml/spring-tool-4.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.1.xsd=org/springframework/scripting/config/spring-lang-3.1.xsd, http://www.springframework.org/schema/tx/spring-tx-3.2.xsd=org/springframework/transaction/config/spring-tx-3.2.xsd, http://www.springframework.org/schema/cache/spring-cache-3.1.xsd=org/springframework/cache/config/spring-cache-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-4.0.xsd=org/springframework/ejb/config/spring-jee-4.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd=org/springframework/jdbc/config/spring-jdbc-3.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc.xsd=org/springframework/jdbc/config/spring-jdbc-4.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.1.xsd=org/springframework/beans/factory/xml/spring-tool-3.1.xsd, http://www.springframework.org/schema/cache/spring-cache-4.0.xsd=org/springframework/cache/config/spring-cache-4.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.1.xsd=org/springframework/ejb/config/spring-jee-3.1.xsd, http://www.springframework.org/schema/task/spring-task-3.2.xsd=org/springframework/scheduling/config/spring-task-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-3.1.xsd=org/springframework/beans/factory/xml/spring-beans-3.1.xsd, http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-4.0.xsd, http://www.springframework.org/schema/aop/spring-aop-3.0.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/data/repository/spring-repository.xsd=org/springframework/data/repository/config/spring-repository-1.11.xsd, http://www.springframework.org/schema/data/repository/spring-repository-1.7.xsd=org/springframework/data/repository/config/spring-repository-1.7.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd=org/springframework/web/servlet/config/spring-mvc-3.0.xsd, http://www.springframework.org/schema/beans/spring-beans-4.0.xsd=org/springframework/beans/factory/xml/spring-beans-4.0.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-4.0.xsd, http://www.springframework.org/schema/lang/spring-lang-3.0.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.1.xsd=org/springframework/transaction/config/spring-tx-3.1.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/task/spring-task-4.0.xsd=org/springframework/scheduling/config/spring-task-4.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.0.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-4.0.xsd=org/springframework/transaction/config/spring-tx-4.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.0.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/task/spring-task-3.1.xsd=org/springframework/scheduling/config/spring-task-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-3.0.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-4.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://www.springframework.org/schema/data/repository/spring-repository-1.6.xsd=org/springframework/data/repository/config/spring-repository-1.6.xsd, http://www.springframework.org/schema/oxm/spring-oxm.xsd=org/springframework/oxm/config/spring-oxm-4.0.xsd, http://www.springframework.org/schema/util/spring-util-3.2.xsd=org/springframework/beans/factory/xml/spring-util-3.2.xsd, http://www.springframework.org/schema/task/spring-task.xsd=org/springframework/scheduling/config/spring-task-4.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.0.xsd=org/springframework/transaction/config/spring-tx-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://www.springframework.org/schema/oxm/spring-oxm-3.2.xsd=org/springframework/oxm/config/spring-oxm-3.2.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/data/repository/spring-repository-1.0.xsd=org/springframework/data/repository/config/spring-repository-1.0.xsd, http://www.springframework.org/schema/util/spring-util-4.0.xsd=org/springframework/beans/factory/xml/spring-util-4.0.xsd, http://www.springframework.org/schema/task/spring-task-3.0.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-4.0.xsd, http://www.springframework.org/schema/context/spring-context-3.2.xsd=org/springframework/context/config/spring-context-3.2.xsd, http://www.springframework.org/schema/data/repository/spring-repository-1.5.xsd=org/springframework/data/repository/config/spring-repository-1.5.xsd, http://www.springframework.org/schema/util/spring-util-3.1.xsd=org/springframework/beans/factory/xml/spring-util-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://www.springframework.org/schema/oxm/spring-oxm-4.0.xsd=org/springframework/oxm/config/spring-oxm-4.0.xsd, http://www.springframework.org/schema/cache/spring-cache.xsd=org/springframework/cache/config/spring-cache-4.0.xsd, http://www.springframework.org/schema/tx/spring-tx.xsd=org/springframework/transaction/config/spring-tx-4.0.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd, http://www.springframework.org/schema/oxm/spring-oxm-3.1.xsd=org/springframework/oxm/config/spring-oxm-3.1.xsd, http://www.springframework.org/schema/tx/spring-tx-2.0.xsd=org/springframework/transaction/config/spring-tx-2.0.xsd, http://www.springframework.org/schema/data/repository/spring-repository-1.11.xsd=org/springframework/data/repository/config/spring-repository-1.11.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.2.xsd=org/springframework/jdbc/config/spring-jdbc-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-4.0.xsd}
+2018-04-19 16:31:41 [ main:897 ] - [ DEBUG ] Found XML schema [http://www.springframework.org/schema/beans/spring-beans-4.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-4.0.xsd
+2018-04-19 16:31:41 [ main:999 ] - [ DEBUG ] Found XML schema [http://www.springframework.org/schema/context/spring-context-4.0.xsd] in classpath: org/springframework/context/config/spring-context-4.0.xsd
+2018-04-19 16:31:41 [ main:1021 ] - [ DEBUG ] Found XML schema [http://www.springframework.org/schema/tool/spring-tool-4.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-4.0.xsd
+2018-04-19 16:31:41 [ main:1040 ] - [ DEBUG ] Loading bean definitions
+2018-04-19 16:31:41 [ main:1094 ] - [ DEBUG ] Loaded NamespaceHandler mappings: {http://www.springframework.org/schema/p=org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler, http://www.springframework.org/schema/mvc=org.springframework.web.servlet.config.MvcNamespaceHandler, http://www.springframework.org/schema/util=org.springframework.beans.factory.xml.UtilNamespaceHandler, http://www.springframework.org/schema/jee=org.springframework.ejb.config.JeeNamespaceHandler, http://www.springframework.org/schema/aop=org.springframework.aop.config.AopNamespaceHandler, http://www.springframework.org/schema/data/repository=org.springframework.data.repository.config.RepositoryNameSpaceHandler, http://www.springframework.org/schema/redis=org.springframework.data.redis.config.RedisNamespaceHandler, http://www.springframework.org/schema/jdbc=org.springframework.jdbc.config.JdbcNamespaceHandler, http://www.springframework.org/schema/oxm=org.springframework.oxm.config.OxmNamespaceHandler, http://www.springframework.org/schema/cache=org.springframework.cache.config.CacheNamespaceHandler, http://www.springframework.org/schema/c=org.springframework.beans.factory.xml.SimpleConstructorNamespaceHandler, http://www.springframework.org/schema/tx=org.springframework.transaction.config.TxNamespaceHandler, http://www.springframework.org/schema/task=org.springframework.scheduling.config.TaskNamespaceHandler, http://www.springframework.org/schema/lang=org.springframework.scripting.config.LangNamespaceHandler, http://www.springframework.org/schema/data/keyvalue=org.springframework.data.keyvalue.repository.config.KeyValueRepositoryNameSpaceHandler, http://www.springframework.org/schema/context=org.springframework.context.config.ContextNamespaceHandler}
+2018-04-19 16:31:41 [ main:1142 ] - [ DEBUG ] JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+2018-04-19 16:31:41 [ main:1146 ] - [ DEBUG ] JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+2018-04-19 16:31:41 [ main:1162 ] - [ DEBUG ] Looking for matching resources in directory tree [D:\Workspaces\MyEclipse10\RedisServer\target\test-classes\cn\redis]
+2018-04-19 16:31:41 [ main:1163 ] - [ DEBUG ] Searching directory [D:\Workspaces\MyEclipse10\RedisServer\target\test-classes\cn\redis] for files matching pattern [D:/Workspaces/MyEclipse10/RedisServer/target/test-classes/cn/redis/**/*.class]
+2018-04-19 16:31:41 [ main:1174 ] - [ DEBUG ] Searching directory [D:\Workspaces\MyEclipse10\RedisServer\target\test-classes\cn\redis\test] for files matching pattern [D:/Workspaces/MyEclipse10/RedisServer/target/test-classes/cn/redis/**/*.class]
+2018-04-19 16:31:41 [ main:1180 ] - [ DEBUG ] Looking for matching resources in directory tree [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis]
+2018-04-19 16:31:41 [ main:1181 ] - [ DEBUG ] Searching directory [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis] for files matching pattern [D:/Workspaces/MyEclipse10/RedisServer/target/classes/cn/redis/**/*.class]
+2018-04-19 16:31:41 [ main:1182 ] - [ DEBUG ] Searching directory [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\controller] for files matching pattern [D:/Workspaces/MyEclipse10/RedisServer/target/classes/cn/redis/**/*.class]
+2018-04-19 16:31:41 [ main:1184 ] - [ DEBUG ] Searching directory [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\controller\database] for files matching pattern [D:/Workspaces/MyEclipse10/RedisServer/target/classes/cn/redis/**/*.class]
+2018-04-19 16:31:41 [ main:1185 ] - [ DEBUG ] Searching directory [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\controller\page] for files matching pattern [D:/Workspaces/MyEclipse10/RedisServer/target/classes/cn/redis/**/*.class]
+2018-04-19 16:31:41 [ main:1187 ] - [ DEBUG ] Searching directory [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\controller\test] for files matching pattern [D:/Workspaces/MyEclipse10/RedisServer/target/classes/cn/redis/**/*.class]
+2018-04-19 16:31:41 [ main:1192 ] - [ DEBUG ] Searching directory [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\exception] for files matching pattern [D:/Workspaces/MyEclipse10/RedisServer/target/classes/cn/redis/**/*.class]
+2018-04-19 16:31:41 [ main:1194 ] - [ DEBUG ] Searching directory [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\model] for files matching pattern [D:/Workspaces/MyEclipse10/RedisServer/target/classes/cn/redis/**/*.class]
+2018-04-19 16:31:41 [ main:1195 ] - [ DEBUG ] Searching directory [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\model\http] for files matching pattern [D:/Workspaces/MyEclipse10/RedisServer/target/classes/cn/redis/**/*.class]
+2018-04-19 16:31:41 [ main:1197 ] - [ DEBUG ] Searching directory [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\model\redisreturn] for files matching pattern [D:/Workspaces/MyEclipse10/RedisServer/target/classes/cn/redis/**/*.class]
+2018-04-19 16:31:41 [ main:1198 ] - [ DEBUG ] Searching directory [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\service] for files matching pattern [D:/Workspaces/MyEclipse10/RedisServer/target/classes/cn/redis/**/*.class]
+2018-04-19 16:31:41 [ main:1200 ] - [ DEBUG ] Searching directory [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\service\impl] for files matching pattern [D:/Workspaces/MyEclipse10/RedisServer/target/classes/cn/redis/**/*.class]
+2018-04-19 16:31:41 [ main:1201 ] - [ DEBUG ] Searching directory [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\test] for files matching pattern [D:/Workspaces/MyEclipse10/RedisServer/target/classes/cn/redis/**/*.class]
+2018-04-19 16:31:41 [ main:1203 ] - [ DEBUG ] Searching directory [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\utils] for files matching pattern [D:/Workspaces/MyEclipse10/RedisServer/target/classes/cn/redis/**/*.class]
+2018-04-19 16:31:41 [ main:1207 ] - [ DEBUG ] Searching directory [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\utils\tree] for files matching pattern [D:/Workspaces/MyEclipse10/RedisServer/target/classes/cn/redis/**/*.class]
+2018-04-19 16:31:41 [ main:1213 ] - [ DEBUG ] Resolved location pattern [classpath*:cn/redis/**/*.class] to resources [file [D:\Workspaces\MyEclipse10\RedisServer\target\test-classes\cn\redis\test\HttpClientT.class], file [D:\Workspaces\MyEclipse10\RedisServer\target\test-classes\cn\redis\test\RunTest.class], file [D:\Workspaces\MyEclipse10\RedisServer\target\test-classes\cn\redis\test\testMain.class], file [D:\Workspaces\MyEclipse10\RedisServer\target\test-classes\cn\redis\test\TestSpringRedis.class], file [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\controller\database\SelectorDataBaseController.class], file [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\controller\page\RedisMainPageController.class], file [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\controller\test\TestController.class], file [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\exception\DatabaseIndexOutException.class], file [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\exception\RedisKeyNUllException.class], file [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\exception\TimeOutRangeException.class], file [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\model\http\ResponseStatus.class], file [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\model\http\ReturnCode.class], file [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\model\redisreturn\RedisReturnValue.class], file [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\service\impl\RedisServiceImpl.class], file [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\service\RedisService.class], file [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\test\TestRedis.class], file [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\utils\RedisKey.class], file [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\utils\RedisLifeCycle.class], file [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\utils\RedisUtils.class], file [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\utils\Stringutils.class], file [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\utils\tree\Tree.class], file [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\utils\tree\TreeBulid.class]]
+2018-04-19 16:31:42 [ main:1337 ] - [ DEBUG ] Identified candidate component class: file [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\controller\database\SelectorDataBaseController.class]
+2018-04-19 16:31:42 [ main:1340 ] - [ DEBUG ] Identified candidate component class: file [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\controller\page\RedisMainPageController.class]
+2018-04-19 16:31:42 [ main:1343 ] - [ DEBUG ] Identified candidate component class: file [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\controller\test\TestController.class]
+2018-04-19 16:31:42 [ main:1353 ] - [ DEBUG ] Identified candidate component class: file [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\service\impl\RedisServiceImpl.class]
+2018-04-19 16:31:42 [ main:1364 ] - [ DEBUG ] Identified candidate component class: file [D:\Workspaces\MyEclipse10\RedisServer\target\classes\cn\redis\utils\RedisUtils.class]
+2018-04-19 16:31:42 [ main:1436 ] - [ INFO ] Loading XML bean definitions from class path resource [redis-config.xml]
+2018-04-19 16:31:42 [ main:1442 ] - [ DEBUG ] Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+2018-04-19 16:31:42 [ main:1471 ] - [ DEBUG ] Found XML schema [http://www.springframework.org/schema/beans/spring-beans.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-4.0.xsd
+2018-04-19 16:31:42 [ main:1556 ] - [ DEBUG ] Loading bean definitions
+2018-04-19 16:31:42 [ main:1571 ] - [ DEBUG ] Loaded 3 bean definitions from location pattern [classpath:redis-config.xml]
+2018-04-19 16:31:42 [ main:1574 ] - [ DEBUG ] Imported 3 bean definitions from URL location [classpath:redis-config.xml]
+2018-04-19 16:31:42 [ main:1577 ] - [ DEBUG ] Loaded 13 bean definitions from location pattern [classpath:applicationContext.xml]
+2018-04-19 16:31:42 [ main:1592 ] - [ INFO ] Refreshing org.springframework.context.support.GenericApplicationContext@cd3fee8: startup date [Thu Apr 19 16:31:42 CST 2018]; root of context hierarchy
+2018-04-19 16:31:42 [ main:1593 ] - [ DEBUG ] Bean factory for org.springframework.context.support.GenericApplicationContext@cd3fee8: org.springframework.beans.factory.support.DefaultListableBeanFactory@238d68ff: defining beans [selectorDataBaseController,redisMainPageController,testController,redisService,redisUtils,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,jedisPoolConfig,jedisConnectionFactory,stringRedisTemplate]; root of factory hierarchy
+2018-04-19 16:31:42 [ main:1658 ] - [ DEBUG ] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2018-04-19 16:31:42 [ main:1659 ] - [ DEBUG ] Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2018-04-19 16:31:42 [ main:1716 ] - [ DEBUG ] Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+2018-04-19 16:31:42 [ main:1733 ] - [ DEBUG ] Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2018-04-19 16:31:42 [ main:1872 ] - [ DEBUG ] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2018-04-19 16:31:42 [ main:1872 ] - [ DEBUG ] Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2018-04-19 16:31:42 [ main:1879 ] - [ INFO ] JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-04-19 16:31:42 [ main:1881 ] - [ DEBUG ] Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+2018-04-19 16:31:42 [ main:1882 ] - [ DEBUG ] Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2018-04-19 16:31:42 [ main:1883 ] - [ DEBUG ] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2018-04-19 16:31:42 [ main:1884 ] - [ DEBUG ] Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2018-04-19 16:31:42 [ main:1885 ] - [ DEBUG ] Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+2018-04-19 16:31:42 [ main:1886 ] - [ DEBUG ] Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2018-04-19 16:31:42 [ main:1888 ] - [ DEBUG ] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2018-04-19 16:31:42 [ main:1889 ] - [ DEBUG ] Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2018-04-19 16:31:42 [ main:1909 ] - [ DEBUG ] Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+2018-04-19 16:31:42 [ main:1910 ] - [ DEBUG ] Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2018-04-19 16:31:42 [ main:1912 ] - [ DEBUG ] Creating shared instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2018-04-19 16:31:42 [ main:1913 ] - [ DEBUG ] Creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2018-04-19 16:31:42 [ main:1919 ] - [ DEBUG ] Eagerly caching bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor' to allow for resolving potential circular references
+2018-04-19 16:31:42 [ main:1921 ] - [ DEBUG ] Finished creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2018-04-19 16:31:42 [ main:1922 ] - [ DEBUG ] Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2018-04-19 16:31:42 [ main:1923 ] - [ DEBUG ] Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2018-04-19 16:31:42 [ main:1923 ] - [ DEBUG ] Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor' to allow for resolving potential circular references
+2018-04-19 16:31:42 [ main:1924 ] - [ DEBUG ] Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2018-04-19 16:31:42 [ main:1925 ] - [ DEBUG ] Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2018-04-19 16:31:42 [ main:1925 ] - [ DEBUG ] Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2018-04-19 16:31:42 [ main:1926 ] - [ DEBUG ] Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor' to allow for resolving potential circular references
+2018-04-19 16:31:42 [ main:1938 ] - [ DEBUG ] Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2018-04-19 16:31:42 [ main:1946 ] - [ DEBUG ] Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@5c45d770]
+2018-04-19 16:31:42 [ main:1952 ] - [ DEBUG ] Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@6bf08014]
+2018-04-19 16:31:42 [ main:1958 ] - [ DEBUG ] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@238d68ff: defining beans [selectorDataBaseController,redisMainPageController,testController,redisService,redisUtils,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,jedisPoolConfig,jedisConnectionFactory,stringRedisTemplate,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor]; root of factory hierarchy
+2018-04-19 16:31:42 [ main:1959 ] - [ DEBUG ] Creating shared instance of singleton bean 'selectorDataBaseController'
+2018-04-19 16:31:42 [ main:1959 ] - [ DEBUG ] Creating instance of bean 'selectorDataBaseController'
+2018-04-19 16:31:42 [ main:1985 ] - [ DEBUG ] Registered injected element on class [cn.redis.controller.database.SelectorDataBaseController]: ResourceElement for private cn.redis.service.RedisService cn.redis.controller.database.SelectorDataBaseController.redisService
+2018-04-19 16:31:42 [ main:1989 ] - [ DEBUG ] Eagerly caching bean 'selectorDataBaseController' to allow for resolving potential circular references
+2018-04-19 16:31:42 [ main:2023 ] - [ DEBUG ] Processing injected method of bean 'selectorDataBaseController': ResourceElement for private cn.redis.service.RedisService cn.redis.controller.database.SelectorDataBaseController.redisService
+2018-04-19 16:31:42 [ main:2024 ] - [ DEBUG ] Creating shared instance of singleton bean 'redisService'
+2018-04-19 16:31:42 [ main:2024 ] - [ DEBUG ] Creating instance of bean 'redisService'
+2018-04-19 16:31:42 [ main:2034 ] - [ DEBUG ] Registered injected element on class [cn.redis.service.impl.RedisServiceImpl]: ResourceElement for private cn.redis.utils.RedisUtils cn.redis.service.impl.RedisServiceImpl.redisUtils
+2018-04-19 16:31:42 [ main:2035 ] - [ DEBUG ] Eagerly caching bean 'redisService' to allow for resolving potential circular references
+2018-04-19 16:31:42 [ main:2043 ] - [ DEBUG ] Processing injected method of bean 'redisService': ResourceElement for private cn.redis.utils.RedisUtils cn.redis.service.impl.RedisServiceImpl.redisUtils
+2018-04-19 16:31:42 [ main:2043 ] - [ DEBUG ] Creating shared instance of singleton bean 'redisUtils'
+2018-04-19 16:31:42 [ main:2044 ] - [ DEBUG ] Creating instance of bean 'redisUtils'
+2018-04-19 16:31:42 [ main:2047 ] - [ DEBUG ] Registered injected element on class [cn.redis.utils.RedisUtils]: ResourceElement for private org.springframework.data.redis.core.RedisTemplate cn.redis.utils.RedisUtils.stringRedisTemplate
+2018-04-19 16:31:42 [ main:2048 ] - [ DEBUG ] Registered injected element on class [cn.redis.utils.RedisUtils]: ResourceElement for private org.springframework.data.redis.connection.jedis.JedisConnectionFactory cn.redis.utils.RedisUtils.jedisConnectionFactory
+2018-04-19 16:31:42 [ main:2049 ] - [ DEBUG ] Eagerly caching bean 'redisUtils' to allow for resolving potential circular references
+2018-04-19 16:31:42 [ main:2063 ] - [ DEBUG ] Processing injected method of bean 'redisUtils': ResourceElement for private org.springframework.data.redis.core.RedisTemplate cn.redis.utils.RedisUtils.stringRedisTemplate
+2018-04-19 16:31:42 [ main:2063 ] - [ DEBUG ] Creating shared instance of singleton bean 'stringRedisTemplate'
+2018-04-19 16:31:42 [ main:2064 ] - [ DEBUG ] Creating instance of bean 'stringRedisTemplate'
+2018-04-19 16:31:42 [ main:2106 ] - [ DEBUG ] Eagerly caching bean 'stringRedisTemplate' to allow for resolving potential circular references
+2018-04-19 16:31:42 [ main:2231 ] - [ DEBUG ] Creating shared instance of singleton bean 'jedisConnectionFactory'
+2018-04-19 16:31:42 [ main:2232 ] - [ DEBUG ] Creating instance of bean 'jedisConnectionFactory'
+2018-04-19 16:31:43 [ main:2337 ] - [ DEBUG ] Eagerly caching bean 'jedisConnectionFactory' to allow for resolving potential circular references
+2018-04-19 16:31:43 [ main:2425 ] - [ DEBUG ] Creating shared instance of singleton bean 'jedisPoolConfig'
+2018-04-19 16:31:43 [ main:2426 ] - [ DEBUG ] Creating instance of bean 'jedisPoolConfig'
+2018-04-19 16:31:43 [ main:2431 ] - [ DEBUG ] Eagerly caching bean 'jedisPoolConfig' to allow for resolving potential circular references
+2018-04-19 16:31:43 [ main:2452 ] - [ DEBUG ] Finished creating instance of bean 'jedisPoolConfig'
+2018-04-19 16:31:43 [ main:2454 ] - [ DEBUG ] Invoking afterPropertiesSet() on bean with name 'jedisConnectionFactory'
+2018-04-19 16:31:43 [ main:2671 ] - [ DEBUG ] Finished creating instance of bean 'jedisConnectionFactory'
+2018-04-19 16:31:43 [ main:2673 ] - [ DEBUG ] Invoking afterPropertiesSet() on bean with name 'stringRedisTemplate'
+2018-04-19 16:31:43 [ main:2675 ] - [ DEBUG ] Finished creating instance of bean 'stringRedisTemplate'
+2018-04-19 16:31:43 [ main:2676 ] - [ DEBUG ] Processing injected method of bean 'redisUtils': ResourceElement for private org.springframework.data.redis.connection.jedis.JedisConnectionFactory cn.redis.utils.RedisUtils.jedisConnectionFactory
+2018-04-19 16:31:43 [ main:2676 ] - [ DEBUG ] Returning cached instance of singleton bean 'jedisConnectionFactory'
+2018-04-19 16:31:43 [ main:2677 ] - [ DEBUG ] Finished creating instance of bean 'redisUtils'
+2018-04-19 16:31:43 [ main:2678 ] - [ DEBUG ] Finished creating instance of bean 'redisService'
+2018-04-19 16:31:43 [ main:2678 ] - [ DEBUG ] Finished creating instance of bean 'selectorDataBaseController'
+2018-04-19 16:31:43 [ main:2678 ] - [ DEBUG ] Creating shared instance of singleton bean 'redisMainPageController'
+2018-04-19 16:31:43 [ main:2679 ] - [ DEBUG ] Creating instance of bean 'redisMainPageController'
+2018-04-19 16:31:43 [ main:2683 ] - [ DEBUG ] Registered injected element on class [cn.redis.controller.page.RedisMainPageController]: ResourceElement for private cn.redis.service.RedisService cn.redis.controller.page.RedisMainPageController.redisService
+2018-04-19 16:31:43 [ main:2684 ] - [ DEBUG ] Eagerly caching bean 'redisMainPageController' to allow for resolving potential circular references
+2018-04-19 16:31:43 [ main:2689 ] - [ DEBUG ] Processing injected method of bean 'redisMainPageController': ResourceElement for private cn.redis.service.RedisService cn.redis.controller.page.RedisMainPageController.redisService
+2018-04-19 16:31:43 [ main:2689 ] - [ DEBUG ] Returning cached instance of singleton bean 'redisService'
+2018-04-19 16:31:43 [ main:2689 ] - [ DEBUG ] Finished creating instance of bean 'redisMainPageController'
+2018-04-19 16:31:43 [ main:2690 ] - [ DEBUG ] Creating shared instance of singleton bean 'testController'
+2018-04-19 16:31:43 [ main:2690 ] - [ DEBUG ] Creating instance of bean 'testController'
+2018-04-19 16:31:43 [ main:2691 ] - [ DEBUG ] Eagerly caching bean 'testController' to allow for resolving potential circular references
+2018-04-19 16:31:43 [ main:2694 ] - [ DEBUG ] Finished creating instance of bean 'testController'
+2018-04-19 16:31:43 [ main:2695 ] - [ DEBUG ] Returning cached instance of singleton bean 'redisService'
+2018-04-19 16:31:43 [ main:2695 ] - [ DEBUG ] Returning cached instance of singleton bean 'redisUtils'
+2018-04-19 16:31:43 [ main:2696 ] - [ DEBUG ] Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2018-04-19 16:31:43 [ main:2696 ] - [ DEBUG ] Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2018-04-19 16:31:43 [ main:2696 ] - [ DEBUG ] Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2018-04-19 16:31:43 [ main:2697 ] - [ DEBUG ] Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2018-04-19 16:31:43 [ main:2697 ] - [ DEBUG ] Returning cached instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2018-04-19 16:31:43 [ main:2697 ] - [ DEBUG ] Returning cached instance of singleton bean 'jedisPoolConfig'
+2018-04-19 16:31:43 [ main:2698 ] - [ DEBUG ] Returning cached instance of singleton bean 'jedisConnectionFactory'
+2018-04-19 16:31:43 [ main:2698 ] - [ DEBUG ] Returning cached instance of singleton bean 'stringRedisTemplate'
+2018-04-19 16:31:43 [ main:2698 ] - [ DEBUG ] Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2018-04-19 16:31:43 [ main:2699 ] - [ DEBUG ] Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2018-04-19 16:31:43 [ main:2716 ] - [ DEBUG ] Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@4e858e0a]
+2018-04-19 16:31:43 [ main:2718 ] - [ DEBUG ] Returning cached instance of singleton bean 'lifecycleProcessor'
+2018-04-19 16:31:43 [ main:2725 ] - [ DEBUG ] Searching for key 'spring.liveBeansView.mbeanDomain' in [systemProperties]
+2018-04-19 16:31:43 [ main:2726 ] - [ DEBUG ] Searching for key 'spring.liveBeansView.mbeanDomain' in [systemEnvironment]
+2018-04-19 16:31:43 [ main:2727 ] - [ DEBUG ] Could not find key 'spring.liveBeansView.mbeanDomain' in any property source. Returning [null]
+2018-04-19 16:31:43 [ main:2728 ] - [ DEBUG ] Storing ApplicationContext in cache under key [[MergedContextConfiguration@1ed1993a testClass = TestSpringRedis, locations = '{classpath:applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+2018-04-19 16:31:43 [ main:2732 ] - [ DEBUG ] Processing injected method of bean 'cn.redis.test.TestSpringRedis': ResourceElement for private cn.redis.service.RedisService cn.redis.test.TestSpringRedis.redisService
+2018-04-19 16:31:43 [ main:2732 ] - [ DEBUG ] Returning cached instance of singleton bean 'redisService'
+2018-04-19 16:31:52 [ main:11691 ] - [ INFO ] select database:2
+2018-04-19 16:31:52 [ main:11812 ] - [ DEBUG ] Opening RedisConnection
+2018-04-19 16:32:07 [ main:26937 ] - [ ERROR ] Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+org.springframework.data.redis.RedisConnectionFailureException: Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.fetchJedisConnector(JedisConnectionFactory.java:198)
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.getConnection(JedisConnectionFactory.java:345)
+	at org.springframework.data.redis.core.RedisConnectionUtils.doGetConnection(RedisConnectionUtils.java:128)
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:91)
+	at org.springframework.data.redis.core.RedisConnectionUtils.getConnection(RedisConnectionUtils.java:78)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:178)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:153)
+	at org.springframework.data.redis.core.RedisTemplate.keys(RedisTemplate.java:718)
+	at cn.redis.utils.RedisUtils.vagueQueryKeys(RedisUtils.java:320)
+	at cn.redis.service.impl.RedisServiceImpl.getKeyByVague(RedisServiceImpl.java:299)
+	at cn.redis.test.TestSpringRedis.testSpringRedis(TestSpringRedis.java:142)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:44)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:41)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:74)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:83)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:72)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:232)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:292)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:175)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:157)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool
+	at redis.clients.util.Pool.getResource(Pool.java:50)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:99)
+	at redis.clients.jedis.JedisPool.getResource(JedisPool.java:12)
+	at org.springframework.data.redis.connection.jedis.JedisConnectionFactory.fetchJedisConnector(JedisConnectionFactory.java:191)
+	... 37 more
+Caused by: redis.clients.jedis.exceptions.JedisConnectionException: java.net.SocketTimeoutException: connect timed out
+	at redis.clients.jedis.Connection.connect(Connection.java:164)
+	at redis.clients.jedis.BinaryClient.connect(BinaryClient.java:80)
+	at redis.clients.jedis.BinaryJedis.connect(BinaryJedis.java:1676)
+	at redis.clients.jedis.JedisFactory.makeObject(JedisFactory.java:87)
+	at org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:861)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:435)
+	at org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:363)
+	at redis.clients.util.Pool.getResource(Pool.java:48)
+	... 40 more
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at redis.clients.jedis.Connection.connect(Connection.java:158)
+	... 47 more
+2018-04-19 16:32:21 [ main:40982 ] - [ DEBUG ] After test method: context [DefaultTestContext@96def03 testClass = TestSpringRedis, testInstance = cn.redis.test.TestSpringRedis@5ccddd20, testMethod = testSpringRedis@TestSpringRedis, testException = java.lang.NullPointerException, mergedContextConfiguration = [MergedContextConfiguration@1ed1993a testClass = TestSpringRedis, locations = '{classpath:applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], class dirties context [false], class mode [null], method dirties context [false].
+2018-04-19 16:32:21 [ main:41005 ] - [ DEBUG ] After test class: context [DefaultTestContext@96def03 testClass = TestSpringRedis, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@1ed1993a testClass = TestSpringRedis, locations = '{classpath:applicationContext.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]], dirtiesContext [false].
+2018-04-19 16:32:21 [ Thread-3:41127 ] - [ INFO ] Closing org.springframework.context.support.GenericApplicationContext@cd3fee8: startup date [Thu Apr 19 16:31:42 CST 2018]; root of context hierarchy
+2018-04-19 16:32:21 [ Thread-3:41130 ] - [ DEBUG ] Returning cached instance of singleton bean 'lifecycleProcessor'
+2018-04-19 16:32:21 [ Thread-3:41130 ] - [ DEBUG ] Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@238d68ff: defining beans [selectorDataBaseController,redisMainPageController,testController,redisService,redisUtils,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,jedisPoolConfig,jedisConnectionFactory,stringRedisTemplate,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor]; root of factory hierarchy
+2018-04-19 16:32:21 [ Thread-3:41221 ] - [ DEBUG ] Retrieved dependent beans for bean 'redisService': [cn.redis.test.TestSpringRedis]
+2018-04-19 16:32:21 [ Thread-3:41222 ] - [ DEBUG ] Invoking destroy() on bean with name 'jedisConnectionFactory'

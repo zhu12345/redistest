@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: cn.meddb:ueditor:20180110-jdk7">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/cn/meddb/ueditor/20180110-jdk7/ueditor-20180110-jdk7.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/cn/meddb/ueditor/20180110-jdk7/ueditor-20180110-jdk7-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/cn/meddb/ueditor/20180110-jdk7/ueditor-20180110-jdk7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

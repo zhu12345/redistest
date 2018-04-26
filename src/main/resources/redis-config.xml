@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+       <bean id="jedisPoolConfig" class="redis.clients.jedis.JedisPoolConfig">
+              <property name="maxTotal" value="10"/>
+              <property name="maxIdle" value="10"/>
+              <property name="minIdle" value="2"/>
+              <property name="maxWaitMillis" value="15000"/>
+              <property name="minEvictableIdleTimeMillis" value="300000"/>
+              <property name="numTestsPerEvictionRun" value="3"/>
+              <property name="timeBetweenEvictionRunsMillis" value="60000"/>
+              <property name="testOnBorrow" value="true"/>
+              <property name="testOnReturn" value="true"/>
+              <property name="testWhileIdle" value="true"/>
+       </bean>
+		<!-- 现网-->
+       <!-- <bean id="jedisConnectionFactory"
+             class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory"
+             destroy-method="destroy">
+              <property name="hostName" value="10.144.242.82" />
+              <property name="port" value="6379" />
+              <property name="timeout" value="15000" />
+              <property name="password" value="ctyun@2017@chinatelecom!" />
+              <property name="usePool" value="true" />
+              <property name="poolConfig" ref="jedisPoolConfig" />
+       </bean> -->
+       <!-- 测试-->
+	 <bean id="jedisConnectionFactory"
+             class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory"
+             destroy-method="destroy">
+              <property name="hostName" value="192.168.13.144" />
+              <property name="port" value="6379" />
+              <property name="timeout" value="15000" />
+              <property name="password" value="ctyun" />
+              <property name="usePool" value="true" />
+              <property name="poolConfig" ref="jedisPoolConfig" />
+       </bean>
+       <!--使用这种方式，value存储前要先被变成字符串，这种方式的可读性更好-->
+       <!-- <bean id="stringRedisTemplate" class="org.springframework.data.redis.core.StringRedisTemplate">
+              <property name="connectionFactory" ref="jedisConnectionFactory"/>
+       </bean> -->
+       <bean id="stringRedisTemplate" class="org.springframework.data.redis.core.StringRedisTemplate">
+              <property name="connectionFactory" ref="jedisConnectionFactory"/>
+       </bean>
+       
+</beans>

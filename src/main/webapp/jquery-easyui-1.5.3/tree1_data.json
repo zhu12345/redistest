@@ -1,0 +1,27 @@
+[{      
+    "id":1,      
+    "text":"杭州",   
+    "children":[  
+        {      
+            "text":"下城区",      
+            "checked":true     
+        },  
+        {      
+            "text":"西湖区",      
+            "state":"open",        
+            "children":[  
+                {      
+                    "text":"超市",      
+                    "checked":true     
+                },  
+                {      
+                    "id": 8,      
+                    "text":"银行"   
+                }  
+            ]      
+        }  
+    ]        
+},{  
+    "id": 2,     
+    "text":"北京"      
+}]
