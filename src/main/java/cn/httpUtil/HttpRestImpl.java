@@ -106,9 +106,9 @@ public class HttpRestImpl implements HttpRest
 	public void getParamAsMap(String url, Map<String, String> mapUrl, Map<String, String> mapHeader) {
 		CloseableHttpClient client = HttpClients.createDefault();
 		if (mapUrl != null && !mapUrl.isEmpty()) {
-			 int i=0;
+			 int i = 0;
 			 for (Map.Entry<String,String> entry : mapUrl.entrySet()) {
-				 if( i==0 ) {
+				 if( i == 0 ) {
 					 url = url + "?"+entry.getKey()+"="+entry.getValue();
 				 } else {
 					 url = url + "&&"+entry.getKey()+"="+entry.getValue();
@@ -146,10 +146,8 @@ public class HttpRestImpl implements HttpRest
 			String boty = EntityUtils.toString(entity);
 			System.out.println(boty);
 		} catch (ClientProtocolException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
