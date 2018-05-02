@@ -83,11 +83,11 @@ public class RepairAndJump {
     public void hwsRepairAndcancel(@RequestParam(value = "bizids")String bizids, 
     		@RequestParam(value = "pd")int pd,@RequestParam(value = "key")String key) {
 		String[] bizid = bizids.split("\n");
-		for (String s: bizid) {
+		/*for (String s: bizid) {
 			if(s.length() != 32) {
 				return;
 			}
-		}
+		}*/
 		String urlrepair = "http://10.144.242.126/rest/resourceRoute/repair";
 		String urlcancel = "http://10.144.242.126/rest/resourceRoute/cancelTask";
 		 cn.httpUtil.dao.HttpRest hr = new HttpRestImpl();

@@ -164,10 +164,10 @@ public class TestSpringRedis {
     	System.out.println(host);
     	host.setVmPassword("nihaoa");
     	hostMapper.updateByPrimaryKey(host);*/
-    	Host host2 = new Host();
+    	/*Host host2 = new Host();
     	host2.setId("0490f00af95f4343854a1a309440698d");
     	host2.setVmPassword("updateByPrimaryKey123");
-    	hostMapper.updateByPrimaryKeySelective(host2);
+    	hostMapper.updateByPrimaryKeySelective(host2);*/
     }
     
 }

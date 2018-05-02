@@ -53,7 +53,7 @@
 <div>
 		<div class="easyui-panel" title="HWS包周期修复与取消" data-options="fit:true">
 		<div style="padding:10px 0 10px 60px">
-	    <form id="ffHWS" action="hws/repairAndJump" method="post" >
+	    <form id="ffHWS" action="hws/repairAndCancel" method="post" >
 	    	<table>
 	    		<tr>
 	    			<td>bizid:</td>
@@ -94,9 +94,11 @@
                 url: "vms/repairAndJump" ,//url
                 data: bodyData,
                 success: function (result) {
+                    start(key);
                 	window.clearTimeout(progressTime);
                 },
                 error : function() {
+                    start(key);
                     window.clearTimeout(progressTime);
                 }
             });
@@ -115,12 +117,14 @@
             //几个参数需要注意一下
                 type: "POST",//方法类型
                 dataType: "json",//预期服务器返回的数据类型
-                url: "hws/repairAndJump" ,//url
+                url: "hws/repairAndCancel" ,//url
                 data: bodyData,
                 success: function (result) {
+                    startHWS(key);
                 	window.clearTimeout(progressTime);
                 },
                 error : function() {
+                    startHWS(key);
                     window.clearTimeout(progressTime);
                 }
             });
