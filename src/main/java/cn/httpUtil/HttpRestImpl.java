@@ -31,6 +31,18 @@ public class HttpRestImpl implements HttpRest
 	public void postParamAsMap(String url, Map<String,String> mapBody, Map<String,String> mapHeader, Map<String,String> mapUrl) {
 		 List<NameValuePair> pair = new ArrayList<NameValuePair>();
 		 CloseableHttpClient client = HttpClients.createDefault();
+		if (mapUrl != null && !mapUrl.isEmpty()) {
+			int i=0;
+			for (Map.Entry<String,String> entry : mapUrl.entrySet()) {
+				if( i==0 ) {
+					url = url + "?"+entry.getKey()+"="+entry.getValue();
+				} else {
+					url = url + "&&"+entry.getKey()+"="+entry.getValue();
+				}
+				logger.info("URL param {}:{}={}", i, entry.getKey(), entry.getValue());
+				i++;
+			}
+		}
 		 HttpPost httppost = new HttpPost(url);
 		 if (mapBody != null && !mapBody.isEmpty()) {
 			 for (Map.Entry<String,String> entry : mapBody.entrySet()) {  
@@ -42,18 +54,6 @@ public class HttpRestImpl implements HttpRest
 			 for (Map.Entry<String,String> entry : mapHeader.entrySet()) {  
 				 httppost.setHeader(entry.getKey(), entry.getValue());
 				 logger.info("Header param :{}={}",entry.getKey(), entry.getValue());
-			 }
-		 }
-		 if (mapUrl != null && !mapUrl.isEmpty()) {
-			 int i=0;
-			 for (Map.Entry<String,String> entry : mapUrl.entrySet()) {
-				 if( i==0 ) {
-					 url = url + "?"+entry.getKey()+"="+entry.getValue();
-				 } else {
-					 url = url + "&&"+entry.getKey()+"="+entry.getValue();
-				 }
-				 logger.info("URL param {}:{}={}", i, entry.getKey(), entry.getValue());
-				 i++;
 			 }
 		 }
 		 try {
