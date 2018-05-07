@@ -27,7 +27,7 @@ public class RedisUtils {
 	public RedisUtils() {}
 	/**
 	 * 设置所选数据库
-	 * @param dataIndex
+	 * @param dbIndex
 	 */
 	public void setDatabase(int dbIndex) {
 		logger.info("select database:"+dbIndex);
@@ -265,6 +265,21 @@ public class RedisUtils {
 				logger.error(e.getMessage(), e);
 			}
 		}
+	}
+	/**
+	 * 删除key-value
+	 * @param keys
+	 */
+	public void deletevaluebyKeys(List<RedisKey> keys) {
+			for (RedisKey key:keys) {
+				if(key != null && key.isValid()) {
+					try {
+						this.stringRedisTemplate.delete(key.getKey());
+					}catch (Exception e) {
+						logger.error(e.getMessage(), e);
+					}
+				}
+			}
 	}
 	/**
 	 * 设置key生存时间

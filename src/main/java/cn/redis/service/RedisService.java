@@ -76,6 +76,13 @@ public interface RedisService {
 	 * @param key redis的key
 	 */
 	void deleteValueByKey(int index, String key);
+
+		/**
+		 *
+		 * @param index
+		 * @param keyVague
+		 */
+	void deleteValueByKeys(int index, String keyVague);
 	/**
 	 * 获取保留时间
 	 * @param key redis的key
@@ -87,7 +94,7 @@ public interface RedisService {
 	 * @param key redis的key
 	 * @param value
 	 * @param start
-	 * @param end
+	 * @param redisLifeCycle
 	 */
 	public void setZSetValue(String key,String value, long start, RedisLifeCycle redisLifeCycle);
 	/**

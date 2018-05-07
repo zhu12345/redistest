@@ -110,6 +110,18 @@ public class SelectorDataBaseController {
         return ReturnCode.IS_FAIL;
     }
 
+    @RequestMapping(value = "/delete/valuesbykeys", method = RequestMethod.GET)
+    @ResponseBody
+    public ReturnCode deleteValuebyKeys(@RequestParam(value = "index")int index,
+                                       @RequestParam(value = "keyVague")String keyVague) {
+        try {
+            redisService.deleteValueByKeys(index, keyVague);
+            return ReturnCode.IS_SUCCESS;
+        } catch (Exception e) {
+            logger.error(e.getMessage(), e);
+        }
+        return ReturnCode.IS_FAIL;
+    }
     /**
      * 根据redis数据库id和key和stringValue保存数据
      * @param index 数据库id

@@ -33,8 +33,7 @@ public class RedisServiceImpl implements RedisService {
 	@Resource
 	private RedisUtils redisUtils;
 	private RedisKey keyUtils = new RedisKey();
-	@Override
-	public String getKeyByBaseNum(int index) {	
+	public String getKeyByBaseNum(int index) {
 		try {
 			this.checkDatabaseIndex(index);
 			redisUtils.setDatabase(index);
@@ -53,25 +52,21 @@ public class RedisServiceImpl implements RedisService {
 		
 	}
 	
-	@Override
-	public List<String> getListValue(String key) {		
+	public List<String> getListValue(String key) {
 		keyUtils.setKey(key);
 		return redisUtils.getListValue(keyUtils);
 	}
 
-	@Override
 	public String getStringValue(String key) {
 		keyUtils.setKey(key);
 		return redisUtils.getStringValue(keyUtils);
 	}
 
-	@Override
 	public Map<String, Object> getHashValue(String key) {
 		keyUtils.setKey(key);
 		return redisUtils.getHashValue(keyUtils);
 	}
 
-	@Override
 	public DataType getTypeByKey(int index, String key) {
 		try {
 			this.checkDatabaseIndex(index);
@@ -87,7 +82,6 @@ public class RedisServiceImpl implements RedisService {
 		return null;
 	}
 	
-	@Override
 	public Set<String> getSetValue(String key) {
 		keyUtils.setKey(key);
 		return redisUtils.getSetValue(keyUtils);
@@ -96,7 +90,6 @@ public class RedisServiceImpl implements RedisService {
 		keyUtils.setKey(key);
 		return redisUtils.getZSet(keyUtils, start, end);
 	}
-	@Override
 	public RedisReturnValue getValueByKey(int index, String key)  {
 		try {
 			this.checkDatabaseIndex(index);
@@ -138,7 +131,6 @@ public class RedisServiceImpl implements RedisService {
 		}
 		return null;
 	}
-	@Override
 	public void deleteValueByKey(int index, String key) {
 		try {
 			this.checkDatabaseIndex(index);
@@ -152,24 +144,37 @@ public class RedisServiceImpl implements RedisService {
 			logger.error(e.getMessage(), e);
 		}
 	}
-	@Override
+
+	public void deleteValueByKeys(int index, String keyVague) {
+		Set<String> setKey = getKeyByVague(index, keyVague);
+		try {
+			this.checkDatabaseIndex(index);
+			redisUtils.setDatabase(index);
+			for (String key : setKey) {
+				this.checkRedisKey(key);
+				keyUtils.setKey(key);
+				redisUtils.deletevalue(keyUtils);
+			}
+		} catch (DatabaseIndexOutException e) {
+			logger.error(e.getMessage(), e);
+		} catch (RedisKeyNUllException e) {
+			logger.error(e.getMessage(), e);
+		}
+	}
 	public void setDabaseIndex(int index) {
 		redisUtils.setDatabase(index);		
 	}
 
-	@Override
 	public long getExpireTime(String key) {
 		keyUtils.setKey(key);
 		return redisUtils.getExpire(keyUtils);		
 	}
 
-	@Override
 	public void setZSetValue(String key, String value, long start,RedisLifeCycle redisLifeCycle ) {
 		keyUtils.setKey(key);
 		redisUtils.setZSetValue(keyUtils, value, start, redisLifeCycle);
 	}
 
-	@Override
 	public void setListValue(int index, String key, List listValue, RedisLifeCycle redisLifeCycle) {
 		try {
 			this.checkDatabaseIndex(index);
@@ -194,14 +199,12 @@ public class RedisServiceImpl implements RedisService {
 		
 	}
 	
-	@Override
 	public void setListValue(String key, String stringListValue,
 			RedisLifeCycle redisLifeCycle) {
 		// TODO Auto-generated method stub
 		
 	}
 	
-	@Override
 	public void setStringValue(int index, String key, String stringValue, RedisLifeCycle redisLifeCycle) {
 		try {
 			this.checkDatabaseIndex(index);
@@ -225,13 +228,11 @@ public class RedisServiceImpl implements RedisService {
 		}
 	}
 
-	@Override
 	public void setHashMap(String key, Map mapValue, RedisLifeCycle redisLifeCycle) {
 		keyUtils.setKey(key);
 		redisUtils.setHashValue(keyUtils, mapValue, redisLifeCycle);
 	}
 
-	@Override
 	public void setHashMapString(int index, String key, String mapkey,
 			String mapStringValue, RedisLifeCycle redisLifeCycle) {
 		try {
