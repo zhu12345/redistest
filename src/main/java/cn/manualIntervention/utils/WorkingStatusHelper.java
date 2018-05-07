@@ -21,7 +21,7 @@ public class WorkingStatusHelper {
         mapper.put (key, val);
     }
 
-    public static synchronized TotalCountVo get(String key) {
+    public static  TotalCountVo get(String key) {
         Integer current = mapper.containsKey(key)?
                 mapper.get (key):0;
         Integer total =  totalCount.containsKey(key)?

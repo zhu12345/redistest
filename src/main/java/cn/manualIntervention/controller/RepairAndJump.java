@@ -31,7 +31,7 @@ public class RepairAndJump {
     public void vmsRepairAndJump(@RequestParam(value = "bizids")String bizids, 
     		@RequestParam(value = "cook")String cook, @RequestParam(value = "pd")int pd,
     		@RequestParam(value = "key")String key) {
-		String[] bizid = bizids.split("\n");
+		/*String[] bizid = bizids.split("\n");
 		WorkingStatusHelper.init(key, bizid.length);
 		for(String l : bizid) {
 			try {
@@ -40,8 +40,8 @@ public class RepairAndJump {
 				e.printStackTrace();
 			}
 			WorkingStatusHelper.addOne(key);
-		}
-		/*if (pdNUll(bizids) && pdNUll(pd) && pdNUll(key)) {
+		}*/
+		if (pdNUll(bizids) && pdNUll(pd) && pdNUll(key)) {
 			return ;
 		}
 		String[] bizid = bizids.split("\n");
@@ -56,7 +56,7 @@ public class RepairAndJump {
 		 cn.httpUtil.dao.HttpRest hr = new HttpRestImpl();
 		 Map<String, String> mapHeader = new HashMap<String, String>();
 	        Map<String, String> mapBody = new HashMap<String, String>();
-	        mapHeader.put("Accept","*\/*");
+	        mapHeader.put("Accept","*/*");
 	        mapHeader.put("Accept-Encoding","gzip, deflate");
 	        mapHeader.put("Accept-Language","zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2");
 	        mapHeader.put("Connection","keep-alive");
@@ -76,7 +76,7 @@ public class RepairAndJump {
 				e.printStackTrace();
 			}
 			WorkingStatusHelper.addOne(key);
-		 }*/
+		 }
     }
 	@RequestMapping(value = "/hws/repairAndCancel", method = RequestMethod.POST )
     @ResponseBody

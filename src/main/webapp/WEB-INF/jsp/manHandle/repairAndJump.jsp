@@ -93,6 +93,7 @@
                 dataType: "json",//预期服务器返回的数据类型
                 url: "vms/repairAndJump" ,//url
                 data: bodyData,
+				timeout: 100000000,
                 success: function (result) {
                     start(key);
                 	window.clearTimeout(progressTime);
@@ -119,6 +120,7 @@
                 dataType: "json",//预期服务器返回的数据类型
                 url: "hws/repairAndCancel" ,//url
                 data: bodyData,
+            	timeout: 100000000,
                 success: function (result) {
                     startHWS(key);
                 	window.clearTimeout(progressTime);
