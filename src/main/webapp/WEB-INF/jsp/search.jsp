@@ -53,7 +53,29 @@
 	</div>
 	<div id="dlg" class="easyui-dialog" title="编辑查询结果" style="width:400px;height:200px;padding:10px" closed="true">
 		
-	</div>  
+	</div>
+<div>下面是使用模糊删除的方式：</div>
+<input id="inputa" class="easyui-searchbox" style="width:250px"
+       data-options="searcher:deleteKeys,prompt:'Please Input Value',menu:'#selecta'"></input>
+<div id="selecta" style="width:120px">
+    <div data-options="index:'0'">0</div>
+    <div data-options="index:'1'">1</div>
+    <div data-options="index:'2'">2</div>
+    <div data-options="index:'3'">3</div>
+    <div data-options="index:'4'">4</div>
+    <div data-options="index:'5'">5</div>
+    <div data-options="index:'6'">6</div>
+    <div data-options="index:'7'">7</div>
+    <div data-options="index:'8'">8</div>
+    <div data-options="index:'9'">9</div>
+    <div data-options="index:'10'">10</div>
+    <div data-options="index:'11'">11</div>
+    <div data-options="index:'12'">12</div>
+    <div data-options="index:'13'">13</div>
+    <div data-options="index:'14'">14</div>
+    <div data-options="index:'15'">15</div>
+</div>
+
 <script type="text/javascript"> 
     	var id; 
         function qq(value,index){
@@ -207,6 +229,28 @@
 				});
 			  }
 		  }
-		  
-    </script>  
+
+    </script>
+    <script >
+        var id;
+        function deleteKeys(value,index) {
+            var lengthValue = value.length;
+            if (lengthValue<5) {
+                alert("至少5个字符");
+            } else {
+                id = index;
+                $.ajax({
+                    method: 'GET',
+                    url: "delete/valuesbykeys?index=" + id + "&keyVague=" + value,
+                    async: true,
+                    success: function (data) {
+                        alert("success del " + value);
+                    },
+                    error: function (data) {
+                        alert("del fail " + value);
+                    }
+                });
+            }
+        }
+    </script>
 </html>

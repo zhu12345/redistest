@@ -16,7 +16,7 @@
               <property name="testWhileIdle" value="true"/>
        </bean>
 		<!-- 现网-->
-       <!-- <bean id="jedisConnectionFactory"
+        <bean id="jedisConnectionFactory"
              class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory"
              destroy-method="destroy">
               <property name="hostName" value="10.144.242.82" />
@@ -25,9 +25,9 @@
               <property name="password" value="ctyun@2017@chinatelecom!" />
               <property name="usePool" value="true" />
               <property name="poolConfig" ref="jedisPoolConfig" />
-       </bean> -->
+       </bean>
        <!-- 测试-->
-	 <bean id="jedisConnectionFactory"
+	 <!--<bean id="jedisConnectionFactory"
              class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory"
              destroy-method="destroy">
               <property name="hostName" value="192.168.13.144" />
@@ -36,7 +36,7 @@
               <property name="password" value="ctyun" />
               <property name="usePool" value="true" />
               <property name="poolConfig" ref="jedisPoolConfig" />
-       </bean>
+       </bean>-->
        <!--使用这种方式，value存储前要先被变成字符串，这种方式的可读性更好-->
        <!-- <bean id="stringRedisTemplate" class="org.springframework.data.redis.core.StringRedisTemplate">
               <property name="connectionFactory" ref="jedisConnectionFactory"/>
