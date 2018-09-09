@@ -1,7 +1,6 @@
 package cn.redis.controller.database;
 
 
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -31,76 +30,81 @@ import javax.servlet.http.HttpServletResponse;
 
 @Controller
 public class SelectorDataBaseController {
-	
+
     private static final Logger logger = LoggerFactory.getLogger(RedisUtils.class);
     @Resource
     private RedisService redisService;
 
     /**
      * 根据redis数据库id查出所有的key, 并构造成树
+     *
      * @param index 数据库id
      * @return 返回string类型
      * @throws Exception
      */
     @RequestMapping(value = "/select/Base", method = RequestMethod.POST)
     @ResponseBody
-    public String selectKeybyBaseNum(@RequestParam(value = "index")int index) {
-    	return redisService.getKeyByBaseNum(index);
+    public String selectKeybyBaseNum(@RequestParam(value = "index") int index) {
+        return redisService.getKeyByBaseNum(index);
     }
+
     /**
      * 根据redis数据库id查出所有的key, 并构造成树
+     *
      * @param index 数据库id
      * @return 返回string类型
      * @throws Exception
      */
     @RequestMapping(value = "/select/VagueKey", method = RequestMethod.GET)
     @ResponseBody
-    public Set<String> selectKeybyVague(@RequestParam(value = "index")int index, @RequestParam(value = "ke")String ke) {
-    	if (ke != null && !ke.equals(""))
-    		return redisService.getKeyByVague(index, ke);
-    	return null;
+    public Set<String> selectKeybyVague(@RequestParam(value = "index") int index, @RequestParam(value = "ke") String ke) {
+        if (ke != null && !ke.equals(""))
+            return redisService.getKeyByVague(index, ke);
+        return null;
     }
 
     /**
      * 根据redis数据库id和key查询value
+     *
      * @param index 数据库id
-     * @param key redis的key
+     * @param key   redis的key
      * @return
      * @throws Exception
      */
     @RequestMapping(value = "/select/value", method = RequestMethod.GET)
     @ResponseBody
-    public RedisReturnValue selectValue(@RequestParam(value = "index")int index, 
-    		@RequestParam(value = "key")String key) {
-		if (key != null) {
-			try {
-				RedisReturnValue redisReturnValue = redisService.getValueByKey(index, key);
-				if(redisReturnValue != null) {
-					redisReturnValue.setReturnCode(ReturnCode.IS_SUCCESS);
-				} else {
-					redisReturnValue = new RedisReturnValue(null, null, null, null, null, 0, ReturnCode.IS_NULL);
-				}
-	            return redisReturnValue;
-			} catch (Exception e) {
-				logger.error(e.getMessage(), e);
-			}
-		}
-		logger.debug("key is null or key length is zero!");
+    public RedisReturnValue selectValue(@RequestParam(value = "index") int index,
+                                        @RequestParam(value = "key") String key) {
+        if (key != null) {
+            try {
+                RedisReturnValue redisReturnValue = redisService.getValueByKey(index, key);
+                if (redisReturnValue != null) {
+                    redisReturnValue.setReturnCode(ReturnCode.IS_SUCCESS);
+                } else {
+                    redisReturnValue = new RedisReturnValue(null, null, null, null, null, 0, ReturnCode.IS_NULL);
+                }
+                return redisReturnValue;
+            } catch (Exception e) {
+                logger.error(e.getMessage(), e);
+            }
+        }
+        logger.debug("key is null or key length is zero!");
         return new RedisReturnValue(null, null, null, null, DataType.NONE, index,
                 ReturnCode.IS_FAIL);
     }
 
     /**
      * 根据redis数据库id和key删除数据
+     *
      * @param index 数据库id
-     * @param key redis的key
+     * @param key   redis的key
      * @return ReturnCode返回对象
      * @throws Exception
      */
     @RequestMapping(value = "/delete/value", method = RequestMethod.GET)
     @ResponseBody
-    public ReturnCode deleteValuebyKey(@RequestParam(value = "index")int index, 
-    		@RequestParam(value = "key")String key) {
+    public ReturnCode deleteValuebyKey(@RequestParam(value = "index") int index,
+                                       @RequestParam(value = "key") String key) {
         try {
             redisService.deleteValueByKey(index, key);
             return ReturnCode.IS_SUCCESS;
@@ -112,8 +116,8 @@ public class SelectorDataBaseController {
 
     @RequestMapping(value = "/delete/valuesbykeys", method = RequestMethod.GET)
     @ResponseBody
-    public ReturnCode deleteValuebyKeys(@RequestParam(value = "index")int index,
-                                       @RequestParam(value = "keyVague")String keyVague) {
+    public ReturnCode deleteValuebyKeys(@RequestParam(value = "index") int index,
+                                        @RequestParam(value = "keyVague") String keyVague) {
         try {
             redisService.deleteValueByKeys(index, keyVague);
             return ReturnCode.IS_SUCCESS;
@@ -122,52 +126,55 @@ public class SelectorDataBaseController {
         }
         return ReturnCode.IS_FAIL;
     }
+
     /**
      * 根据redis数据库id和key和stringValue保存数据
-     * @param index 数据库id
-     * @param key redis的key
+     *
+     * @param index       数据库id
+     * @param key         redis的key
      * @param stringValue 存储的string类型数据
-     * @param timeout 设定存储时间
+     * @param timeout     设定存储时间
      * @return ReturnCode返回对象
      * @throws Exception
      */
     @RequestMapping(value = "/save/stringValue", method = RequestMethod.POST)
     @ResponseBody
-    public ReturnCode savestringValuebyKey(@RequestParam(value = "index")int index,
-    		@RequestParam(value = "key")String key,
-    		@RequestParam("stringValue")String stringValue,
-    		@RequestParam(value = "timeout")long timeout) {
-    	if ((key != null) && (stringValue != null)) {
-	        try {
-	            RedisLifeCycle redisLifeCycle = new RedisLifeCycle(timeout,
-	                    TimeUnit.MILLISECONDS);
-	            redisService.setStringValue(index, key, stringValue, redisLifeCycle);
-	            return ReturnCode.IS_SUCCESS;
-	        } catch (Exception e) {
-	            logger.error(e.getMessage(), e);
-	        }
-    	}
+    public ReturnCode savestringValuebyKey(@RequestParam(value = "index") int index,
+                                           @RequestParam(value = "key") String key,
+                                           @RequestParam("stringValue") String stringValue,
+                                           @RequestParam(value = "timeout") long timeout) {
+        if ((key != null) && (stringValue != null)) {
+            try {
+                RedisLifeCycle redisLifeCycle = new RedisLifeCycle(timeout,
+                        TimeUnit.MILLISECONDS);
+                redisService.setStringValue(index, key, stringValue, redisLifeCycle);
+                return ReturnCode.IS_SUCCESS;
+            } catch (Exception e) {
+                logger.error(e.getMessage(), e);
+            }
+        }
         return ReturnCode.IS_FAIL;
     }
 
     /**
      * 根据redis数据库id和key和stringValue保存数据
-     * @param index 数据库id
-     * @param key redis的key
+     *
+     * @param index     数据库id
+     * @param key       redis的key
      * @param listValue 存储的list类型数据
-     * @param timeout 设定存储时间 
+     * @param timeout   设定存储时间
      * @return ReturnCode返回对象
      * @throws Exception
      */
     @RequestMapping(value = "/save/listValue", method = RequestMethod.POST)
     @ResponseBody
-    public ReturnCode saveListValuebyKey(@RequestParam(value = "index")int index, 
-    @RequestParam(value = "key")String key, 
-    @RequestParam("listValue")List listValue, 
-    @RequestParam(value = "timeout")long timeout, 
-    HttpServletResponse response) {
-    	if ((key != null) && (listValue != null)) {
-    		try {
+    public ReturnCode saveListValuebyKey(@RequestParam(value = "index") int index,
+                                         @RequestParam(value = "key") String key,
+                                         @RequestParam("listValue") List listValue,
+                                         @RequestParam(value = "timeout") long timeout,
+                                         HttpServletResponse response) {
+        if ((key != null) && (listValue != null)) {
+            try {
                 RedisLifeCycle redisLifeCycle = new RedisLifeCycle(timeout,
                         TimeUnit.MILLISECONDS);
                 redisService.setListValue(index, key, listValue, redisLifeCycle);
@@ -175,30 +182,30 @@ public class SelectorDataBaseController {
             } catch (Exception e) {
                 logger.error(e.getMessage(), e);
             }
-    	}
-         return ReturnCode.IS_FAIL;
+        }
+        return ReturnCode.IS_FAIL;
     }
 
     /**
      * 保存map数据类型
-     * @param index 数据库id
-     * @param key redis的key
-     * @param mapKey 存储map的key键
+     *
+     * @param index    数据库id
+     * @param key      redis的key
+     * @param mapKey   存储map的key键
      * @param mapValue 存储map的key值
-     * @param timeout 设定存储时间
+     * @param timeout  设定存储时间
      * @return ReturnCode返回对象
      * @throws Exception
      */
     @RequestMapping(value = "/save/mapValue", method = RequestMethod.POST)
     @ResponseBody
-    public ReturnCode saveMapValuebyKey(@RequestParam(value = "index", required = true)int index, 
-    		@RequestParam(value = "key")String key, 
-    		@RequestParam("mapKey")String mapKey, 
-    		@RequestParam("mapValue")String mapValue, 
-    		@RequestParam(value = "timeout")long timeout) 
-    {
-    	if ((key != null) && (mapKey != null) && (mapValue != null)) {
-    		try {
+    public ReturnCode saveMapValuebyKey(@RequestParam(value = "index", required = true) int index,
+                                        @RequestParam(value = "key") String key,
+                                        @RequestParam("mapKey") String mapKey,
+                                        @RequestParam("mapValue") String mapValue,
+                                        @RequestParam(value = "timeout") long timeout) {
+        if ((key != null) && (mapKey != null) && (mapValue != null)) {
+            try {
                 RedisLifeCycle redisLifeCycle = new RedisLifeCycle(timeout,
                         TimeUnit.MILLISECONDS);
                 redisService.setHashMapString(index, key, mapKey, mapValue, redisLifeCycle);
@@ -206,32 +213,34 @@ public class SelectorDataBaseController {
             } catch (Exception e) {
                 logger.error(e.getMessage(), e);
             }
-    	}
+        }
         return ReturnCode.IS_FAIL;
     }
 
     /**
-     *查询key的数据存储的结构类型
+     * 查询key的数据存储的结构类型
+     *
      * @param index 数据库id
-     * @param key redis的key
+     * @param key   redis的key
      * @return
      */
     @RequestMapping(value = "/queryValueType", method = RequestMethod.POST)
     @ResponseBody
-    public DataType queryValueType(@RequestParam(value = "index") int index, 
-    		@RequestParam(value = "key") String key) {
-    	if (key != null) {
-    		try {
+    public DataType queryValueType(@RequestParam(value = "index") int index,
+                                   @RequestParam(value = "key") String key) {
+        if (key != null) {
+            try {
                 return redisService.getTypeByKey(index, key);
             } catch (Exception e) {
                 logger.error(e.getMessage(), e);
             }
-    	}
+        }
         return null;
     }
 
     /**
      * 测试JSON-easyUI数据
+     *
      * @return
      */
     @RequestMapping(value = "/createJson", method = RequestMethod.POST)

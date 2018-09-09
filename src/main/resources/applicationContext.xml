@@ -22,7 +22,5 @@
 		</context:component-scan>           
         <import resource="classpath:redis-config.xml"/>
       	<import resource="classpath:mybatis-config.xml"/>
-	
+		<import resource="task.xml"/>
 </beans>
-
-
