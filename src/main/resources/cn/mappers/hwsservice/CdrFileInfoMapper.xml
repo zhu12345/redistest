@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.hwsservice.dao.CdrFileInfoMapper" >
+  <resultMap id="BaseResultMap" type="cn.hwsservice.bo.CdrFileInfo" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="zip_fileName" property="zipFilename" jdbcType="VARCHAR" />
+    <result column="file_size" property="fileSize" jdbcType="DOUBLE" />
+    <result column="access_date" property="accessDate" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <resultMap id="ResultMapWithBLOBs" type="cn.hwsservice.bo.CdrFileInfo" extends="BaseResultMap" >
+    <result column="resource_types" property="resourceTypes" jdbcType="LONGVARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, zip_fileName, file_size, access_date
+  </sql>
+  <sql id="Blob_Column_List" >
+    resource_types
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="ResultMapWithBLOBs" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from cdr_file_info
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from cdr_file_info
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="cn.hwsservice.bo.CdrFileInfo" >
+    insert into cdr_file_info (id, zip_fileName, file_size, 
+      access_date, resource_types)
+    values (#{id,jdbcType=INTEGER}, #{zipFilename,jdbcType=VARCHAR}, #{fileSize,jdbcType=DOUBLE}, 
+      #{accessDate,jdbcType=TIMESTAMP}, #{resourceTypes,jdbcType=LONGVARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="cn.hwsservice.bo.CdrFileInfo" >
+    insert into cdr_file_info
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="zipFilename != null" >
+        zip_fileName,
+      </if>
+      <if test="fileSize != null" >
+        file_size,
+      </if>
+      <if test="accessDate != null" >
+        access_date,
+      </if>
+      <if test="resourceTypes != null" >
+        resource_types,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="zipFilename != null" >
+        #{zipFilename,jdbcType=VARCHAR},
+      </if>
+      <if test="fileSize != null" >
+        #{fileSize,jdbcType=DOUBLE},
+      </if>
+      <if test="accessDate != null" >
+        #{accessDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="resourceTypes != null" >
+        #{resourceTypes,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="cn.hwsservice.bo.CdrFileInfo" >
+    update cdr_file_info
+    <set >
+      <if test="zipFilename != null" >
+        zip_fileName = #{zipFilename,jdbcType=VARCHAR},
+      </if>
+      <if test="fileSize != null" >
+        file_size = #{fileSize,jdbcType=DOUBLE},
+      </if>
+      <if test="accessDate != null" >
+        access_date = #{accessDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="resourceTypes != null" >
+        resource_types = #{resourceTypes,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="cn.hwsservice.bo.CdrFileInfo" >
+    update cdr_file_info
+    set zip_fileName = #{zipFilename,jdbcType=VARCHAR},
+      file_size = #{fileSize,jdbcType=DOUBLE},
+      access_date = #{accessDate,jdbcType=TIMESTAMP},
+      resource_types = #{resourceTypes,jdbcType=LONGVARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="cn.hwsservice.bo.CdrFileInfo" >
+    update cdr_file_info
+    set zip_fileName = #{zipFilename,jdbcType=VARCHAR},
+      file_size = #{fileSize,jdbcType=DOUBLE},
+      access_date = #{accessDate,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>
