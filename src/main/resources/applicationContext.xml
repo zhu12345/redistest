@@ -21,6 +21,7 @@
         <context:component-scan base-package="cn">
 		</context:component-scan>           
         <import resource="classpath:redis-config.xml"/>
-      	<import resource="classpath:mybatis-config.xml"/>
+      	<import resource="classpath:mybatis-config-vms.xml"/>
+		<import resource="classpath:mybatis-config-hws.xml"/>
 		<import resource="task.xml"/>
 </beans>

@@ -1,5 +1,8 @@
 package cn.LinuxShell;
 
+import java.util.List;
+
 public interface CheckCDRNoService {
-    StringBuffer checkByDateAndRegion(String region, String date);
+    void repay() ;
+
 }

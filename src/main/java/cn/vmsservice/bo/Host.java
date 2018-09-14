@@ -1,7 +1,12 @@
 package cn.vmsservice.bo;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.util.Date;
 
+@JsonIgnoreProperties
 public class Host {
     private String id;
 
@@ -29,16 +34,20 @@ public class Host {
 
     private String orderId;
 
+    @JsonFormat(pattern = "yyyy-MM-dd HH-mm-ss")
     private Date applyDate;
 
+    @JsonFormat(pattern = "yyyy-MM-dd HH-mm-ss")
     private Date inputDate;
 
     private String vlanId;
 
     private Integer status;
 
+    @JsonFormat(pattern = "yyyy-MM-dd HH-mm-ss")
     private Date statusChangeDate;
 
+    @JsonFormat(pattern = "yyyy-MM-dd HH-mm-ss")
     private Date dueDate;
 
     private String payPattern;
