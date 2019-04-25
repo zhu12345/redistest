@@ -49,7 +49,6 @@ public class CheckCDRNoServiceImpl implements CheckCDRNoService {
             if (strings.size() != 12) {
                 for (int i = 0; i < 24; i++) {
                     String s1 = "";
-
                     if (i < 10) {
                         s1 = "0" + String.valueOf(i);
                     } else {
@@ -276,4 +275,96 @@ public class CheckCDRNoServiceImpl implements CheckCDRNoService {
             }
         }
     }
+
+
+    /*public void repay2() {
+        try {
+            HttpRest httpRest = new HttpRestImpl();
+            String s = httpRest.getParamAsMap(ConstantKey.ng + ConstantKey.getZones,
+                    null, null);
+            JSONObject jsonObject = JSON.parseObject(s);
+            List zoneConfigs = JSON.parseObject(jsonObject.getString("returnObj"), List.class);
+            System.out.println(JSON.toJSONString(zoneConfigs));
+            Calendar cal = Calendar.getInstance();
+            cal.add(Calendar.DATE, -1);
+            String yesterday = "201810";
+            StringBuffer stringBuffer = new StringBuffer();
+            StringBuffer pdString = new StringBuffer();
+            List<String> zoneString = new ArrayList<String>();
+            for (Object o : zoneConfigs) {
+                JSONObject jsonObject1 = JSON.parseObject(o.toString());
+                logger.info(jsonObject1.getString("regionId"));
+                zoneString.add(jsonObject1.getString("regionId"));
+            }
+            Connection connection = null;
+            InputStream stdout = null;
+            Session session = null;
+            try {
+                connection = ShellOperateUtils.getConnection(ConstantKey.userName, ConstantKey.password,
+                        ConstantKey.host, ConstantKey.port);
+                session = ShellOperateUtils.getSession(connection);
+                String cmd = ConstantKey.Often_cd + "ls |grep " + yesterday;
+                stdout = ShellOperateUtils.getInputStream(session, cmd);
+                String split = "\\|";
+                stringBuffer = ShellOperateUtils.doShell(stdout, "|");
+                String[] fileNames = stringBuffer.toString().split(split);
+                StringBuffer stringBufferCheck = new StringBuffer();
+                Map<String, CopyOnWriteArrayList<String>> regionFileName = new HashMap<String, CopyOnWriteArrayList<String>>();
+                for (String fileName : fileNames) {
+                    CopyOnWriteArrayList<String> copyOnWriteArrayList = null;
+                    for (String region : zoneString) {
+                        if (fileName.contains(region)) {
+                            copyOnWriteArrayList = regionFileName.get(region);
+                            if (copyOnWriteArrayList == null) {
+                                copyOnWriteArrayList = new CopyOnWriteArrayList<String>();
+                            }
+                            copyOnWriteArrayList.add(fileName);
+                            regionFileName.put(region, copyOnWriteArrayList);
+                        }
+                    }
+                }
+                for (String region : zoneString) {
+                    pdString.append("|");
+                    stringBufferCheck.append(this.checkByDateAndRegion(regionFileName.get(region), region, yesterday)).append("|");
+                }
+                logger.info(pdString.toString());
+                List<String> listType = new ArrayList<String>();
+                if (!stringBufferCheck.toString().equals(pdString.toString())) {
+                    List<String> lostFile = Arrays.asList(stringBufferCheck.toString().split("\\|"));
+                    stringBufferCheck.delete(0, stringBufferCheck.length()).append("检查话单异常：下面是缺失的压缩文件开头的字符串\n");
+                    for (int i = 0; i < lostFile.size(); i++) {
+                        if ("".equals(lostFile.get(i))) {
+                            continue;
+                        }
+                        stringBufferCheck.append(lostFile.get(i)).append("\n");
+                    }
+                    getMappingType(httpRest, listType);
+                    stringBufferCheck.append("\n华为mapping映射不对应的：");
+                    for (String s1 : listType) {
+                        stringBufferCheck.append(s1 + "\n");
+                    }
+                    SendEmail.sendMail(stringBufferCheck);
+                } else {
+                    stringBufferCheck.delete(0, stringBufferCheck.length()).append("检查话单正常!");
+                    getMappingType(httpRest, listType);
+                    stringBufferCheck.append("\n华为mapping映射不对应的：");
+                    for (String s1 : listType) {
+                        stringBufferCheck.append(s1 + "\n");
+                    }
+                    SendEmail.sendMail(stringBufferCheck);
+                }
+                for (String fileName : fileNames) {
+                    doSaveCDRFile(connection, fileName);
+                }
+            } catch (Exception e) {
+                logger.error(e.getMessage(), e);
+            } finally {
+                ShellOperateUtils.closeStream(stdout);
+                ShellOperateUtils.closeSession(session);
+                ShellOperateUtils.closeConnection(connection);
+            }
+        } catch (Exception e) {
+            logger.error(e.getMessage(), e);
+        }
+    }*/
 }

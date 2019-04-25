@@ -88,8 +88,8 @@ public class RepairAndJump {
 				return;
 			}
 		}*/
-		String urlrepair = "http://10.144.242.126/rest/resourceRoute/repair";
-		String urlcancel = "http://10.144.242.126/rest/resourceRoute/cancelTask";
+		String urlrepair = "http://10.144.242.126/controller/resourceRoute/repair";
+		String urlcancel = "http://10.144.242.126/controller/resourceRoute/cancelTask";
 		 cn.httpUtil.dao.HttpRest hr = new HttpRestImpl();
 		 WorkingStatusHelper.init(key, bizid.length);
 		 Map<String, String> mapHeader = new HashMap<String, String>();

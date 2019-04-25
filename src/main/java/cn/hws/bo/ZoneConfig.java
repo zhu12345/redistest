@@ -2,7 +2,10 @@ package cn.hws.bo;
 
 import java.util.Date;
 
-public class ZoneConfig {
+public class ZoneConfig implements java.io.Serializable{
+
+    private static final long serialVersionUID = 1822818790694831649L;
+
     private String id;
     /**
      * 华为节点ID

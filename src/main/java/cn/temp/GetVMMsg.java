@@ -62,11 +62,11 @@ public class GetVMMsg {
         StringBuffer stringBuffer = new StringBuffer();
         File f = new File(writetxtFileString);
         for (Map.Entry<Integer, Map<String , String>> set:map.entrySet()) {
-            /*System.out.print(i++);
+//            System.out.print(i++);
             for (Map.Entry<String, String> set2: set.getValue().entrySet()) {
                 System.out.println("行:" + set.getKey() + "，key:" + set2.getKey().toString() + "，value:" + set2.getValue().toString());
-            }*/
-            stringBuffer.append(getVMEBSNETWORK(httpRest, set.getValue(), 0));
+            }
+            stringBuffer.append(doReport(httpRest, set.getValue(), 0));
         }
         try {
             writeToFile(f, stringBuffer);
@@ -81,7 +81,7 @@ public class GetVMMsg {
         String s = "";
 
         try {
-            s = httpRest.getParamAsMap("http://10.144.242.126/hws_api/getVMStatus", null, map);
+            s = httpRest.getParamAsMap("http://10.144.242.126/hws_api/getVMByVmId", null, map);
             System.out.print(s);
             JSONObject jsonObject = JSON.parseObject(s);
             if (jsonObject.get("statusCode") != null && jsonObject.get("statusCode").toString().equals("800")) {
@@ -99,7 +99,8 @@ public class GetVMMsg {
                 if (i == 0) {
                     cleanToken(httpRest, map.get("accountId"));
                     i++;
-                    status =  doReport(httpRest, map, i);
+                    String s1 = doReport(httpRest, map, i);
+                    status =  s1.split("\\|")[1];
                 }else {
                     status = "Non-existent";
                 }
@@ -110,7 +111,8 @@ public class GetVMMsg {
             if (i == 0) {
                 cleanToken(httpRest, map.get("accountId"));
                 i++;
-                status =  doReport(httpRest, map, i);
+                String s1 = doReport(httpRest, map, i);
+                status =  s1.split("\\|")[1];
             }else {
                 status = "Non-existent";
             }
@@ -128,7 +130,7 @@ public class GetVMMsg {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        logger.info("return:" + s);
+        logger.info("getVMByVmIdreturn:" + s);
         JSONObject jsonObject = JSON.parseObject(s);
         String vmId = "";
         List<String> publicIps = new ArrayList<String>();

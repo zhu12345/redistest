@@ -16,8 +16,9 @@
         <!--数据库链接URL，用户名、密码 -->    
 
 <!-- jdbc:mysql://10.182.254.154:3306/auapdevconfig?useUnicode=true&amp;characterEncoding=utf8 -->
-        <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://192.168.13.99:3306/hws_service_new?Unicode=true&amp;characterEncoding=utf8" userId="portal" password="portal.ctyun">
-        </jdbcConnection>    
+        <!--<jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://192.168.13.99:3306/hws_service_new?Unicode=true&amp;characterEncoding=utf8" userId="portal" password="portal.ctyun">-->
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://10.144.242.161:3306/hws_service?Unicode=true&amp;characterEncoding=utf8" userId="hws_service" password="hws_service@ctyun.cn">
+        </jdbcConnection>
         <javaTypeResolver>    
             <property name="forceBigDecimals" value="false"/>    
         </javaTypeResolver>    
@@ -35,6 +36,6 @@
             <property name="enableSubPackages" value="true"/>    
         </javaClientGenerator>
         <!-- 要生成的表      tableName：数据库中的表名或视图名 domainObjectName：实体类名-->    
-        <table tableName="cdr_file_info" domainObjectName="CdrFileInfo" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>
+        <table tableName="product_mapping" domainObjectName="ProductMapping" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"></table>
     </context>    
 </generatorConfiguration>

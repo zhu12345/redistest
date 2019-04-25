@@ -19,7 +19,7 @@ public class GetVmStatus {
 
     @RequestMapping(value = "/getVmStatus", method = RequestMethod.GET)
     @ResponseBody
-    public void selectKeybyVague(@RequestParam(value = "readxlsFileString")String readxlsFileString,
+    public void getHost(@RequestParam(value = "readxlsFileString")String readxlsFileString,
                                  @RequestParam(value = "writetxtFileString")String writetxtFileString) {
         getVMMsg.getHost(readxlsFileString, writetxtFileString);
     }

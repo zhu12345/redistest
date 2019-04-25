@@ -8,7 +8,7 @@ import java.util.Map;
 
 public class SendEmail {
     private static String url = "http://10.144.242.126/mail/sendDetailsMail";
-    private static String toMail = "zhuxinquan@ctyun.cn;chentaih@chinatelecom.cn;zhouxb@ctyun.cn;nieyc@asiainfo.com";
+    private static String toMail = "zhuxinquan@ctyun.cn;chentaih@chinatelecom.cn;zhouxb@ctyun.cn;yangcheng@ctyun.cn";
     public static boolean sendMail(Object o) {
         HttpRest httpRest = new HttpRestImpl();
         Map<String, String> mapBody = new HashMap<String, String>();
